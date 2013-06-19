@@ -1,0 +1,58 @@
+<div id="lg_banner">
+<img src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/674/482810/banner.jpg">
+</div>
+
+<div id="menu_container">
+<ul id="menu">
+
+    <a href="http://library.depaul.edu/"><span id="home_icon" class="not-drop"></span></a>
+
+  <li><a href="http://library.depaul.edu/Find/index.aspx" class="drop">Find</a><!-- Begin Collections Item -->
+
+        
+    </li><!-- End Collections Item -->
+
+
+    
+     <!--  GET HELP - RESEARCH GUIDES-->
+    <li><a href="http://library.depaul.edu/GetHelp/index.aspx" class="drop">Get Help</a><!-- Begin Get Help -->
+
+
+
+    </li><!-- End Get Help -->
+
+
+    <li><a href="http://library.depaul.edu/Services/index.aspx" class="drop">Services</a><!-- Begin Services Item -->
+
+            </li><!--Services Item -->
+
+
+      
+    
+    
+       <li><a href="http://library.depaul.edu/About/index.aspx" class="drop">About</a><!-- Begin About Item -->
+    
+    </li>  <!--End About Item-->
+    
+    
+    
+   
+    <li class="menu_right"><a href="#" class="drop">Ask a Librarian</a>
+
+    <div class="dropdown_1column align_right">
+
+                <div class="col_1">                                        
+                  <a href="#" onclick="u=location.href;x=window;e=x.encodeURIComponent;w=open('http://depaul.libanswers.com/askr.php?i=680&header=Email%20a%20Librarian&uri='+e(u),'add','width=520,height=600,location=0,menubar=0,toolbar=0,status=0,scrollbars,resizable');return false" target="_new" alt="Email" id="email_icon">By E-mail</a>
+                  <a href="http://libguides.depaul.edu/ask" alt="Text/SMS" id="text_icon">By Text</a>
+                  <a href="http://libguides.depaul.edu/ask" alt="Phone" id="phone_icon">By Phone</a>
+                </div>
+
+        </div>
+
+    </li>
+    <a href="#" onclick="window.open('http://libraryh3lp.com/chat/dpulibrarian@chat.libraryh3lp.com?skin=6694&theme=crystal&title=IM%20a%20librarian&identity=dpulibrarian#','AskWindow', 'toolbar=no, directories=no,location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=300,height=400'); return false" target="_blank" alt="Chat with a librarian">
+    <span id="chat_icon" class="not-drop"></span></a>
+    	
+    
+
+</ul></div>
