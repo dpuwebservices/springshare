@@ -1,0 +1,43 @@
+<!-- Footer code -->
+<div id="libraryfooter" class="gradient">
+<div class="footer_section" id="footer_address">
+        <h2>DePaul University Libraries</h2>
+        <p>2350 N. Kenmore Ave<br />
+        Chicago, IL 60614<br />
+        <a href="mailto:libraries@depaul.edu">libraries@depaul.edu</a>
+        </p>
+    </div>
+    <div class="footer_section">
+    <h2>Get Help</h2>
+        <p>
+          <a href="http://library.depaul.edu/Browse%20Subjects/researchguides.aspx">Research Guides</a>
+            <a href="http://depaul.libanswers.com/a.php?qid=364603">Research Consultations</a>
+            <a href="http://depaul.libanswers.com">FAQs</a>
+        </p>
+    </div>
+<div class="footer_section">
+    	<h2>Services</h2>
+        <p>
+        	<a href="https://i-share.carli.illinois.edu/dpu/cgi-bin/Pwebrecon.cgi?DB=local&PAGE=pbLogon">My Account</a>
+                <a href="http://library.depaul.edu/Services/libraryinstruction.aspx">Library Instruction</a>
+            <a href="http://depaul.libcal.com/">Room Reservations</a>
+            
+        </p>
+    </div>
+<div class="footer_section">
+    	<h2>Collections</h2>
+        <p>
+        	<a href="http://library.depaul.edu/Services/coursereserves.aspx">Course Reserves</a>
+            <a href="http://library.depaul.edu/Find/Collections/index.aspx">Special Collections</a>
+            <a href="http://library.depaul.edu/Find/DigiCollections.aspx">Digital Images</a>
+        </p>
+    </div>
+<div class="footer_section">
+    	<h2>About</h2>
+        <p>
+        	<a href="http://library.depaul.edu/About/hours.aspx">Hours</a>
+            <a href="http://library.depaul.edu/About/locations.aspx">Locations</a>
+            <a href="http://library.depaul.edu/About/staffdirectory.aspx">Staff Directory</a>
+        </p>
+    </div>
+</div>
