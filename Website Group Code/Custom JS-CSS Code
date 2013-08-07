@@ -834,6 +834,8 @@ margin-right:4px;
 ,#content11327450 /*Special Collections - Academic Archive Policies */
 ,#content11330040 /*Special Collections - Archive Donations Forms */
 ,#content14054854 /*Resources For - Students */
+,#content10351167 /*Scholar's Lab */
+
 
  {
    background-color:#f9f9f9;
@@ -847,6 +849,7 @@ margin-right:4px;
 #boxatt9956927 ul, #boxatt9948975 ul, #boxatt9957009 ul, #boxatt9956469 ul, #boxatt9956655 ul, #boxatt10394031 ul
 ,#boxatt10787309 ul /*Information for Template Navigation */ 
 ,#boxatt14054854 ul /* Resources for Template Navigation */
+,#boxatt10351167 ul /* Services Template*/
 
 {
      
@@ -857,6 +860,7 @@ margin-right:4px;
 #boxatt9956927 ul a, #boxatt9948975 ul a, #boxatt9957009 ul a, #boxatt9956469 ul a, #boxatt9956655 ul a, #boxatt10394031 ul a
 ,#boxatt10787309 ul a /*Information for Template Navigation */
 ,#boxatt14054854 ul a /* Resources for Template Navigation */
+,#boxatt10351167 ul a /*Services Template */
  {
 border-bottom: solid thin 
 #E4E4E4;
@@ -875,6 +879,7 @@ background-color:
 /* SubMenu Navigation- link styles on hover  */
 #boxatt9956927 ul a:hover, #boxatt9948975 ul a:hover, #boxatt9957009 ul a:hover, #boxatt9956469 ul a:hover, #boxatt9956655 ul a:hover, #boxatt10394031 ul a:hover /* Information For Template Navigation */
 ,#boxatt14054854 ul a:hover /* Resources For Template Navigation */
+,#boxatt10351167 ul a:hover /* Services Template */
 
 {
 background-color:#dadada;
