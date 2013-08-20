@@ -1,25 +1,15 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" type="text/css" />
-
-
 <style>
 
-
-
 body {
-	font-size:14px;
-	font-family:Arial, Helvetica, sans-serif;
-	line-height:21px;
-	text-align:left; 
-        background-color: #333;
+
 }
 
 h1, h2, h3 {
-       color: #2f79bc;
+       color: #2f79bc !important;
        padding: 10px 0px 5px 0px;
        margin-bottom: 20px;
-       text-shadow: 1px 1px 1px #c9d8ec;
-       border-bottom: thin solid #cadc76;
+       text-shadow: 1px 1px 1px #c9d8ec !important;
+       border-bottom: thin solid #cadc76 !important;
        width: 98%;
 }
 
@@ -40,6 +30,11 @@ margin: 0 auto;
 
 }
 
+#container
+{
+background:#fff;
+}
+
 #bc_guide_name{
 font-size: 20px;
 display: block;
@@ -53,59 +48,15 @@ text-shadow: 1px 1px 1px #C9D8EC;
 
 #contentcenter {padding-bottom:50px;}
 
-.headerbox {display:block; background-color:#fff; padding:0px;margin:0px;}
+.headerbox {display:block; background-color:#fff !important;}
 /* controls the background color of the header box */
 
-.headerbox h2 {color: #fff; display:block; border: none; text-shadow: none;padding:0px;margin:0px;}
+.headerbox h2 {color: #2f79bc !important;}
 /* controls the font color in the header box */
 
-.outerbox {padding:5px; background-color:#fff;}
-/* padding controls the thickness of the border
-background-color:#eaeaea; controls the color of the border */
-
-.innerbox {background-color:#fff; border: none;padding-bottom:5px; padding-top:5px; padding-right:10px; padding-left:20px;}
- /* controls the background color inside the box*/
+.roundbox {background:#fff !important;}
 
 
-.roundbox_grey {
-background-color: #F9F9F9;
-border: #D0D0D0 solid thin;
-border-radius: 5px;
--webkit-border-radius: 5px;
-padding:10px;
-
-}
-
-
-/*----------------------------------------Accordions -----------------------------------------------------------*/
-
-.ui-accordion .ui-accordion-content
-{
- height:auto !important; 
-margin-right:0px !important;
-
-  }
-
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
-
-border-bottom:1px solid #eee;
-}
-.ui-widget-content{
-background:none;
-
-}
-
-.ui-widget {
-font-family:Arial, Helvetica, sans-serif;
-font-size:none;
-}
-
-.ui-widget-content a {
-color: #2F79BC !important;
-}
-
-
-/*---------------------------------------End Accordions -------------------------------------------------------*/
 
 /* -------------------------------------- LibGuides interface elements hiding ----------------------------------------*/
 
@@ -118,12 +69,11 @@ color: #2F79BC !important;
 {display:none;}
 
 
-/* Hide Profile Boxes so right side boxes align correctly */
-#profile3066813 /*Borrow from DePaul - students */
-
-{
-display:none;
-}
+/*  Hide profile boxes so that right column boxes appear at the same level as center column boxes */
+#profile2947619, #profile2958567, #profile2958593, #profile3014801
+, #profile3058942 /*Hide profile box- Information For Template*/
+,#profile3083201 /*Hide profile box - Reference Hours */
+{display:none}
 
 /*--------------------------------------- Guide Title Bar styles -------------------------------------------------------*/
 .stitle {
@@ -134,6 +84,29 @@ margin-bottom: 5px;
 
 
 /* ---------------------------------------- common styles ---------------------------------------- */
+
+.button{
+
+text-align: center;
+color:  #2F79BC;
+background-color: #F1F1F1;
+padding: 4px 20px;
+border: 1px solid #d0d0d0;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+font-size: 10px;
+font-weight: bold;
+
+}
+.button:hover{
+background-color: #DADADA;
+text-decoration: none;
+border: 1px 1px 1px #eee;
+
+
+}
+
 
 .lightbox {
 	background-color: #F9F9F9;
@@ -167,7 +140,7 @@ margin-bottom: 5px;
 
 .linklist {
      list-style:none;
-    margin: 5px 5px 5px 5px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -189,6 +162,8 @@ position:relative;
 
 }
 
+
+
 /* ---------------------------------------- end common styles ---------------------------------------- */
 
 
@@ -205,7 +180,7 @@ position:relative;
 
 #menu_container {
        background-color: #013953;
-       margin-top:-5px;
+       margin-top:-7px;
 
 }
 
@@ -362,9 +337,9 @@ position:relative;
 
     /* Rounded corners */
 
-    -moz-border-radius: 5px 5px 0px 0px;
-    -webkit-border-radius: 5px 5px 0px 0px;
-    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -752,18 +727,13 @@ background: url("http://r.mzstatic.com/htmlResources/1873/images/mask175.png") 0
 
 div.toolboxdetail {
 	min-height:150px;
-	border: thin solid #d0d0d0;
-	border-radius:5px;
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
 	margin-left: 0px;
 	padding-bottom: 10px;
-	-moz-box-shadow:    3px 3px 2px 1px #f1f1f1;
-	-webkit-box-shadow: 3px 3px 2px 1px #f1f1f1;
-	box-shadow:         3px 3px 2px 1px #f1f1f1;
 	padding-left: 10px;
-	width: 480px;
+	width: 100%;
 	height: auto;
 	overflow:hidden;
 }
@@ -799,260 +769,9 @@ float:left; width:300px;
 	margin-bottom: 10px;
 }
 
-
-
-.toolboxdetail .ui-accordion .ui-accordion-content
-{
- 
-margin-right:4px;
-  }
-
 /* -------------------------------------------- End Toolbox Styles -------------------------------------------------------------*/
 
 
-
-/* -------------------------------------------- Begin SubMenu Styles --------------------------------------------------------- */
-/* Applies gray background box and border */
-
-#content9956927, #content9948975, #content9957009, #content9956469, #content9956655, #content10394031
-,#content10828606 /*Borrow From DePaul - students */
-,#content10925573 /*Borrow From DePaul - faculty */
-,#content10925843/*Borrow From DePaul - staff */
-,#content10925989  /*Borrow From DePaul - I-Share*/
-,#content10926224 /*Borrow From DePaul - Other */
-,#content10930209 /*Borrow From Other */
-,#content10953880 /*Employment */
-,#content10957712 /*OCLCBorrowingProgram*/
-,#content11000768 /*Special Collections Policies  */
-,#content10590570 /*Encyclopedias - Credo Reference */
-,#content11256052 /*Special Collections - Marketing */
-,#content11258028 /*Special Collections - Footer */
-,#content11260304 /*Special Collections - Contact */
-,#content11289836/*Special Collections - Hours */
-,#content11294220/*Special Collections - FAQs */
-,#content11325658/*Special Collections - DRMA Policies */
-,#content11327450 /*Special Collections - Academic Archive Policies */
-,#content11330040 /*Special Collections - Archive Donations Forms */
-,#content14054854 /*Resources For - Students */
-,#content10351167 /*Scholar's Lab */
-
-
- {
-   background-color:#f9f9f9;
-     border: #d0d0d0 solid thin;
-}
-
-
-
-
-/* SubMenu Navigation- link styles - removes bullets from navigation list */
-#boxatt9956927 ul, #boxatt9948975 ul, #boxatt9957009 ul, #boxatt9956469 ul, #boxatt9956655 ul, #boxatt10394031 ul
-,#boxatt10787309 ul /*Information for Template Navigation */ 
-,#boxatt14054854 ul /* Resources for Template Navigation */
-,#boxatt10351167 ul /* Services Template*/
-
-{
-     
-      list-style:none;
-}
-
-/* SubMenu Navigation- link styles  */
-#boxatt9956927 ul a, #boxatt9948975 ul a, #boxatt9957009 ul a, #boxatt9956469 ul a, #boxatt9956655 ul a, #boxatt10394031 ul a
-,#boxatt10787309 ul a /*Information for Template Navigation */
-,#boxatt14054854 ul a /* Resources for Template Navigation */
-,#boxatt10351167 ul a /*Services Template */
- {
-border-bottom: solid thin 
-#E4E4E4;
-display: block;
-padding: 10px 5px 0px 10px;
-margin: 0px 0px 0px -15px;
-min-height: 2em;
-color: #2F79BC;
-background-color: 
-#F1F1F1;
-}
-
-
-
-
-/* SubMenu Navigation- link styles on hover  */
-#boxatt9956927 ul a:hover, #boxatt9948975 ul a:hover, #boxatt9957009 ul a:hover, #boxatt9956469 ul a:hover, #boxatt9956655 ul a:hover, #boxatt10394031 ul a:hover /* Information For Template Navigation */
-,#boxatt14054854 ul a:hover /* Resources For Template Navigation */
-,#boxatt10351167 ul a:hover /* Services Template */
-
-{
-background-color:#dadada;
-text-decoration:none;
-font-weight:bold;
-
-}
-
-
-
-
-/* Sidebox bulleted list indent  */
-#content10828606 ul  /*Borrow From DePaul - Students */
-,#content10925573 ul  /*Borrow From DePaul - Faculty*/
-,#content10925843 ul  /*Borrow From DePaul - Staff*/
-,#content10925989 ul /*Borrow From DePaul - I-Share*/
-,#content10926224 ul /*Borrow From DePaul - Other */
-,#content10930209 ul /*Borrow From Other - Related Links */	
-,#content10953880 ul /*About - Employment */
-,#content11325658 ul/*Special Collections - DRMA Policies */
-,#content11327450 ul /*Special Collections - Academic Archive Policies */
-,#content11330040 ul /*Special Collections - Archive Donation Forms */
-
- {
-margin-left: -20px;
-}
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------- End SubMenu Styles  ------------------------------------------------------------ */
-
-/* ---------------------------------------- marketing and task highlight styles ------------------------------ */
-
-#highlight_container {
-	width: 915px;
-        float:left;
-	border: #d0d0d0 solid 1px;
-	border-radius: 5px;
-}
-
-#taskbox {
-	width: 225px;
-	margin: 10px 5px 10px 5px;
-	float: left;
-}
-
-#taskbox a {
-	display: block;
-	padding: 5px;
-}
-
-#highlight_container #marketing_container {
-	margin: 10px;
-	float: left;
-	width: 625px;
-}
-#marketing_container .marketing_box {
-	width: 200px;
-	float: left;
-	height: 265px;
-	padding: 3px;
-}
-
-/* ---------------------------------------- end marketing and task highlight styles ------------------------------ */
-
-
-/* -------------------------------------begin staff styles --------------------------------------------------------*/
-
-#lib_unit h2 {
-	display: block;
-	border-bottom-width: thin;
-	border-bottom-style: solid;
-	border-bottom-color: #333;
-}
-
-#lib_unit h3{
-	clear:left;
-	
-}
-#lib_unit .deptHead h3{
-	margin-bottom:0px;
-	margin-top:-10px;
-	
-	
-}
-
-#lib_unit .deptHeadContent {
-	float:left;
-margin-top:10px;
-}
-
-#lib_unit .textcontent{
-    float:left;
-margin-top:10px;
-}
-
-#lib_unit .office{
-margin-bottom:5px;	
-}
-
-
-
-#lib_unit .staff_title {
-	display: block;
-	font-style: italic;
-	margin-bottom:10px;
-}
-#lib_unit .staff_contact {
-	display: block;
-	font-size:12px;
-	font-family:Arial, Helvetica, sans-serif;
-	margin-bottom:2px;
-	
-}
-
-.label {
-font-weight:bold;
-}
-
-
-#lib_unit .staff_name {
-	display: block;
-	font-weight: bold;
-}
-
-
-
-#lib_unit img{
-float:left;	
-margin: 10px 20px;
-border: #D0D0D0 solid thin;
-}
-
-#lib_unit div.deptHead {
-	padding: 10px 20px 10px 20px;
-	margin:20px 0px;
-	float:left;
-	width:600px;
-	background-color: #eee;
-	border: #D0D0D0 solid thin;
-	border-radius: 5px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-width:90%
-}
-
-#lib_unit div.staffodd {
-	padding: 10px 20px 10px 20px;
-	float:left;
-	width:600px;
-	background-color: #e9e9e9;
-	border-top: #D0D0D0 solid thin;
-
-}
-#lib_unit div.staffeven {
-	padding: 10px 20px 10px 20px;
-	float:left;
-	width:600px;
-	background-color: #f8f8f8;
-	border-top: #D0D0D0 solid thin;
-
-}
-
-
-
-/* -------------------------------------end staff styles ----------------------------------------------------------*/
 
 /* -------------------------------------footer styles ----------------------------------------------------------*/
 
@@ -1149,41 +868,6 @@ margin: 15px 0px;
 
 /*-------------------------------------end location styles ---------------------------------------------------------*/
 
-
-/* -------------------------------------Updated Worldcat Local Box Style--------------------------------------------------------- */
-
-
-
-
-.wcl_block {
-display:block;
-float:none;
-}
-
-.wcl_left { 
-float:left;}
-.wcl_right {float:right;}
-
-.sep {padding: 0px 10px 0px 10px;}
-.wcl_radiolabel {text-shadow: 1px 1px 1px #fff;	}
-.wcl_hpadding {padding: 0px 10px 0px 10px;}
-.wcl_vpadding {padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;}
-.wcl_tinytext {font-size: xx-small;color: #333;padding-top: 1px;text-shadow: 1px 1px 1px #fff;}
-#wcl_container {
-/*width: 465px;height: 105px;*/
-width: 95%; height: 90%;
-min-height:105px;
-padding-bottom: 40px;
-margin: 0px;border: thin solid #CCC;border: #D0D0D0 solid thin;border-radius: 5px;-webkit-border-radius: 5px;font-size: small;padding-top: 5px;padding-right: 5px;padding-left: 15px;
-	background-color: #f9f9f9;
-    background: -moz-linear-gradient(top, #f9f9f9, #e8e8e8 );
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e8e8e8));
-	}
-#wcl_searchbox {height: 40px;}
-#wcl_filters {padding-top: 10px;}
-#wcl_advanced {width: 250px;padding-top: 10px;}
-.wcl_h2 {font-size: 1.3em;font-style: normal;font-weight: bold;text-shadow: 1px 1px 1px #fff;}
-
 /*------------------------------------Library Hacks Accordions  ------------------------------------------------*/
 
 
@@ -1202,80 +886,110 @@ padding:10px;
 }
 
 /*----------------------------------- end Library Hacks Accordions ---------------------------------------------*/
-/*hours page css (month view)*/
-
-#lc_rcol { width: 750px; float: right; padding-bottom: 30px; }
-.lc_cal_oh	{ font: 12px/1.5em Arial, Helvetica, sans-serif; overflow: hidden; width: 750px; }
-.lc_hours_cal {  margin: 10px 2px 30px 2px; width: 745px; background-color: #fff; border-spacing:0; border-collapse:collapse; -webkit-box-shadow:1px 1px 3px 0px #aaa; box-shadow:1px 1px 3px 0px #aaa; -webkit-border-radius:5px 5px 0px 0px;  border-radius:5px 5px 0px 0px;} 
-.lc_header_title { font-size: 20px; font-weight: normal; padding: 10px 20px; }
-.lc_header_date {  padding: 10px 20px; font-size: 20px; font-weight: normal; }
-.lc_hours_cal tr.days { text-align: center; color: #fff; background-color: #2f79bc; font-size: 11px; text-transform: uppercase; border-top: 1px solid #D0D0D0; border-bottom: 1px solid #D0D0D0; }
-.lc_hours_cal tr.days td { border-right: 1px solid #D0D0D0; width: 14%;}
-.lc_hours_cal td.noday, .lc_hours_cal td.day { vertical-align:text-top; border-right: 1px solid #D0D0D0; border-bottom: 1px solid #D0D0D0; }
-.lc_day_l { text-align: right; color: #000; font-size: 12px; padding: 2px; }
-.lc_hours_cal td.day { border-right: 1px solid #D0D0D0; }
-.lc_loc { border-radius: 3px; margin: 1px; padding: 1px 3px; color: #fff; line-height: 1em; font-size: 12px; }
-.lc_loc_name { margin:0px; padding:2px 0px; font-size: 11px; }
-.lc_sub_loc { margin-left: 3px;}
-.lc_hours_cal tr.cells { height: 50px; }
-.lc_today { background-color: #FFFFCC;}
-.lc_cal_hours_nav{ width: 100px; z-index: 90; clear: right; overflow: hidden; position: absolute; margin: 0px; text-align: center; padding: 0px 0px 0px 653px; }
-.lc_cal_prev{ float: left; padding: 0; margin: 30px 0px 0px 0px; width: 40px; height: 20px; display: block; left: 0px; font-size: 30px;	}
-.lc_cal_next{ float: left; padding: 0; margin: 30px 0px 0px 0px; width: 40px; height: 20px; display: block; right: 0px; font-size: 30px;	}
-.lc_cal_prev .disabled, .lc_cal_next .disabled{ display: none; }
-.lc_list { margin-bottom: 5px;}
-.lc_list_box { width: 25px; height: 25px; display:inline-block; border-radius: 3px; padding: 0px 0px 0px 0px;}
-.lc_list_cb { padding: 0px; margin: 6px; }
-.lc_list  label {font-weight:bold; word-break: normal;} 
-.lc_footnote_cal { overflow: hidden; width: 100%; margin-bottom: 10px; } 
-.lc_dot { padding: 0px 6px; font-weight: bold; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; } 
-.loc_60 { color:000;background-color: #fff; }
-.loc_63 { background-color: #fff; } 
-.loc_61 { background-color: #fff; }
-.loc_62 { background-color: #fff; } 
-.loc_64 { background-color: #fff; }
-.loc_65 { background-color: #fff; } 
-.loc_66 { background-color: #fff; }
-.loc_91 { background-color: #fff; } 
-.loc_79 { background-color: #fff; }
-.loc_92 { background-color: #fff; } 
-.loc_80 { background-color: #fff; }
-.loc_93 { background-color: #fff; } 
 
 
-/*hours page css*/
+/*-------------EventAlert----------*/
 
-/*hours page css (weekly view)*/
+#event_alert {
+padding: 2px 5px;
+text-align: center;
+color:  #2F79BC;
+font-size: 10px;
+font-weight: bold;
+  background-color:#f9f9f9;
+     border: #d0d0d0 solid thin;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
 
-.lc_oh { font-family: Arial, Helvetica, sans-serif; }
-.lc_hours { border-spacing:0; border-collapse:collapse; width: 100%;font-size: 12px; }
-.lc_locname, .lc_sublocname { word-break: normal; } 
-.lc_locname { font-weight: bold; } 
-.lc_locname a, .lc_sublocname a { color: #000;  } 
-.lc_hours tr th { color: #FFF; background: #2f79bc; border-top: solid 1px #ccc; margin: 0; padding: 4px 10px; }
-.lc_head_date { color: #FFF; font-size: 11px;}
-.lc_hours tr td{ color: #000;border-bottom: dotted 1px #D6D6D6; padding:10px; }
-.lc_hours tr:hover { background-color: #f2f2f2; }	
-.lc_footnote { color: #555; } 
-.lc_footnote td:hover { background-color: #000; }
-.lc_header h3 { color: #004374; padding: 0px 0px 0px 0px!important; font-size: 14px; }
-.lc_header h3 a { color: #437C93; text-decoration: none; }
-.lc_hours_nav{ z-index: 90; overflow: hidden; position: absolute; margin: 0px; text-align: center;  }
-.lc_prev, .lc_next { padding: 0; width: 40px; height: 20px; display: block; text-decoration: none; font-size: 22px;	}
-.lc_prev{ margin: 4px 0px 0px 0px; left: 0px; float: left;}
-.lc_next{ margin: 4px 0px 0px 0px; right: 0px; float: right; padding: 0px 3px; text-align: right; }
-.lc_next a, .lc_prev a { color: #ffffff!important; }
-.lc_prev .disabled, .lc_next .disabled{ display: none; }
-.lc_today_head {background-color: #004374!important;}
-.lc_today {  background-color: #c9d8ec!important;}
-.lc_hours_ul li { list-style-type: none!important;  }
-.lc_hours_ul { padding: 0px; margin: 0px; }
-.s-lc-closed, .s-lc-allday, .s-lc-time { white-space:nowrap;}
+.rsspod_title a {
+color:  #2F79BC !important;
+font-size: 12px !important;
+font-weight: bold !important;
+}
 
+.lg_rss_list_item {
+list-style:none !important;
+border-bottom: thin solid #cadc76 !important;
+padding: 3px !important;
+}
 
-/*hours page css (weekly view)*/
-
+.lg_rss_list {
+padding:0px !important;
+}
 
 
+/* --------------------------------------- Localist calendars ----------------------------------------------*/
+#localist-minical-2834 select {display:none;}
+
+.localist_minicalendar .localist_minicalendar_nav .right {
+float: left !important;
+}
+.localist_minicalendar .localist_minicalendar_page_heading h1 {
+font-size: 16px !important;
+line-height: 3px !important;
+text-decoration: none !important;
+}
+.localist_minicalendar .localist_minicalendar_pager a {
+font-size: 10px !important;
+}
+.localist_minicalendar_minicalendar {
+width: 170px !important;
+}
+
+.localist_minicalendar_minicalendar th {
+font-size: 8px !important;
+}
+
+.localist_minicalendar_minicalendar td {
+height: 16px !important;
+font-size: 10px !important;
+line-height: 16px !important;
+width: 15px !important;
+}
+
+.localist_minicalendar_minicalendar td a {
+height: 25px !important;
+line-height: 25px !important;
+}
+.localist_minicalendar_nav {
+display:none;
+}
+
+#lw ul {
+margin-left: -35px !important;
+}
+#lw li.lwe {
+padding: 5px 0px 5px 0px !important;
+}
+.lwn0 {
+font-size:10px !important;
+width:165px !important;
+}
+.lwl { display:none !important; }
+.lwn {
+font-size: 12px !important;
+line-height: 13px !important;
+}
 
 </style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    if (document.getElementById("boxatt11677129")) {
+        var str = document.getElementById("boxatt11677129").innerHTML;
+        var n = str.replace(/No entries found./, '<div id="event_alert">No events scheduled</div>');
+        document.getElementById("boxatt11677129").innerHTML = n;
+    }
+
+    if (document.getElementById("boxatt11677000")) {
+        var str2 = document.getElementById("boxatt11677000").innerHTML;
+        var n2 = str2.replace(/No entries found./, '<div id="event_alert">No events scheduled</div>');
+        document.getElementById("boxatt11677000").innerHTML = n2;
+    }
+});
+
+</script>
+
+<link href="http://www.depaul.edu/_layouts/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
