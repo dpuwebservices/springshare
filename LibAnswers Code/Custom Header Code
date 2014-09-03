@@ -1,58 +1,504 @@
-<div id="lg_banner">
-<img src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/674/482810/banner.jpg">
-</div>
+<!-- Google Font -->
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Open+Sans+Condensed:300,700,300italic" />
 
-<div id="menu_container">
-<ul id="menu">
+<style>
 
-    <a href="http://library.depaul.edu/"><span id="home_icon" class="not-drop"></span></a>
-
-  <li><a href="http://library.depaul.edu/Find/index.aspx" class="drop">Find</a><!-- Begin Collections Item -->
-
-        
-    </li><!-- End Collections Item -->
+/*---------------General Style----------------*/
 
 
-    
-     <!--  GET HELP - RESEARCH GUIDES-->
-    <li><a href="http://library.depaul.edu/GetHelp/index.aspx" class="drop">Get Help</a><!-- Begin Get Help -->
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+font-family: "Source Sans Pro", sans-serif!important;
+line-height: 1.618;
+}
+
+#content{
+padding-top: 10px;
+}
+
+a {color: #005C96;}
+
+a:link, a:visited {
+	color: #005C96
+	text-decoration: none;
+}
+
+b{
+font-size: 14px;
+}
+
+span{
+font-size: 14px;
+}
+
+h1 span{
+font-size: 145%;
+}
+
+h2{
+font-family: "Open Sans Condensed", sans-serif;
+font-weight: bold;
+line-height: 1;
+color: rgba(9,70,101,.9);
+font-size: 16px;
+font-size: 1.3em;
+}
+
+h3{
+font-family: "Open Sans Condensed", sans-serif;
+font-weight: bold;
+font-size: 16px;
+line-height: 1;
+}
+
+p, .linkdesc{
+color: #565656;
+font-family: "Source Sans Pro", sans-serif;
+line-height: 1.618;
+font-size: 14px;
+}
+
+a{
+font-family: "Source Sans Pro", sans-serif;
+line-height: 1.618;
+font-size:14px;
+color: #005c96;
+}
+
+table {
+margin: 10px 0px 10px 0px;
+background-color: #e7e7e1;
+border-color: #dddddd;
+}
+
+tbody {border:none;}
+
+td {padding:10px;
+border: none;}
+
+ul, ol {padding: 5px 0px 25px 30px;}
+
+
+/* -------------------------------------------------------LIBANSWERS COMPONENTS ----------------------------------------------------- */
+
+.qstyle{
+font-weight: bold;
+font-size: 2em;
+}
+#answerer {display:none;}
+
+.qlborder, .aborder {
+    color: #535381;
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+    height: 20px;
+    width: 20px;
+    float: left;
+    display: block;
+    border: 1px solid #336;
+}
+
+.qltext, .ainner {
+    background-color: #FFF;
+    height: 16px;
+    width: 16px;
+    margin: 0px 0px 3px 4px;
+    color: #535381;
+    font: bold 16px Georgia,Times,serif;
+    padding-top: 0px;
+}
+
+/*---deactivate comments-----*/
+div#othera { display: none; }
+#date_asked {display:none;}
+.searchtip {display:none;}
+.tstamp  {display:none;}
+
+/* ------------------------------------------------------- Navigation Mega Dropdown ----------------------------------------------------- */
+
+/*-- Header styles for banner from SharePoint */
+.masthead{
+background: #385f8a;
+background: -moz-linear-gradient(top, #385f8a 0%, #2b4c72 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#385f8a), color-stop(100%,#2b4c72));
+background: -webkit-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
+background: -o-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
+background: -ms-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
+background: linear-gradient(to bottom, #385f8a 0%,#2b4c72 100%);
+height: 110px;
+border-top: 4px solid #052c41;
+}
+
+a.site-title-long{
+color: #fff!important;
+font-size: 200%;
+padding-top: .35em;
+padding-left: 22px;
+}
+
+h1, .h1{
+font-family: "Open Sans Condensed", sans-serif;
+font-weight: bold;
+line-height: 1;
+color: rgba(9,70,101,.9);
+}
+
+.dpu-logo{
+margin: 2.5em 0 1.5em 0;
+}
+
+.logo-short{
+background:url("http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png") no-repeat;
+width: 190px;
+height: 45px;
+border-right: 2px solid #fff;
+}
+
+.unit{
+float:left;
+padding: 0 3% 0 3%;
+}
+
+.size5of5{
+width: 100%;
+}
+/*-- End Header styles */
+
+/*-- Sharepoint styles for navigation menu 
+*/
+nav{
+background: #e8e8e3;
+background: -moz-linear-gradient(top, #e8e8e3 0%, #d9d9d3 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e3), color-stop(100%,#d9d9d3));
+background: -webkit-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
+background: -o-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
+background: -ms-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
+background: linear-gradient(to bottom, #e8e8e3 0%,#d9d9d3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e3', endColorstr='#d9d9d3',GradientType=0 );
+box-shadow: inset -1px -1px #bbb;
+-moz-box-shadow: inset -1px -1px #bbb;
+-webkit-box-shadow: inset -1px -1px #bbb;
+list-style:none;
+z-index:5;
+display: block;
+}
+
+nav ul { height: 1.2em;}
+
+nav li{
+margin: 0px;
+position:relative;
+}
+
+nav li li{
+border-right: none;
+}
+
+nav ul li{
+border-right: 1px solid #bcbcab;
+
+}
+
+nav ul li:last-child{
+border-right: none;
+}
+
+
+nav ul{
+position:absolute;
+}
+
+nav ul ul{
+    list-style:none;
+    position: absolute;
+    display: none;
+}
+
+nav ul li{
+position: relative;
+display: inline-block;
+}
+
+nav ul li ul li{
+display: block;
+}
+
+.nav-primary a{
+    display:block;
+    padding: 7px 7px 7px 7px;
+    margin-left: -3px;
+    color:#284b6e;
+    text-decoration:none;
+font-family: "Open Sans Condensed";
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.nav-primary a:hover{
+background-color: #052c41;
+color: #fff;
+margin-left: -3px;
+}
+
+nav li:hover ul{
+display: inline-block;
+}
+
+.level-2{
+background-color: #fff;
+width: 200px;
+margin-left: -3px;
+-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.level-2 li{
+border-right: none!important;
+margin-right: -3px;
+}
+
+.nav-primary{
+width: 560px;
+margin: 0 auto;
+list-style:none;
+font-size: 1.2em;
+margin-top: 0;
+margin-bottom:10px;
+position: relative;
+display: block;
+font-family: "Open Sans Condensed";
+font-weight: 700;
+text-transform: uppercase;
+}
 
 
 
-    </li><!-- End Get Help -->
+/* -----------------------------------------------------End Global Navigation Styles -------------------------------------------------*/
 
 
-    <li><a href="http://library.depaul.edu/Services/index.aspx" class="drop">Services</a><!-- Begin Services Item -->
+/*-- ************************* Begin LibGuides Styles
 
-            </li><!--Services Item -->
+*/
+.roundbox{
+background: none!important;
+}
+
+.outerbox{
+background: none!important;
+border: 1px solid #bbb;
+}
+
+.headerbox h2{
+font-family: "Open Sans Condensed";
+font-weight: 700;
+color: #565656;
+font-size: 1.4em;
+}
+
+.guideattr{
+display: none;
+}
+
+.breadcrumbs, #breadcrumbsl, #breadcrumbsr {
+font-size: 70%!important;
+font-weight: normal;
+}
+
+#guideattr{
+display: none;
+}
+
+#tabsI{
+font-family: "Source Sans Pro", sans-serif;
+font-size: 14px;
+border-bottom: 1px solid #bbb;
+}
+
+#tabsI a span{
+background: #ddd;
+color: #222;
+}
+
+#tabsI a{
+border-top: 1px solid #bbb;
+border-right: 1px solid #bbb;
+border-left: 1px solid #bbb;
+background: #ddd;
+color: #222;
+margin-right: 3px;
+font-weight: normal;
+}
+
+#tabsI a:hover{
+color: #222;
+background: #f0f0f0;
+}
+
+#tabsI a:hover span{
+color: #222;
+background: #f0f0f0;
+}
+
+#tabsI #current a span, #tabsI .current a span{
+color: #222;
+background: #f0f0f0;
+border-bottom: none;
+}
+
+#tabsI #current a{
+color: #222;
+background: #f0f0f0;
+}
+
+.stitle{
+font-family: "Open Sans Condensed", sans-serif;
+text-transform: Uppercase;
+weight: 700;
+}
+
+#guide_tab_title_bar{
+display: none;
+}
+
+.boxeditlink{
+font-size: 12px;
+}
+
+/*----------------------- End LibGuides Box Styles -------------------------*/
+
+/*-- Begin SharePoint Footer Styles */
+
+#footer_topline{
+display: none;
+}
+
+ .footer {
+background: linear-gradient(to bottom, #eff5fb 0%,#fff 100%);
+margin-top: 1.618em !important;
+}
+
+.footer h5 a{
+font-size: 19px;
+font-weight: normal;
+
+}
+
+.footer h5{
+color: #434A51;
+}
+
+h5, .h5 {
+  font-size: 19px;
+  padding: 0px 0px 7px 0px;
+}
+
+.footer h5 a {
+font-weight: normal;
+font-size: 120%;
+}
+
+a:-webkit-any-link {
+cursor: auto;
+}
+
+.copyright {
+border-top: 1px solid #eae6de;
+background: #fff;
+}
+
+h5 {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.size1of5 {
+width: 20%;
+}
+
+.line, {
+overflow: hidden;
+}
+.unit, .unit-nopad {
+float: left;
+padding: 0 3% 0 3%;
+}
 
 
-      
-    
-    
-       <li><a href="http://library.depaul.edu/About/index.aspx" class="drop">About</a><!-- Begin About Item -->
-    
-    </li>  <!--End About Item-->
-    
-    
-    
-   
-    <li class="menu_right"><a href="#" class="drop">Ask a Librarian</a>
+.unit{
+box-sizing: border-box;
+}
 
-    <div class="dropdown_1column align_right">
+.small {
+font-size:100%;
+}
 
-                <div class="col_1">                                        
-                  <a href="#" onclick="u=location.href;x=window;e=x.encodeURIComponent;w=open('http://depaul.libanswers.com/askr.php?i=680&header=Email%20a%20Librarian&uri='+e(u),'add','width=520,height=600,location=0,menubar=0,toolbar=0,status=0,scrollbars,resizable');return false" target="_new" alt="Email" id="email_icon">By E-mail</a>
-                  <a href="http://libguides.depaul.edu/ask" alt="Text/SMS" id="text_icon">By Text</a>
-                  <a href="http://libguides.depaul.edu/ask" alt="Phone" id="phone_icon">By Phone</a>
-                </div>
+.line{
+overflow:hidden; 
+}
 
-        </div>
+h5, h3 {
+font-family: "Open Sans Condensed", sans-serif;
+font-weight: bold;
+line-height: 1;
+}
 
-    </li>
-    <a href="#" onclick="window.open('http://libraryh3lp.com/chat/dpulibrarian@chat.libraryh3lp.com?skin=6694&theme=crystal&title=IM%20a%20librarian&identity=dpulibrarian#','AskWindow', 'toolbar=no, directories=no,location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=300,height=400'); return false" target="_blank" alt="Chat with a librarian">
-    <span id="chat_icon" class="not-drop"></span></a>
-    	
-    
 
-</ul></div>
+.footer a {
+    color: #434A51;
+}
+
+
+h5 a:link {
+
+color: #434A51;
+}
+
+.unitRight, .unitRight-nopad { float:right; }
+
+a:hover, a:active {
+    text-decoration: underline;
+        -webkit-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+.no-bullets, .no-bullets li {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer li {
+    line-height: 1.3;
+    margin-bottom: .75em;
+}
+
+.ul {
+ margin-bottom: 1.618em;
+}
+
+.copyright a{
+margin: 3px;
+}
+
+.copyright, .copyright p{
+font-size: 12px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/*--End Footer Styles
+--*-
+
+
+</style>
+
+<link href="http://www.depaul.edu/_layouts/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
