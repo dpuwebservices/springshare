@@ -1,691 +1,301 @@
-<!-- Google Font -->
-<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Open+Sans+Condensed:300,700,300italic" />
-
-
-<!-- ************************ LibGuides What's in this Guide JS to float links beside image ************************ -->
-<script type="text/javascript"> 
-$(document).ready(function(){
-  $("#centerboxes div:contains(What's in this Guide)").addClass("dpuwitg");
-
-});
-</script>
-
-
-
-
-
-<style>
-
-/************************* Global Styles ***********************/
-
-*{
-padding: 0;
-margin: 0;
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Open+Sans+Condensed:300,700,300italic"><link rel="shortcut icon" href="http://library.depaul.edu/_layouts/images/favicon.ico" type="image/vnd.microsoft.icon" /><style>	body {
+    font-family: "Source Sans Pro",sans-serif !important;
+    color: #565656;
+    font-size: 14px;
+    padding: 0;
 }
 
-body{
-font-family: "Source Sans Pro", sans-serif!important;
-line-height: 1.618;
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: 700;
+    line-height: 1;
 }
 
-#content{
-padding-top: 10px;
+/* Banner */
+/*Library Header*/
+.dpu-gradient {
+    background-color: #2b4c72;
+    height: 110px;
+    border-top: 4px solid #052C41;
 }
 
-/*-- Styles for input buttons */
-input[type="submit"]{
-background: #345b8a;
-background: -moz-linear-gradient(top, #345b8a 0%, #2c4c74 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#345b8a), color-stop(100%,#2c4c74));
-background: -webkit-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -o-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -ms-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: linear-gradient(to bottom, #345b8a 0%,#2c4c74 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345b8a', endColorstr='#2c4c74',GradientType=0 );
-border: 1px solid #0b223e;
-padding: .5em 1em .5em 1em;
-margin: .5em .5em 1em 0;
-border-radius: 5px;
-color: #fff;
-font-weight: normal;
-font-family: "Source Sans Pro", sans-serif;
+/*	banner with max width 66em*/
+@media only screen and (max-width: 66em) {
+    .dpu-banner {
+        padding-top: 1em !important;
+    }
 }
 
-input[type="button"]{
-background: #345b8a;
-background: -moz-linear-gradient(top, #345b8a 0%, #2c4c74 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#345b8a), color-stop(100%,#2c4c74));
-background: -webkit-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -o-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -ms-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: linear-gradient(to bottom, #345b8a 0%,#2c4c74 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345b8a', endColorstr='#2c4c74',GradientType=0 );
-border: 1px solid #0b223e;
-padding: .5em 1em .5em 1em;
-margin: .5em .5em 1em 0;
-border-radius: 5px;
-color: #fff;
-font-weight: normal;
-font-family: "Source Sans Pro", sans-serif;
+.dpu-banner {
+    padding: 2.5em 20px 1.5em;
+    color: #fff;
+    font-size: 130%;
 }
 
-input[type="submit"]:hover{
- background-color: #203957;
-    color: #ffffff;
+/*Depaul logo*/
+.dpu-logo-short {
+    background: url(http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png) no-repeat scroll 0 0 transparent;
+    width: 190px;
+    height: 45px;
+    border-right: 2px solid #FFF;
+}
+
+/*depaul logo change when width change to 66em*/
+@media only screen and (max-width: 66em) {
+    .dpu-logo-short {
+        background: url(http://libservices.org/3rdpartycontent/libguides/images/logoo.png) no-repeat scroll 0 0 transparent;
+        width: 250px;
+        height: 80px;
+        border-right: none;
+    }
+}
+
+/*Logo change again when width change to the 40em. */
+@media only screen and (max-width: 40em) {
+    .dpu-logo-short {
+        background: url(http://libservices.org/3rdpartycontent/libguides/images/smalllogo.png) no-repeat scroll 0 0 transparent;
+        width: 200px;
+        height: 60px;
+        border-right: none;
+    }
+}
+
+/*Depaul Library Text*/
+.dpu-banner-text {
+    padding-left: 20px;
+}
+
+/* LibGuides Overrides */
+.pager {
+    width: 75%;
+}
+
+a.dpu-logo-short,a.dpu-logo-short:hover {
     text-decoration: none;
 }
 
-input[type="button"]:hover{
- background-color: #203957;
-    color: #ffffff;
+.h1 {
+    font-size: 28px;
+    font-family: "Open Sans Condensed",sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+/*h1 tag for header text*/
+@media only screen and (max-width: 66em) {
+    .h1 {
+        display: none;
+    }
+}
+
+.dpu-banner-text>a:hover {
+    color: #fff;
+}
+
+a {
+    color: #777;
     text-decoration: none;
 }
 
-
-input[type="text"]{
-background: rgba(255,255,255,.8);
-border: 1px solid #b7b7b7;
-padding: .75em 1em .75em 1em;
-border-radius: 8px;
-font-family: "Source Sans Pro", sans-serif;
-color: gray;
--webkit-box-shadow: inset 1px 3px 15px 1px rgba(183, 183, 183, 1);
-box-shadow: inset 0px 2px 3px 1px rgba(183, 183, 183, .4);
+a:hover,a:focus {
+    color: #777;
 }
 
-select{
-margin: 1em 1.5em 1em 0;
-padding: .4em;
-border: 1px solid #b7b7b7;
-border-radius: 4px;
-min-width: 185px;
+/* Navigation bar change when max width equal to 66em*/
+@media only screen and (max-width: 66em) {
+    .navbar-nav {
+        font-family: "Open Sans Condensed",sans-serif;
+        font-size: 1.1em !important;
+        font-weight: 700;
+    }
 }
 
-b{
-font-size: 14px;
+/*when navigation bar collapse. */
+.navbar-nav {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 0;
+    margin-top: -1px;
 }
 
-span{
-font-size: 14px;
+.nav .navbar-nav {
+    width: 430px;
+    height: 50px;
 }
 
-h1, h2, h3 {padding-bottom: 10px;}
-
-h1 span{
-font-size: 145%;
+.navbar {
+    position: relative;
+    min-height: 0;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
 }
 
-h2{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-line-height: 1;
-color: rgba(9,70,101,.9);
-font-size: 16px;
-font-size: 1.3em;
+.navbar-inverse {
+    background: #f0ede4;
+    border-color: #bbb;
 }
 
-h3{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-font-size: 16px;
-line-height: 1;
+.navbar-inverse .navbar-nav>li>a {
+    color: #284b6e;
+    font-weight: 700;
 }
 
-p, .linkdesc{
-color: #565656;
-font-family: "Source Sans Pro", sans-serif;
-line-height: 1.618;
-font-size: 14px;
+.navbar-inverse .navbar-collapse {
 }
 
-a{
-font-family: "Source Sans Pro", sans-serif;
-line-height: 1.618;
-font-size:14px;
-color: #005c96;
+.navbar-collapse .navbar-nav > li > a:hover,.navbar-collapse .navbar-nav > li > a:focus {
+    background-color: #284b6e;
+    color: #fff;
+    display: block !important;
+    width: 100%;
 }
 
-#content ul {color:#565656;
-padding: 5px 0px 10px 0px;}
-
-li {margin-left: 20px;}
-
-/*--SharePoint classes brought over for Ask a Librarian*/
-a.cta-lib-green{
-background-color: #2dba6f;
+#btn-ask {
+    background-color: #2dba6f;
+    color: #fff;
+    margin: 2px 0;
 }
 
-a.cta-lib-green:hover{
-background-color: #319b62;
-    color: #ffffff;
+/*Research Guide */
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    padding-top: 1px;
+    height: 0;
+    line-height: 30px;
+}
+
+/* More Guide */
+.dropdown-menu>li>a {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #284b6e;
+    padding: .55em 1em;
+    font-size: 1em;
+}
+
+/* bootstrap overrides */
+#s-lg-tabs-container .nav-pills > li > a {
+    color: #555;
+    background: linear-gradient(to bottom,#F5F5F5 1%,#ECECEC 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+#s-lg-tabs-container .nav-pills > li > a {
+    color: #555;
+    background: linear-gradient(to bottom,#F5F5F5 1%,#ECECEC 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+#s-lg-tabs-container .nav-pills > li .active {
+    color: #555;
+    background: #284B6E;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a {
+    color: #fff;
+}
+
+#s-lg-tabs-container .nav-pills >.active > a:hover {
+    color: #555;
+    background: #7197c2 !important;
+}
+
+#s-lg-tabs-container .nav-pills > li > a:hover {
+    color: #555;
+    background: #7197c2 !important;
+    font-weight: 700;
+}
+
+.s-lib-box .s-lib-box-title {
+    font-size: 20px;
+    color: #565656;
+    background-color: #fff;
+}
+
+.s-lib-box {
+    border: none;
+    box-shadow: none;
+}
+
+#s-lg-guide-name,#s-lib-public-header-title {
+    color: rgba(9,70,101,0.9);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.s-lib-box h1 {
+    font-size: 18px;
+}
+
+.s-lib-box h2 {
+    font-size: 16px;
+}
+
+.s-lib-box h3 {
+    font-size: 14px;
+}
+
+.s-lib-box h4,.s-lib-box h5 {
+    font-size: 13px;
+}
+
+.s-lib-box body {
+    font-family: "Source Sans Pro",sans-serif;
+}
+
+.s-lib-box a:link,.s-lib-box a:visited {
+    color: #005c96;
     text-decoration: none;
 }
 
-a.cta-lib-blue {
-background-color: #2c4c74;
+.s-lib-box a:hover {
+    color: #005c96;
+    text-decoration: underline;
 }
 
-a.cta-lib-blue:hover {
-    background-color: #203957;
-    color: #ffffff;
+.s-lg-link-list li {
+    padding-bottom: 10px;
+}
+
+/*  Font style override for Tabbed content and other UI widgets  */
+.ui-widget {
+    font-family: "Source Sans Pro",sans-serif !important;
+}
+
+/* Carousel Styling */
+.carousel a:link {
+    color: #fff;
+    font-size: 60px;
+}
+
+.carousel a:hover {
     text-decoration: none;
 }
 
-.skin-simple-transparent-tan {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(231, 231, 225, 0.85) 100%) repeat scroll 0% 0% transparent;
-    border: 1px solid #D0D0D0;
-    box-shadow: 1px 3px 10px rgba(1, 1, 1, 0.1);
-    margin-top: -15px;
-    margin-bottom: 0em;
-    margin-left: -13px;
-margin-right: -13px;
-
-}
-.cta-lib-gray {
-    background: linear-gradient(to bottom, #F2F6F9 0%, #E6E9EC 100%) repeat scroll 0% 0% transparent;
+/* Email button styling */
+.s-lib-profile-email a:link {
+    color: #fff;
 }
 
-.cta-type5 {
-padding: .5em !important;
-font-size: 90%;
-border: 1px solid #c1cccc;
-margin: 5px 4px 0 0;
-border-radius: .3em;
--webkit-border-radius: .3em;
-width: 99%;
-text-decoration: none;
+/* Multi-disciplinary styling */
+.multidis {
+    color: #4796B3;
 }
 
-.cta-type5:hover{
-background: #d3d8de;
-    text-decoration: none!important;
+/* Popover Style*/
+.popover-title {
+    font-size: 16px;
 }
 
-
-.cta-row {
-    width: 95%;
-   margin: 3%;
-}
-.centering-content {
-    text-align: center;
-}
-.size1of1 {
-    float: none;
-}
-* {
-    box-sizing: border-box;
-}
-
-.cta-type4 {
-padding: .5em !important;
-margin: .5em !important;
-font-style: normal;
-font-weight: bold;
-text-align: center;
--webkit-border-radius: .3em;
-border-radius: .3em;
-display: block;
-color: #fff !important;
-}
-
-/*--End of SharePoint Ask a Librarian styles
-*/
-
-
-/*-- Header styles for banner from SharePoint */
-.masthead{
-background: #385f8a;
-background: -moz-linear-gradient(top, #385f8a 0%, #2b4c72 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#385f8a), color-stop(100%,#2b4c72));
-background: -webkit-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: -o-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: -ms-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: linear-gradient(to bottom, #385f8a 0%,#2b4c72 100%);
-height: 110px;
-border-top: 4px solid #052c41;
-}
-
-a.site-title-long{
-color: #fff!important;
-font-size: 200%;
-padding-top: .35em;
-padding-left: 22px;
-}
-
-h1, .h1{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-line-height: 1;
-color: rgba(9,70,101,.9);
-}
-
-.dpu-logo{
-margin: 2.5em 0 1.5em 0;
-}
-
-.logo-short{
-background:url("http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png") no-repeat;
-width: 190px;
-height: 45px;
-border-right: 2px solid #fff;
-}
-
-.unit{
-float:left;
-padding: 0 3% 0 3%;
-}
-
-.size5of5{
-width: 100%;
-}
-/*-- End Header styles */
-
-/*-- Sharepoint styles for navigation menu 
-*/
-nav{
-background: #e8e8e3;
-background: -moz-linear-gradient(top, #e8e8e3 0%, #d9d9d3 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e3), color-stop(100%,#d9d9d3));
-background: -webkit-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: -o-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: -ms-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: linear-gradient(to bottom, #e8e8e3 0%,#d9d9d3 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e3', endColorstr='#d9d9d3',GradientType=0 );
-box-shadow: inset -1px -1px #bbb;
--moz-box-shadow: inset -1px -1px #bbb;
--webkit-box-shadow: inset -1px -1px #bbb;
-list-style:none;
-z-index:5;
-display: block;
-}
-
-nav li{
-margin: 0px;
-position:relative;
-}
-
-nav li li{
-border-right: none;
-}
-
-nav ul li{
-border-right: 1px solid #bcbcab;
-}
-
-nav ul li:last-child{
-border-right: none;
-}
-
-
-nav ul{
-position:absolute;
-}
-
-nav ul ul{
-    list-style:none;
-    position: absolute;
+span[title="Last update"],span[title="Number of visits this year"] {
     display: none;
 }
 
-nav ul li{
-position: relative;
-display: inline-block;
+@media (max-width: 767px) {
+    navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: #284b6e;
+    }
 }
-
-nav ul li ul li{
-display: block;
-}
-
-.nav-primary a{
-    display:block;
-    padding: 7px 7px 7px 7px;
-    margin-left: -3px;
-    color:#284b6e;
-    text-decoration:none;
-font-family: "Open Sans Condensed";
-font-weight: 700;
-text-transform: uppercase;
-}
-
-.nav-primary a:hover{
-background-color: #052c41;
-color: #fff;
-margin-left: -3px;
-}
-
-nav li:hover ul{
-display: inline-block;
-}
-
-.level-2{
-background-color: #fff;
-width: 200px;
-margin-left: -3px;
--webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.level-2 li{
-border-right: none!important;
-margin-right: -3px;
-}
-
-.nav-primary{
-width: 360px;
-margin: 0 auto;
-list-style:none;
-font-size: 1.2em;
-margin-top: 0;
-margin-bottom:10px;
-position: relative;
-display: block;
-font-family: "Open Sans Condensed";
-font-weight: 700;
-text-transform: uppercase;
-}
-
-
-
-/*-- ************************* Begin LibGuides Styles
-
-*/
-.roundbox{
-background: none!important;
-}
-
-.outerbox{
-background: none!important;
-border: 1px solid #bbb;
-}
-
-.headerbox h2{
-font-family: "Open Sans Condensed";
-font-weight: 700;
-color: #565656;
-font-size: 1.4em;
-}
-
-.guideattr{
-display: none;
-}
-
-.guidetags {display:none;}
-
-.breadcrumbs, #breadcrumbsl, #breadcrumbsr {
-font-size: 70%!important;
-font-weight: normal;
-}
-
-#guideattr{
-display: none;
-}
-
-#tabsI{
-font-family: "Source Sans Pro", sans-serif;
-font-size: 14px;
-border-bottom: 1px solid #bbb;
-}
-
-#tabsI a span{
-background: #ddd;
-color: #222;
-}
-
-#tabsI a{
-border-top: 1px solid #bbb;
-border-right: 1px solid #bbb;
-border-left: 1px solid #bbb;
-background: #ddd;
-color: #222;
-margin-right: 3px;
-font-weight: normal;
-}
-
-#tabsI a:hover{
-color: #222;
-background: #f0f0f0;
-}
-
-#tabsI a:hover span{
-color: #222;
-background: #f0f0f0;
-}
-
-#tabsI #current a span, #tabsI .current a span{
-color: #222;
-background: #f0f0f0;
-border-bottom: none;
-}
-
-#tabsI #current a{
-color: #222;
-background: #f0f0f0;
-}
-
-.stitle{
-display:none;
-}
-
-#guide_tab_title_bar{
-display: none;
-}
-
-.boxeditlink{
-font-size: 12px;
-}
-
-/*-- Begin SharePoint Footer Styles */
-
-#footer_topline{
-display: none;
-}
-
-#customFooter {
-background: linear-gradient(to bottom, #eff5fb 0%,#fff 100%);
-margin-top: 1.618em !important;
-}
-
-.footer h5 a{
-font-size: 19px;
-font-weight: normal;
-
-}
-
-.footer h5{
-color: #434A51;
-}
-
-h5, .h5 {
-  font-size: 19px;
-  padding: 0px 0px 7px 0px;
-}
-
-.footer h5 a {
-font-weight: normal;
-font-size: 120%;
-}
-
-a:-webkit-any-link {
-cursor: auto;
-}
-
-.copyright {
-border-top: 1px solid #eae6de;
-background: #fff;
-}
-
-h5 {
-display: block;
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
-}
-
-.size1of5 {
-width: 20%;
-}
-
-.line, {
-overflow: hidden;
-}
-.unit, .unit-nopad {
-float: left;
-padding: 0 3% 0 3%;
-}
-
-
-.unit{
-box-sizing: border-box;
-}
-
-.small {
-font-size:100%;
-}
-
-.line{
-overflow:hidden; 
-}
-
-h5, h3 {
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-line-height: 1;
-}
-
-
-.footer a {
-    color: #434A51;
-}
-
-
-h5 a:link {
-
-color: #434A51;
-}
-
-.unitRight, .unitRight-nopad { float:right; }
-
-a:hover, a:active {
-    text-decoration: underline;
-        -webkit-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
-}
-
-.no-bullets, .no-bullets li {
-    padding-left: 0;
-    list-style: none;
-}
-
-.footer li {
-    line-height: 1.3;
-    margin-bottom: .75em;
-}
-
-.ul {
- margin-bottom: 1.618em;
-}
-
-
-.copyright a{
-margin: 3px;
-}
-
-.copyright, .copyright p{
-font-size: 12px;
-}
-
-.clear-both {
-    clear: both;
-}
-
-/*--End Footer Styles
---*-
-
-
-
-/*　-----------------------------------------------------------　WITG styles ----------------------------------------------------------- */
-.dpuwitg p {
-float:left; 
-clear: left;
-}
-
-.dpuwitg .innerbox p {
-margin-bottom: -8px;
-float:left; 
-clear: left;
-}
-
-.dpuwitg p span {
-margin-bottom: 4px;
-margin-top: 7px;
-max-width: 165px;
-margin-right: 20px; }
-
-.dpuwitg img {
-    clear: left;
-border: 1px solid rgb(153, 153, 153);
-margin: 15px 8px 5px 0px;
-padding: 4px;
-background-color: rgb(255, 255, 255);
-max-width: 200px;
-width: auto;
-max-height: 230px;
-float: left !important;
-}
-
-.dpuwitg .action_icon_offset {
-float: none !important;
-       border: none;
-       margin:0;
-       padding: 0;
-       background-color:none;
-       
-}
-
-.dpuwitg span {
-           
-           margin: -4px 0 0 8px;
-           max-width:215px;
-           display: inline-block;
-}
-
-.dpuwitg .itemlist {
-    padding-bottom: 15px;
-min-height: 200px; 
-display: inline-block;
-margin-bottom:35px;
-margin-top: 10px;
-margin-left:5px;
-margin-top: 0px /9;
-position: relative;
-left: -40px/9;
-
-min-width:350px;
-
-}
-
-.dpuwitg .itemlist ul, .dpuwitg .itemlist li {
-margin: 0 8px 0 8px;
-color: #006ed1;
-padding: 0 3px 5px 0;
-list-style: none;
-font-weight: bold;
-font-size: 14px;
-}
-​
- .dpuwitg .itemlist li  a:link, .dpuwitg .itemlist li a:hover, .dpuwitg .itemlist li a:visited, .dpuwitg .itemlist li a:active {
-font-weight: bold;
-font-size: 14px;
-text-decoration: none;
-
-}
- .dpuwitg .itemlist li div.linkdesc {
-max-width:350px;
-}
-.dpuwitg  .itemlist ul{}
-
-
- 
-</style>
