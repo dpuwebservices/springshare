@@ -1,481 +1,232 @@
-<!-- Google Font -->
-<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Open+Sans+Condensed:300,700,300italic" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source Sans Pro:400,600,400italic,600italic|Open Sans Condensed:300,700,300italic"><link rel="shortcut icon" href="http://library.depaul.edu/_layouts/images/favicon.ico" type="image/vnd.microsoft.icon" />
 
 <style>
-
-/*--Global Styles*/
-
-*{
-padding: 0;
-margin: 0;
+body {
+    font-family: "Source Sans Pro",sans-serif !important;
+    color: #565656;
+    font-size: 14px;
 }
 
-body{
-font-family: "Source Sans Pro", sans-serif!important;
-line-height: 1.618;
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: 700;
+    line-height: 1;
 }
 
-#content{
-padding-top: 10px;
+/* Control to compensate for larger font we use and avoid overlapping DIVs*/
+@media (min-width: 1200px){
+#s-lc-rm-cal .ui-datepicker {
+    width: 17em;}
 }
 
-/*-- Styles for input buttons */
-input[type="submit"]{
-background: #345b8a;
-background: -moz-linear-gradient(top, #345b8a 0%, #2c4c74 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#345b8a), color-stop(100%,#2c4c74));
-background: -webkit-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -o-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -ms-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: linear-gradient(to bottom, #345b8a 0%,#2c4c74 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345b8a', endColorstr='#2c4c74',GradientType=0 );
-border: 1px solid #0b223e;
-padding: .5em 1em .5em 1em;
-margin: .5em .5em 1em 0;
-border-radius: 5px;
-color: #fff;
-font-weight: normal;
-font-family: "Source Sans Pro", sans-serif;
+#s-lc-public-skiplink {display:none;}
+
+/* Banner */
+/*Library Header*/
+.dpu-gradient {
+    background-color: #2b4c72;
+    height: 110px;
+    border-top: 4px solid #052C41;
 }
 
-input[type="button"]{
-background: #345b8a;
-background: -moz-linear-gradient(top, #345b8a 0%, #2c4c74 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#345b8a), color-stop(100%,#2c4c74));
-background: -webkit-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -o-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: -ms-linear-gradient(top, #345b8a 0%,#2c4c74 100%);
-background: linear-gradient(to bottom, #345b8a 0%,#2c4c74 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345b8a', endColorstr='#2c4c74',GradientType=0 );
-border: 1px solid #0b223e;
-padding: .5em 1em .5em 1em;
-margin: .5em .5em 1em 0;
-border-radius: 5px;
-color: #fff;
-font-weight: normal;
-font-family: "Source Sans Pro", sans-serif;
+/*	banner with max width 66em*/
+@media only screen and (max-width: 66em) {
+.dpu-banner {
+    padding-top: 1em !important;
+}
 }
 
-input[type="submit"]:hover{
- background-color: #203957;
-    color: #ffffff;
-    text-decoration: none;
+.dpu-banner {
+    padding: 2.5em 20px 1.5em;
+    color: #fff;
+    font-size: 130%;
 }
 
-input[type="button"]:hover{
- background-color: #203957;
-    color: #ffffff;
-    text-decoration: none;
+/*Depaul logo*/
+.dpu-logo-short {
+    background: url(http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png) no-repeat scroll 0 0 transparent;
+    width: 190px;
+    height: 45px;
+    border-right: 2px solid #FFF;
 }
 
-
-input[type="text"]{
-background: rgba(255,255,255,.8);
-border: 1px solid #b7b7b7;
-padding: .75em 1em .75em 1em;
-border-radius: 8px;
-font-family: "Source Sans Pro", sans-serif;
-color: gray;
--webkit-box-shadow: inset 1px 3px 15px 1px rgba(183, 183, 183, 1);
-box-shadow: inset 0px 2px 3px 1px rgba(183, 183, 183, .4);
+/*depaul logo change when width change to 66em*/
+@media only screen and (max-width: 66em) {
+.dpu-logo-short {
+    background: url(http://libservices.org/3rdpartycontent/libguides/images/logoo.png) no-repeat scroll 0 0 transparent;
+    width: 250px;
+    height: 80px;
+    border-right: none;
+}
 }
 
-select{
-margin: 1em 1.5em 1em 0;
-padding: .4em;
-border: 1px solid #b7b7b7;
-border-radius: 4px;
-min-width: 185px;
+/*Logo change again when width change to the 40em. */
+@media only screen and (max-width: 40em) {
+.dpu-logo-short {
+    background: url(http://libservices.org/3rdpartycontent/libguides/images/smalllogo.png) no-repeat scroll 0 0 transparent;
+    width: 200px;
+    height: 60px;
+    border-right: none;
+}
 }
 
-b{
-font-size: 14px;
+/*Depaul Library Text*/
+.dpu-banner-text {
+    padding-left: 20px;
 }
 
-
-
-h1 span{
-font-size: 145%;
+.h1 {
+    font-size: 28px;
+    font-family: "Open Sans Condensed",sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
 }
 
-h2{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-line-height: 1;
-color: rgba(9,70,101,.9);
-font-size: 16px;
-font-size: 1.3em;
-}
-
-h3{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-font-size: 16px;
-line-height: 1;
-}
-
-p, .linkdesc{
-color: #565656;
-font-family: "Source Sans Pro", sans-serif;
-line-height: 1.618;
-font-size: 14px;
-}
-
-a{
-font-family: "Source Sans Pro", sans-serif;
-line-height: 1.618;
-font-size:14px;
-color: #005c96;
-}
-
-/*--SharePoint classes brought over for Ask a Librarian*/
-a.cta-lib-green{
-background-color: #2dba6f;
-}
-
-a.cta-lib-green:hover{
-background-color: #319b62;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-a.cta-lib-blue {
-background-color: #2c4c74;
-}
-
-a.cta-lib-blue:hover {
-    background-color: #203957;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.skin-simple-transparent-tan {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85) 0%, rgba(231, 231, 225, 0.85) 100%) repeat scroll 0% 0% transparent;
-    border: 1px solid #D0D0D0;
-    box-shadow: 1px 3px 10px rgba(1, 1, 1, 0.1);
-    margin-top: -15px;
-    margin-bottom: 0em;
-    margin-left: -13px;
-margin-right: -13px;
-
-}
-.cta-lib-gray {
-    background: linear-gradient(to bottom, #F2F6F9 0%, #E6E9EC 100%) repeat scroll 0% 0% transparent;
-}
-
-.cta-type5 {
-padding: .5em !important;
-font-size: 90%;
-border: 1px solid #c1cccc;
-margin: 5px 4px 0 0;
-border-radius: .3em;
--webkit-border-radius: .3em;
-width: 99%;
-text-decoration: none;
-}
-
-.cta-type5:hover{
-background: #d3d8de;
-    text-decoration: none!important;
-}
-
-
-.cta-row {
-    width: 95%;
-   margin: 3%;
-}
-.centering-content {
-    text-align: center;
-}
-.size1of1 {
-    float: none;
-}
-* {
-    box-sizing: border-box;
-}
-
-.cta-type4 {
-padding: .5em !important;
-margin: .5em !important;
-font-style: normal;
-font-weight: bold;
-text-align: center;
--webkit-border-radius: .3em;
-border-radius: .3em;
-display: block;
-color: #fff !important;
-}
-
-/*--End of SharePoint Ask a Librarian styles
-*/
-
-
-/*-- Header styles for banner from SharePoint */
-.masthead{
-background: #385f8a;
-background: -moz-linear-gradient(top, #385f8a 0%, #2b4c72 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#385f8a), color-stop(100%,#2b4c72));
-background: -webkit-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: -o-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: -ms-linear-gradient(top, #385f8a 0%,#2b4c72 100%);
-background: linear-gradient(to bottom, #385f8a 0%,#2b4c72 100%);
-height: 110px;
-border-top: 4px solid #052c41;
-}
-
-a.site-title-long{
-color: #fff!important;
-font-size: 200%;
-padding-top: .35em;
-padding-left: 22px;
-}
-
-h1, .h1{
-font-family: "Open Sans Condensed", sans-serif;
-font-weight: bold;
-line-height: 1;
-color: rgba(9,70,101,.9);
-}
-
-.dpu-logo{
-margin: 2.5em 0 1.5em 0;
-}
-
-.logo-short{
-background:url("http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png") no-repeat;
-width: 190px;
-height: 45px;
-border-right: 2px solid #fff;
-}
-
-.unit{
-float:left;
-padding: 0 3% 0 3%;
-}
-
-.size5of5{
-width: 100%;
-}
-/*-- End Header styles */
-
-/*-- Sharepoint styles for navigation menu 
-*/
-nav{
-background: #e8e8e3;
-background: -moz-linear-gradient(top, #e8e8e3 0%, #d9d9d3 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e3), color-stop(100%,#d9d9d3));
-background: -webkit-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: -o-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: -ms-linear-gradient(top, #e8e8e3 0%,#d9d9d3 100%);
-background: linear-gradient(to bottom, #e8e8e3 0%,#d9d9d3 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e3', endColorstr='#d9d9d3',GradientType=0 );
-box-shadow: inset -1px -1px #bbb;
--moz-box-shadow: inset -1px -1px #bbb;
--webkit-box-shadow: inset -1px -1px #bbb;
-list-style:none;
-z-index:5;
-display: block;
-}
-
-nav li{
-margin: 0px;
-position:relative;
-}
-
-nav li li{
-border-right: none;
-}
-
-nav ul li{
-border-right: 1px solid #bcbcab;
-}
-
-nav ul li:last-child{
-border-right: none;
-}
-
-
-nav ul{
-position:absolute;
-}
-
-nav ul ul{
-    list-style:none;
-    position: absolute;
+/*h1 tag for header text*/
+@media only screen and (max-width: 66em) {
+.h1 {
     display: none;
 }
-
-nav ul li{
-position: relative;
-display: inline-block;
 }
 
-nav ul li ul li{
-display: block;
+.dpu-banner-text>a:hover {
+    color: #fff;
 }
 
-.nav-primary a{
-    display:block;
-    padding: 7px 7px 7px 7px;
-    margin-left: -3px;
-    color:#284b6e;
-    text-decoration:none;
-font-family: "Open Sans Condensed";
-font-weight: 700;
-text-transform: uppercase;
+a {
+    color: #777;
+    text-decoration: none;
 }
 
-.nav-primary a:hover{
-background-color: #052c41;
-color: #fff;
-margin-left: -3px;
+a:hover,a:focus {
+    color: #777;
 }
 
-nav li:hover ul{
-display: inline-block;
+/* Navigation bar change when max width equal to 66em*/
+@media only screen and (max-width: 66em) {
+.navbar-nav {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 1.1em !important;
+    font-weight: 700;
+}
 }
 
-.level-2{
-background-color: #fff;
-width: 200px;
-margin-left: -3px;
--webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+/*when navigation bar collapse. */
+.navbar-nav {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 0;
+    margin-top: -1px;
 }
 
-.level-2 li{
-border-right: none!important;
-margin-right: -3px;
+.nav .navbar-nav {
+    width: 430px;
+    height: 50px;
 }
 
-.nav-primary{
-width: 360px;
-margin: 0 auto;
-list-style:none;
-font-size: 1.2em;
-margin-top: 0;
-margin-bottom:10px;
-position: relative;
-display: block;
-font-family: "Open Sans Condensed";
-font-weight: 700;
-text-transform: uppercase;
+.navbar {
+    position: relative;
+    min-height: 0;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
 }
 
-
-
-/*-- ************************* Begin LibGuides Styles
-
-*/
-.roundbox{
-background: none!important;
+.navbar-inverse {
+    background: #f0ede4;
+    border-color: #bbb;
 }
 
-.outerbox{
-background: none!important;
-border: 1px solid #bbb;
+.navbar-inverse .navbar-nav>li>a {
+    color: #284b6e;
+    font-weight: 700;
 }
 
-.headerbox h2{
-font-family: "Open Sans Condensed";
-font-weight: 700;
-color: #565656;
-font-size: 1.4em;
+.navbar-inverse .navbar-collapse {
 }
 
-.guideattr{
-display: none;
+.navbar-collapse .navbar-nav > li > a:hover,.navbar-collapse .navbar-nav > li > a:focus {
+    background-color: #284b6e;
+    color: #fff;
+    display: block !important;
+    width: 100%;
 }
 
-.breadcrumbs, #breadcrumbsl, #breadcrumbsr {
-font-size: 70%!important;
-font-weight: normal;
+#btn-ask {
+    background-color: #2dba6f;
+    color: #fff;
+    margin: 2px 0;
 }
 
-#guideattr{
-display: none;
+/*Research Guide */
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    padding-top: 1px;
+    height: 0;
+    line-height: 30px;
 }
 
-#tabsI{
-font-family: "Source Sans Pro", sans-serif;
-font-size: 14px;
-border-bottom: 1px solid #bbb;
+/* More Guide */
+.dropdown-menu>li>a {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #284b6e;
+    padding: .55em 1em;
+    font-size: 1em;
 }
 
-#tabsI a span{
-background: #ddd;
-color: #222;
+.nav>li>a {
+    padding: 8px 12px;
 }
 
-#tabsI a{
-border-top: 1px solid #bbb;
-border-right: 1px solid #bbb;
-border-left: 1px solid #bbb;
-background: #ddd;
-color: #222;
-margin-right: 3px;
-font-weight: normal;
+.s-lc-box-container h1 {
+    font-size: 18px;
 }
 
-#tabsI a:hover{
-color: #222;
-background: #f0f0f0;
+.s-lc-box-container h2 {
+    font-size: 16px;
+   
 }
 
-#tabsI a:hover span{
-color: #222;
-background: #f0f0f0;
+.s-lc-box-container h3 {
+    font-size: 14px;
 }
 
-#tabsI #current a span, #tabsI .current a span{
-color: #222;
-background: #f0f0f0;
-border-bottom: none;
+.s-lc-box-container,.s-lc-box-container h5 {
+    font-size: 13px;
 }
 
-#tabsI #current a{
-color: #222;
-background: #f0f0f0;
+.room-type-box {
+padding:5px;
+border: solid #f1f1f1 thin;
+margin: 20px 0px 10px 0px;
 }
 
-.stitle{
-font-family: "Open Sans Condensed", sans-serif;
-text-transform: Uppercase;
-weight: 700;
+.resbox{
+min-height:180px;
+background-color: #F8F8F8;
+padding: 20px;
+margin: 5px 0px 5px 0px;
 }
 
-#guide_tab_title_bar{
-display: none;
+.resbox img {
+padding-left:10px;
+padding-bottom:10px;
 }
 
-.boxeditlink{
-font-size: 12px;
+@media (max-width: 767px)
+{
+ navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open      .dropdown-menu>li>a:hover {
+background-color: #284b6e; }
 }
 
-
-#group_desc {
-margin:10px;
+.dropdown-menu{
+font-size:12px;
 }
 
-
+.navbar-collapse{
+max-height:400px; 
+}
 </style>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    if (document.getElementById("boxatt11677129")) {
-        var str = document.getElementById("boxatt11677129").innerHTML;
-        var n = str.replace(/No entries found./, '<div id="event_alert">No events scheduled</div>');
-        document.getElementById("boxatt11677129").innerHTML = n;
-    }
-
-    if (document.getElementById("boxatt11677000")) {
-        var str2 = document.getElementById("boxatt11677000").innerHTML;
-        var n2 = str2.replace(/No entries found./, '<div id="event_alert">No events scheduled</div>');
-        document.getElementById("boxatt11677000").innerHTML = n2;
-    }
-});
-
-</script>
-
-<link href="http://www.depaul.edu/_layouts/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
