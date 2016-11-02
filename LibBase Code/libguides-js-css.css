@@ -1,0 +1,118 @@
+<link type="text/css" rel="stylesheet" 
+href="http://fonts.googleapis.com/css?family=Source Sans Pro:400,600,400italic,600italic|Open Sans Condensed:300,700,300italic">
+<link type="image/vnd.microsoft.icon" rel="shortcut icon" 
+href="http://library.depaul.edu/_layouts/images/favicon.ico"/>
+
+
+<style> 
+
+    div.s-lg-az-result-keywords span.bold {
+        font-weight: normal;
+    }
+
+    /* LibGuides Overrides */
+    .pager {
+        width:75%
+    } 
+    a.dpu-logo-short, a.dpu-logo-short:hover {
+        text-decoration:none; 
+    }
+
+    /* bootstrap overrides */   
+    #s-lg-tabs-container .nav-pills > li > a{
+        color:#555;
+        background: linear-gradient(to bottom, #F5F5F5 1%, #ECECEC 100%) repeat scroll 0% 0% transparent;border-bottom:1px solid #D1D1D1;
+    }   
+    #s-lg-tabs-container .nav-pills > li > a{   
+        color:#555;
+        background: linear-gradient(to bottom, #F5F5F5 1%, #ECECEC 100%) repeat scroll 0% 0% transparent;border-bottom:1px solid #D1D1D1;
+    }
+    #s-lg-tabs-container .nav-pills > li .active{
+        color:#555;
+        background: #284B6E;
+    }
+    #s-lg-tabs-container .nav-pills > .active > a{
+        color:#ffffff;  
+    } 
+    #s-lg-tabs-container .nav-pills >.active > a:hover{
+        color:#555;
+        background:#7197c2!important;
+    }
+    #s-lg-tabs-container .nav-pills > li > a:hover{
+        color:#555;
+        background:#7197c2!important;
+        font-weight:bold;
+    }
+    .s-lib-box .s-lib-box-title{
+        font-size:20px;
+        color:#565656;
+        background-color:#ffffff;
+    }
+    .s-lib-box{
+        border:none;
+        box-shadow:none;
+    }
+    #s-lg-guide-name, #s-lib-public-header-title  {
+        color: rgba(9, 70, 101, 0.9);
+        font-size: 30px;font-weight: 700;
+    }
+    .s-lib-box h1{
+        font-size:18px;
+    }
+    .s-lib-box h2{
+        font-size:16px;
+    }
+    .s-lib-box h3{
+        font-size:14px;
+    }
+    .s-lib-box h4, .s-lib-box h5 {
+        font-size:13px;
+    }
+    .s-lib-box body{
+        font-family:"Source Sans Pro", sans-serif;
+    }
+    .s-lib-box a:link,.s-lib-box a:visited{
+        color:#005c96;
+        text-decoration:none;
+    }
+    .s-lib-box a:hover{
+        color:#005c96;
+        text-decoration:underline;
+    }
+    .s-lg-link-list li {
+        padding-bottom: 10px;
+    }
+    /*  Font style override for Tabbed content and other UI widgets  */
+    .ui-widget {
+        font-family: "Source Sans Pro",sans-serif !important;
+    }
+    /* Carousel Styling */
+    .carousel a:link {
+        color:white;
+        font-size:60px;
+    }
+    .carousel a:hover{
+        text-decoration:none;
+    }
+    /* Email button styling */
+    .s-lib-profile-email a:link {
+        color: #ffffff;
+    }
+    /* Multi-disciplinary styling */
+    .multidis {
+        color: #4796B3;
+    }
+    /* Popover Style*/
+    .popover-title
+    {
+        font-size: 16px;
+    }
+    span[title="Last update"],span[title="Number of visits this year"] {
+        display:none;
+    }
+    @media (max-width: 767px) {
+        navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: #284b6e;
+    }
+
+</style>

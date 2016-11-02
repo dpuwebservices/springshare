@@ -1,0 +1,74 @@
+<link type="text/css" rel="stylesheet" 
+href="http://fonts.googleapis.com/css?family=Source Sans Pro:400,600,400italic,600italic|Open Sans Condensed:300,700,300italic">
+<link type="image/vnd.microsoft.icon" rel="shortcut icon" 
+href="http://library.depaul.edu/_layouts/images/favicon.ico"/>
+
+
+<style>
+
+
+    /* Control to compensate for larger font we use and avoid overlapping DIVs*/
+    @media (min-width: 1200px){
+        #s-lc-rm-cal .ui-datepicker {
+            width: 17em;}
+    }
+
+    #s-lc-public-skiplink {display:none;}
+
+
+    }
+
+    .nav>li>a {
+        padding: 8px 12px;
+    }
+
+    .s-lc-box-container h1 {
+        font-size: 18px;
+    }
+
+    .s-lc-box-container h2 {
+        font-size: 16px;
+
+    }
+
+    .s-lc-box-container h3 {
+        font-size: 14px;
+    }
+
+    .s-lc-box-container,.s-lc-box-container h5 {
+        font-size: 13px;
+    }
+
+    .room-type-box {
+        padding:5px;
+        border: solid #f1f1f1 thin;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .resbox{
+        min-height:180px;
+        background-color: #F8F8F8;
+        padding: 20px;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .resbox img {
+        padding-left:10px;
+        padding-bottom:10px;
+    }
+
+    @media (max-width: 767px)
+    {
+        navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open      .dropdown-menu>li>a:hover {
+            background-color: #284b6e; }
+    }
+
+    .dropdown-menu{
+        font-size:12px;
+    }
+
+    .navbar-collapse{
+        max-height:400px; 
+    }
+
+</style>
