@@ -1,3 +1,5 @@
+    @import url('libcommon.css');    //import settings common to all LibApps apps
+
     div.s-lg-az-result-keywords span.bold {
         font-weight: normal;
     }
