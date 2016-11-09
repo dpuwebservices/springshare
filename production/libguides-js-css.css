@@ -1,6 +1,3 @@
-
-<style> 
-
     div.s-lg-az-result-keywords span.bold {
         font-weight: normal;
     }
@@ -109,5 +106,3 @@
         navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
         background-color: #284b6e;
     }
-
-</style>
