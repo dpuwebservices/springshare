@@ -1,9 +1,3 @@
-<link type="image/vnd.microsoft.icon" rel="shortcut icon" 
-href="http://library.depaul.edu/_layouts/images/favicon.ico"/>
-
-
-<style>
-
 
     /* Control to compensate for larger font we use and avoid overlapping DIVs*/
     @media (min-width: 1200px){
@@ -69,4 +63,4 @@ href="http://library.depaul.edu/_layouts/images/favicon.ico"/>
         max-height:400px; 
     }
 
-</style>
+
