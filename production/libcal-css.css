@@ -1,5 +1,6 @@
-
-    /* Control to compensate for larger font we use and avoid overlapping DIVs*/
+@import "libcommon.css"; //import settings common to all LibApps apps
+   
+/* Control to compensate for larger font we use and avoid overlapping DIVs*/
     @media (min-width: 1200px){
         #s-lc-rm-cal .ui-datepicker {
             width: 17em;}
