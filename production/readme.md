@@ -1,0 +1,1 @@
+This files are the ones used by LibApps. They are currently hosted on BlueHost at http://libservices.org/3rdpartycontent/libapps/
