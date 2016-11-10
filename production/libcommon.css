@@ -150,7 +150,7 @@ Note: The common attributes/tags/elements
     .navbar-brand {
         float: left;
         font-size: 18px;
-        padding-top: 1px;
+        padding-top: 8px;
         height: 0;
         line-height: 30px;
     }
