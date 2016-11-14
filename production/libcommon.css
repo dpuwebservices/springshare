@@ -42,7 +42,9 @@ Note: The common attributes/tags/elements
     }
     /*Depaul logo*/
     .dpu-logo-short {
-        background: url('http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png') no-repeat scroll 0 0 transparent;
+        background: url('images/dpu-logo-short.png') no-repeat scroll 0 0 transparent;
+        /* old url
+        background: url('http://libservices.org/3rdpartycontent/libguides/images/dpu-logo-short.png') no-repeat scroll 0 0 transparent;*/
         width: 190px;
         height: 45px;
         border-right: 2px solid #FFF;
@@ -50,7 +52,9 @@ Note: The common attributes/tags/elements
     /*depaul logo change when width change to 66em*/
     @media only screen and (max-width: 66em){
         .dpu-logo-short{
-            background: url('http://libservices.org/3rdpartycontent/libguides/images/logoo.png') no-repeat scroll 0% 0% transparent;  
+            background: url('images/logoo.png') no-repeat scroll 0% 0% transparent;
+            /* old url  
+            background: url('http://libservices.org/3rdpartycontent/libguides/images/logoo.png') no-repeat scroll 0% 0% transparent;  */
             width:250px; 
             height:80px;   
             border-right:none;
@@ -59,7 +63,9 @@ Note: The common attributes/tags/elements
     /*Logo change again when width change to the 40em. */
     @media only screen and (max-width: 40em) {
         .dpu-logo-short {
-            background: url(http://libservices.org/3rdpartycontent/libguides/images/smalllogo.png) no-repeat scroll 0 0 transparent;
+            background: url('images/smalllogo.png') no-repeat scroll 0 0 transparent;
+            /* old url
+            background: url(http://libservices.org/3rdpartycontent/libguides/images/smalllogo.png) no-repeat scroll 0 0 transparent; */
             width: 200px;
             height: 60px;
             border-right: none;
