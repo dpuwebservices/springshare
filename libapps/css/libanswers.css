@@ -5,8 +5,8 @@ Note: The attributes/tags/elements for http://depaul.beta.libanswers.com/
 */
 
 
-@import url('libcommon.css');    //import settings common to all LibApps apps
+@import url('libcommon.css');    /*import settings common to all LibApps apps*/
     
-p.navbar-text, label.navbar-text, ul.s-la-navbrowse { // hide elements that reference librarians wanted removed from search bar (but no others)
+p.navbar-text, label.navbar-text, ul.s-la-navbrowse { /* hide elements that reference librarians wanted removed from search bar (but no others) */
  visibility:hidden;
 }    
