@@ -349,17 +349,7 @@ span[title="Last update"],span[title="Number of visits this year"] {
         max-height:400px; 
     }
 
-/* update on Nov'28 */
-.s-la-navbrowse{
-visibility:hidden;
-}
-
-label
-{
-visibility:hidden;
-}
-
-.navbar-text
-{
-visibility:hidden;
-}
+    
+p.navbar-text, label.navbar-text, ul.s-la-navbrowse { // hide elements that reference librarians wanted removed from search bar (but no others)
+ visibility:hidden;
+}    
