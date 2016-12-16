@@ -7,6 +7,29 @@ Note: The attributes/tags/elements for http://depaul.beta.libanswers.com/
 
 @import url('libcommon.css');    /*import settings common to all LibApps apps*/
     
-p.navbar-text, label.navbar-text, ul.s-la-navbrowse { /* hide elements that reference librarians wanted removed from search bar (but no others) */
- visibility:hidden;
-}    
+/* show only questions in browse list (Home Page, Single Search Page) */
+.s-la-faq-listing-meta, .s-srch-result-meta {
+    display: none;
+} 
+
+/* hide FAQ owner (FAQ page) */  
+.s-la-faq-owner {
+    display: none;
+} 
+
+/* hide browser bar in navigation (All pages)*/
+ul.s-la-navbrowse, ul.s-la-navbrowse li{
+    visibility:hidden;
+}
+
+/* Hide # answers + "Enter another question" text in search bar (Home Page, Single Search Page) */
+.navbar .navbar-text{
+  display:none;
+}
+
+/* Styleing for topic list in sidebar (Home page, FAQ page) */ 
+.s-la-content-topic-list{
+  padding:0;
+  list-style:none;
+  
+}
