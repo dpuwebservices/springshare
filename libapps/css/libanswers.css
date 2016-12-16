@@ -27,7 +27,7 @@ ul.s-la-navbrowse, ul.s-la-navbrowse li{
   display:none;
 }
 
-/* Styleing for topic list in sidebar (Home page, FAQ page) */ 
+/* Styleing for topic list in sidebar (Home page, FAQ page, custom page) */ 
 .s-la-content-topic-list{
   padding:0;
   list-style:none;
