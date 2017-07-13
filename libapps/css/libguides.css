@@ -4,6 +4,39 @@
         font-weight: normal;
     }
 
+    /* Custom styles for the Topics section in the LibAnswers widget when embedded to LibGuides */
+
+    .s-la-widget .s-la-widget-header {
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 5px;
+        padding-bottom: 18px;
+    }
+    .s-la-widget hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .s-la-widget .s-la-faq-listing-meta .metalabel {
+        font-weight: bold;
+        padding-right: 10px;
+    }
+    .s-la-widget .s-la-faq-listing-topics ul {
+        margin-left: 0px;
+        display: inline;
+    }
+    .s-la-widget .list-inline > li {
+    display: inline-block;
+    }
+    .s-la-widget .list-inline {
+        padding-left: 0;
+        list-style: none;
+    }
+    .s-la-widget .s-la-faq-listing-topics .label-topic {
+        font-weight: normal;
+        background-color: #eee;
+        color: #555;
+    }
+
+
     /* LibGuides Overrides */
     .pager {
         width:75%
