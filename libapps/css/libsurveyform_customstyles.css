@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic');
-#header-text {font-size: 2em !important;text-align: left;}
-#mainform label {font-size: 18px;}
+#mainform p {font-size: 20.8px;}
+#header-text {font-size: 24px !important;text-align: left;}
+#mainform label {font-size: 16.6px;}
 #mainform label.radio,
-#mainform label.checkbox {font-family: "Source Sans Pro",sans-serif !important;font-weight: normal;font-size: 17px;}
+#mainform label.checkbox {font-family: "Source Sans Pro",sans-serif !important;font-weight: normal;font-size: 18px;line-height:1.5;}
+#mainform label.radio input,
+#mainform label.checkbox input {margin-top: 10px !important;}
 div.field-input {width: 80%;float:right;}
 div#form_button_row {width: 80%;float:right;padding-left:18px;}
 button#form_save {background-color: #337ab7;}
