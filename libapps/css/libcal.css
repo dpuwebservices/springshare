@@ -1,6 +1,6 @@
 @import url('libcommon.css');    //import settings common to all LibApps apps
    
-/* Control to compensate for larger font we use and avoid overlapping DIVs */
+/* Control to compensate for larger font we use and avoid overlapping DIVs*/
     @media (min-width: 1200px){
         #s-lc-rm-cal .ui-datepicker {
             width: 17em;}
@@ -30,6 +30,10 @@
 
     .s-lc-box-container,.s-lc-box-container h5 {
         font-size: 13px;
+    }
+
+    .s-lc-public-main a.btn-primary {
+        color: #fff;
     }
 
     .room-type-box {
