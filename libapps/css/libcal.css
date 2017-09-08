@@ -68,4 +68,22 @@
         max-height:400px; 
     }
 
+    .modal-dialog a {
+        color: #005c96;
+    }
+    .modal-dialog h4.modal-title small {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+        font-family: "Source Sans Pro",sans-serif;
+    }
 
+    .modal-dialog button {
+        color: #fff;
+        background: #005c96;
+    }
+    .modal-dialog button:hover,
+    .modal-dialog button:focus {
+        background-color: #4a4a4a;
+        color: #fff !important;
+    }
