@@ -139,27 +139,50 @@
     }
 
 
-    .nav .s-lg-index-nav-btn>button {margin: 10px 10px 0;}
+    .nav .s-lg-index-nav-btn>button {
+        margin: 3px 10px 0;
+        padding: 12px;
+    }
     .nav>li>a {
         margin: 4px 0 0 0;
+        color: #337ab7;
+    }
+    .nav>li>a:hover {
+        background-color: transparent;
+        outline: 0;
     }
     .nav.nav-pills .navbar-brand {
         padding-top: 12px;
+    }
+    .nav-pills>li.active>button, 
+    .nav-pills>li.active>button:focus, 
+    .nav-pills>li.active>button:hover {
+        color: #fff;
+        padding: 14px 15px;
+        outline: 0;
+        line-height: 14px;
+        margin: 4px 0 0;
     }
 
 @media (max-width: 767px) {
     navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
         background-color: #284b6e;
     }
+    .nav.nav-pills .navbar-brand {line-height:20px;}
     .nav-pills>li+li {
-        margin-left: 0;
+        margin-left: 8px;
         width: 100%;
     }
+    .nav-pills li a button {
+        width: 105%;
+        padding: 12px 0;
+    }
     .nav .s-lg-index-nav-btn>button {
-        width: 100% !important;
+        width: 95% !important;
     }
     .nav>li>a {
         text-align: center;
+        width: 96%;
     }
     #s-lg-guide-list-controls .pull-right {
         width: 100%;
@@ -169,4 +192,5 @@
         border: 1px solid #ccc;
         margin: 0 0 31px;
     }
+    #s-lg-az-filters #s-lg-az-filter-cols div {margin-bottom: 10px;}
 }
