@@ -137,7 +137,36 @@
     span[title="Last update"],span[title="Number of visits this year"] {
         display:none;
     }
-    @media (max-width: 767px) {
-        navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+
+
+    .nav .s-lg-index-nav-btn>button {margin: 10px 10px 0;}
+    .nav>li>a {
+        margin: 4px 0 0 0;
+    }
+    .nav.nav-pills .navbar-brand {
+        padding-top: 12px;
+    }
+
+@media (max-width: 767px) {
+    navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
         background-color: #284b6e;
     }
+    .nav-pills>li+li {
+        margin-left: 0;
+        width: 100%;
+    }
+    .nav .s-lg-index-nav-btn>button {
+        width: 100% !important;
+    }
+    .nav>li>a {
+        text-align: center;
+    }
+    #s-lg-guide-list-controls .pull-right {
+        width: 100%;
+        background-color: #ddd;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 0 0 31px;
+    }
+}

@@ -68,4 +68,14 @@
         max-height:400px; 
     }
 
-
+@media only screen and (max-width: 66em) {
+    .resbox{
+        min-height:auto;
+    }
+    .resbox .resbox {padding:0;}
+    .s-lc-box-container h2 {margin: 0 0 20px;}
+    .s-lc-box-container p+h2 {margin-top: 20px;}
+    .resbox img {
+        max-width: 110%;
+    }
+}

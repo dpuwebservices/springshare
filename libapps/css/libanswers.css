@@ -33,3 +33,8 @@ ul.s-la-navbrowse, ul.s-la-navbrowse li{
   list-style:none;
   
 }
+
+@media only screen and (max-width: 66em) {
+    #s-la-page-title-bar .navbar-collapse .nav.navbar-nav.s-la-navbrowse li {display:none;}
+    #s-la-page-title-bar .navbar-collapse.in {overflow-y:hidden}
+}
