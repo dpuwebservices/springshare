@@ -2,9 +2,10 @@
 Author: Advait, McClure
 Date: 11/2/2016
 Note: The common attributes/tags/elements
+Last update: 1/12/2018 11:35
 */
 
-@import url('http://fonts.googleapis.com/css?family=Source Sans Pro:400,600,400italic,600italic|Open Sans Condensed:300,700,300italic');
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic');
 
     body {
         font-family: "Source Sans Pro",sans-serif !important;	
@@ -77,6 +78,9 @@ Note: The common attributes/tags/elements
         padding-top: 0;
         margin-top: -1px;
     }
+    .navbar-nav:first-child>li {
+        border-right: 1px solid #bcbcab;
+    }
     .nav .navbar-nav {
         width: 430px;
         height: 50px;
@@ -88,7 +92,9 @@ Note: The common attributes/tags/elements
         margin-bottom: 20px;
         border: 1px solid transparent;
     }
-
+    .navbar-right {
+        margin-top:1px;
+    }
     .navbar-inverse {
         background: #f0ede4;
         border-color: #bbb;
@@ -97,6 +103,10 @@ Note: The common attributes/tags/elements
     .navbar-inverse .navbar-nav>li>a {
         color: #284b6e;
         font-weight: 700;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 0.8em;
+        margin: 0;
     }
 
     .navbar-inverse .navbar-collapse {
@@ -112,7 +122,8 @@ Note: The common attributes/tags/elements
     #btn-ask {
         background-color: #2dba6f;
         color: #fff;
-        margin: 2px 0;
+        margin: 0;
+        padding: 11px 14px 9px 18px;
     }
 
     /*Research Guide */
@@ -154,6 +165,9 @@ Note: The common attributes/tags/elements
         font-family:"Open Sans Condensed",sans-serif;
         font-size:1.1em!important;
         font-weight:700;
+    }
+    .nav>li>a {
+        font-size: 1.2em;
     }
     .dpu-banner-text {padding-left:8px;}
     .site-title-short {display:inline !important;}
