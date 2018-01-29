@@ -31,6 +31,12 @@
     .s-lc-box-container,.s-lc-box-container h5 {
         font-size: 13px;
     }
+    
+        /* ensure links are blue and bold on room pages */
+    .s-lc-public-main a, .modal a { 
+       color: #2F5C96;
+       font-weight:bold;
+    }
 
     .s-lc-public-main a.btn-primary {
         color: #fff;
