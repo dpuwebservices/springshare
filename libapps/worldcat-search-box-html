@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+ 
+<!--****** do not use code above this line-->
+
+
+
+
+
+<script>
+        $(document).ready(function(){
+
+          $("#searchTips").hide();
+
+            $(".showTips").click(function(){
+                $("#searchTips").show( "slow", function(){});
+              });
+
+            $(".hideTips").click(function(){
+                $("#searchTips").hide( "slow", function(){});
+            });    
+            
+        });  
+
+   function submitWC() {
+     
+    var queryString=document.getElementsByName('searchInput')[0].value;
+
+    var formatVal = "all";
+      if (document.getElementsByName('format')[0].checked){
+        formatVal="Artchap&format=Jrnl&format=News";
+      }
+
+    var scope = ""; 
+      if (document.getElementById('scope').value != "999"){ // explicit fake value to indicate search all
+        scope=document.getElementById('scope').value;
+      }
+      var worldcat = 'https://depaul.on.worldcat.org/search?queryString=' + queryString + '&scope=' + scope + "&format=" + formatVal;
+      window.open(worldcat);    
+   }
+   
+    function changeWCSearch() {
+      if (document.getElementsByName('searchInput')[0].value.trim()==""){
+        document.getElementsByName('searchInput')[0].value="Search books, articles, I-Share and more...";
+      }
+    }
+   
+    function setWCSearch() {
+      document.getElementsByName('searchInput')[0].value="Search books, articles, I-Share and more...";
+    }
+   
+    function clearWCSearch() {
+      if (document.getElementsByName('searchInput')[0].value=="Search books, articles, I-Share and more..." ){
+      document.getElementsByName('searchInput')[0].value="";
+      }
+      else {
+        if (document.getElementsByName('searchInput')[0].value==""){
+        document.getElementsByName('searchInput')[0].value="Search books, articles, I-Share and more...";
+        }
+      }
+    }
+</script>
+
+                  <h2>Search DePaul WorldCat Discovery</h2>
+
+
+               <input name="qt" value="affiliate" type="hidden"/> <input name="ai" value="wclocal_813" type="hidden"/> 
+               <div class="block" id="wcl_searchbox">
+                  <div class="block">
+                     <span>
+                     <input name="searchInput" title="Search books, articles, I-Share and more..." class="wcl_text" id="searchInput" onkeypress="if(event.keyCode===13)submitWC();" onfocus="clearWCSearch();" onblur="changeWCSearch();" value="Search books, articles, I-Share and more..." type="text"/> 
+                     </span>
+                     <span class="hpadding">
+                        <label class="offscreen" for="scope">Select Scope</label>
+                        <select name="scope" id="scope">
+                           <option value="999" selected>Libraries Worldwide</option> <!-- Need a fake value here because null gets stripped out -->
+                           <option value="sz:30986">I-Share Libraries</option>
+                           <option value="sz:33458">DePaul University</option>
+                        </select>
+                        <input name="oldscope" type="hidden"/> 
+                     </span>
+                     <span>
+                     <input id="wcl_search_button" onclick="submitWC(); return false;" value="Search" type="submit"/> </span> 
+                     <div>
+                        <label class="offscreen" for="format">Search Articles Only</label>
+                        <input name="format" value="" type="checkbox"/> 
+                     </div>
+                    <p><a href="https://depaul.on.worldcat.org/advancedsearch" target="_top">Advanced Search</a></span> <span class="wcl_left sep">|</span> <span class="wcl_left"><a href="https://vufind.carli.illinois.edu/vf-dpu" target="_top">VuFind Catalog</a>
+
+               </p>
+<a href="#" class="showTips" id="searchTipsToggle">search tips</a>  
+<div id="searchTips">
+<h3>Search Tips</h3>
+
+<ul>
+	<li>When looking for a specific edition, try searching by isbn number or use the <a href="https://i-share.carli.illinois.edu/dpu/cgi-bin/Pwebrecon.cgi?DB=local&amp;PAGE=First"> classic catalog</a></li>
+	<li>Try using quotation marks &quot; &quot; when you know the exact title</li>
+	<li>Do you have a call number? Use the <a href="https://vufind.carli.illinois.edu/vf-dpu"> VuFind catalog</a></li>
+<!--	<li>You can find more search tips on our <a href="http://libguides.depaul.edu/wclhowto">WorldCat Local How To Guide</a></li>-->
+</ul>
+
+<p><a href="#" class="hideTips">close</a></p>
+</div>
+
+
+
+
+
+
+<!--****** do not use code below this line-->
+  </body>
+</html>
