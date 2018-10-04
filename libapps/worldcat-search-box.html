@@ -22,22 +22,6 @@ and open the template in the editor.
 <script>
         $(document).ready(function(){
             
-        $("#searchTips").hide();
-        
-        $(document).on("click", ".showTips" , function() {
-          $("#searchTips").show("slow");
-          $("#searchTipsToggle").removeClass("showTips");
-          $("#searchTipsToggle").addClass("hideTips");
-          $("#searchTipsToggle").text("hide search tips");
-        });
-
-        $(document).on("click", ".hideTips" , function() {
-          $("#searchTips").hide("slow");
-          $("#searchTipsToggle").removeClass("hideTips");
-          $("#searchTipsToggle").addClass("showTips");
-          $("#searchTipsToggle").text("show search tips");
-        });    
-            
         });  
 
    function submitWC() {
@@ -105,18 +89,7 @@ and open the template in the editor.
                     <p><a href="https://depaul.on.worldcat.org/advancedsearch" target="_top">Advanced Search</a></span> <span class="wcl_left sep">|</span> <span class="wcl_left"><a href="https://vufind.carli.illinois.edu/vf-dpu" target="_top">DePaul VuFind Catalog</a>
 
                </p>
-<a href="#" class="showTips" id="searchTipsToggle">show search tips</a>  
-<div id="searchTips">
-<h3>Search Tips</h3>
 
-<ul>
-	<li>When looking for a specific edition, try searching by isbn number or use the <a href="https://vufind.carli.illinois.edu/vf-dpu">DePaul VuFind catalog</a></li>
-	<li>Try using quotation marks &quot; &quot; when you know the exact title</li>
-	<li>Do you have a call number? Use the <a href="https://vufind.carli.illinois.edu/vf-dpu">DePaul VuFind catalog</a></li>
-<!--	<li>You can find more search tips on our <a href="http://libguides.depaul.edu/wclhowto">WorldCat Local How To Guide</a></li>-->
-</ul>
-
-</div>
 
 
 
