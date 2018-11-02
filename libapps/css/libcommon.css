@@ -145,6 +145,7 @@ Last update: 1/12/2018 11:35
         font-size: 1em;
     }
 
+.clear-block{display:inline;}
 
 @media only screen and (max-width: 66em) {
     /*Logo change again when width change to the 66em. */
