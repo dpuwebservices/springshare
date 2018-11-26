@@ -20,6 +20,8 @@ Last update: 1/12/2018 11:35
     }
     
     .no-float{float:none;}
+    .float-left{float:left;}
+    .float-right{float:right;}
     
     /* Banner */
     /*Library Header*/
