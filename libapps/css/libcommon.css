@@ -18,6 +18,9 @@ Last update: 1/12/2018 11:35
         font-weight: bold;
         line-height: 1;
     }
+    
+    .no-float{float:none;}
+    
     /* Banner */
     /*Library Header*/
     .dpu-gradient{
