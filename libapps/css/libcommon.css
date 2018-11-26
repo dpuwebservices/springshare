@@ -144,8 +144,9 @@ Last update: 1/12/2018 11:35
         padding: .55em 1em;
         font-size: 1em;
     }
+    
+    p.clear-block, .clear-block{display:inline;}
 
-.clear-block{display:inline;}
 
 @media only screen and (max-width: 66em) {
     /*Logo change again when width change to the 66em. */
