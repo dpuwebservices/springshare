@@ -152,7 +152,10 @@ Last update: 1/12/2018 11:35
     
     p.clear-block, .clear-block{display:inline;}
 
-
+    /* Hide admin-only calendars from LibCal widgets*/
+    .s-lc-h-subloc.s-lc-h-tr_6930, .s-lc-hm-loc.locf_6930.s-lc-hm-bg-6930, .s-lc-whw-loc.s-lc-whw-loc-tr-6930.s-lc-whw-libbg-6930, .s-lc-whw-subloc.s-lc-whw-loc-tr-6930
+      {display:none;}
+    
 @media only screen and (max-width: 66em) {
     /*Logo change again when width change to the 66em. */
     .dpu-logo-short {
