@@ -194,3 +194,31 @@
     }
     #s-lg-az-filters #s-lg-az-filter-cols div {margin-bottom: 10px;}
 }
+#s-lg-tabs-container .nav-pills > li .active {
+    color: #0d5975;
+    border-left: 3px solid currentColor;
+ }
+ 
+ #s-lg-tabs-container .nav-pills > .active > a {
+  color: inherit;
+ }
+ 
+ #s-lg-tabs-container .nav-pills >.active > a:hover {
+  color: #0d5975;
+  background: #f1f1f1!important;
+ }
+ 
+ #s-lg-tabs-container .nav-pills > li > a:hover {
+  color: #0d5975;
+  border:none;
+  background: #f1f1f1!important;
+ }
+ 
+ #s-lg-tabs-container .nav-pills > li > a {
+  border: none;
+  background: #f1f1f1!important;
+ }
+ 
+ #s-lg-tabs-container .nav-pills > li > a {
+  padding: 5px 14px;
+ }
