@@ -1,224 +1,245 @@
-    @import url('libcommon.css');    //import settings common to all LibApps apps
+@import url('libcommon.css'); //import settings common to all LibApps apps
 
-    div.s-lg-az-result-keywords span.bold {
-        font-weight: normal;
-    }
+div.s-lg-az-result-keywords span.bold {
+  font-weight: normal;
+}
 
-    /* Custom styles for the Topics section in the LibAnswers widget when embedded to LibGuides */
+/* Custom styles for the Topics section in the LibAnswers widget when embedded to LibGuides */
 
-    .s-la-widget .s-la-widget-header {
-        border-bottom: 1px solid #e5e5e5;
-        margin-bottom: 5px;
-        padding-bottom: 18px;
-    }
-    .s-la-widget hr {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .s-la-widget .s-la-faq-listing-meta .metalabel {
-        font-weight: bold;
-        padding-right: 10px;
-    }
-    .s-la-widget .s-la-faq-listing-topics ul {
-        margin-left: 0px;
-        display: inline;
-    }
-    .s-la-widget .list-inline > li {
-    display: inline-block;
-    }
-    .s-la-widget .list-inline {
-        padding-left: 0;
-        list-style: none;
-    }
-    .s-la-widget .s-la-faq-listing-topics .label-topic {
-        font-weight: normal;
-        background-color: #eee;
-        color: #555;
-    }
+.s-la-widget .s-la-widget-header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+  padding-bottom: 18px;
+}
+.s-la-widget hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.s-la-widget .s-la-faq-listing-meta .metalabel {
+  font-weight: bold;
+  padding-right: 10px;
+}
+.s-la-widget .s-la-faq-listing-topics ul {
+  margin-left: 0px;
+  display: inline;
+}
+.s-la-widget .list-inline > li {
+  display: inline-block;
+}
+.s-la-widget .list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.s-la-widget .s-la-faq-listing-topics .label-topic {
+  font-weight: normal;
+  background-color: #eee;
+  color: #555;
+}
 
+/* LibGuides Overrides */
+.pager {
+  width: 75%;
+}
+a.dpu-logo-short,
+a.dpu-logo-short:hover {
+  text-decoration: none;
+}
 
-    /* LibGuides Overrides */
-    .pager {
-        width:75%
-    } 
-    a.dpu-logo-short, a.dpu-logo-short:hover {
-        text-decoration:none; 
-    }
-
-    /* bootstrap overrides */   
-    #s-lg-tabs-container .nav-pills > li > a{
-        color:#555;
-        background: linear-gradient(to bottom, #F5F5F5 1%, #ECECEC 100%) repeat scroll 0% 0% transparent;border-bottom:1px solid #D1D1D1;
-    }   
-    #s-lg-tabs-container .nav-pills > li > a{   
-        color:#555;
-        background: linear-gradient(to bottom, #F5F5F5 1%, #ECECEC 100%) repeat scroll 0% 0% transparent;border-bottom:1px solid #D1D1D1;
-    }
-    #s-lg-tabs-container .nav-pills > li .active{
-        color:#555;
-        background: #284B6E;
-    }
-    #s-lg-tabs-container .nav-pills > .active > a{
-        color:#ffffff;  
-    } 
-    #s-lg-tabs-container .nav-pills >.active > a:hover{
-        color:#555;
-        background:#7197c2!important;
-    }
-    #s-lg-tabs-container .nav-pills > li > a:hover{
-        color:#555;
-        background:#7197c2!important;
-        font-weight:bold;
-    }
-    .s-lib-box .s-lib-box-title{
-        font-size:20px;
-        color:#565656;
-        background-color:#ffffff;
-    }
-    .s-lib-box{
-        border:none;
-        box-shadow:none;
-    }
-    #s-lg-guide-name, #s-lib-public-header-title  {
-        color: rgba(9, 70, 101, 0.9);
-        font-size: 30px;font-weight: 700;
-    }
-    .s-lib-box h1{
-        font-size:18px;
-    }
-    .s-lib-box h2{
-        font-size:16px;
-    }
-    .s-lib-box h3{
-        font-size:14px;
-    }
-    .s-lib-box h4, .s-lib-box h5 {
-        font-size:13px;
-    }
-    .s-lib-box body{
-        font-family:"Source Sans Pro", sans-serif;
-    }
-    .s-lib-box a:link,.s-lib-box a:visited{
-        color:#005c96;
-        text-decoration:none;
-    }
-    .s-lib-box a:hover{
-        color:#005c96;
-        text-decoration:underline;
-    }
-    .s-lg-link-list li {
-        padding-bottom: 10px;
-    }
-    /*  Font style override for Tabbed content and other UI widgets  */
-    .ui-widget {
-        font-family: "Source Sans Pro",sans-serif !important;
-    }
-    /* Carousel Styling */
-    .carousel a:link {
-        color:white;
-        font-size:60px;
-    }
-    .carousel a:hover{
-        text-decoration:none;
-    }
-    /* Email button styling */
-    .s-lib-profile-email a:link {
-        color: #ffffff;
-    }
-    /* Multi-disciplinary styling */
-    .multidis {
-        color: #4796B3;
-    }
-    /* Popover Style*/
-    .popover-title
-    {
-        font-size: 16px;
-    }
-    span[title="Last update"],span[title="Number of visits this year"] {
-        display:none;
-    }
-
-
-    .nav .s-lg-index-nav-btn>button {
-        margin: 3px 10px 0;
-        padding: 12px;
-    }
-    .nav>li>a {
-        margin: 4px 0 0 0;
-        color: #337ab7;
-    }
-    .nav>li>a:hover {
-        background-color: transparent;
-        outline: 0;
-    }
-    .nav.nav-pills .navbar-brand {
-        padding-top: 12px;
-    }
-    .nav-pills>li.active>button, 
-    .nav-pills>li.active>button:focus, 
-    .nav-pills>li.active>button:hover {
-        color: #fff;
-        padding: 14px 15px;
-        outline: 0;
-        line-height: 14px;
-        margin: 4px 0 0;
-    }
-
-@media (max-width: 767px) {
-    navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-        background-color: #284b6e;
-    }
-    .nav.nav-pills .navbar-brand {line-height:20px;}
-    .nav-pills>li+li {
-        margin-left: 8px;
-        width: 100%;
-    }
-    .nav-pills li a button {
-        width: 105%;
-        padding: 12px 0;
-    }
-    .nav .s-lg-index-nav-btn>button {
-        width: 95% !important;
-    }
-    .nav>li>a {
-        text-align: center;
-        width: 96%;
-    }
-    #s-lg-guide-list-controls .pull-right {
-        width: 100%;
-        background-color: #ddd;
-        padding: 12px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin: 0 0 31px;
-    }
-    #s-lg-az-filters #s-lg-az-filter-cols div {margin-bottom: 10px;}
+/* bootstrap overrides */
+#s-lg-tabs-container .nav-pills > li > a {
+  color: #555;
+  background: linear-gradient(to bottom, #f5f5f5 1%, #ececec 100%) repeat scroll
+    0% 0% transparent;
+  border-bottom: 1px solid #d1d1d1;
+}
+#s-lg-tabs-container .nav-pills > li > a {
+  color: #555;
+  background: linear-gradient(to bottom, #f5f5f5 1%, #ececec 100%) repeat scroll
+    0% 0% transparent;
+  border-bottom: 1px solid #d1d1d1;
 }
 #s-lg-tabs-container .nav-pills > li .active {
-    color: #0d5975;
-    border-left: 3px solid currentColor;
- }
- 
- #s-lg-tabs-container .nav-pills > .active > a {
-  color: inherit;
- }
- 
- #s-lg-tabs-container .nav-pills >.active > a:hover {
-  color: #0d5975;
-  background: #f1f1f1!important;
- }
- 
- #s-lg-tabs-container .nav-pills > li > a:hover {
-  color: #0d5975;
-  border:none;
-  background: #f1f1f1!important;
- }
- 
- #s-lg-tabs-container .nav-pills > li > a {
+  color: #555;
+  background: #284b6e;
+}
+#s-lg-tabs-container .nav-pills > .active > a {
+  color: #ffffff;
+}
+#s-lg-tabs-container .nav-pills > .active > a:hover {
+  color: #555;
+  background: #7197c2 !important;
+}
+#s-lg-tabs-container .nav-pills > li > a:hover {
+  color: #555;
+  background: #7197c2 !important;
+  font-weight: bold;
+}
+.s-lib-box .s-lib-box-title {
+  font-size: 20px;
+  color: #565656;
+  background-color: #ffffff;
+}
+.s-lib-box {
   border: none;
-  background: #f1f1f1!important;
- }
- 
- #s-lg-tabs-container .nav-pills > li > a {
+  box-shadow: none;
+}
+#s-lg-guide-name,
+#s-lib-public-header-title {
+  color: rgba(9, 70, 101, 0.9);
+  font-size: 30px;
+  font-weight: 700;
+}
+.s-lib-box h1 {
+  font-size: 18px;
+}
+.s-lib-box h2 {
+  font-size: 16px;
+}
+.s-lib-box h3 {
+  font-size: 14px;
+}
+.s-lib-box h4,
+.s-lib-box h5 {
+  font-size: 13px;
+}
+.s-lib-box body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.s-lib-box a:link,
+.s-lib-box a:visited {
+  color: #005c96;
+  text-decoration: none;
+}
+.s-lib-box a:hover {
+  color: #005c96;
+  text-decoration: underline;
+}
+.s-lg-link-list li {
+  padding-bottom: 10px;
+}
+/*  Font style override for Tabbed content and other UI widgets  */
+.ui-widget {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+/* Carousel Styling */
+.carousel a:link {
+  color: white;
+  font-size: 60px;
+}
+.carousel a:hover {
+  text-decoration: none;
+}
+/* Email button styling */
+.s-lib-profile-email a:link {
+  color: #ffffff;
+}
+/* Multi-disciplinary styling */
+.multidis {
+  color: #4796b3;
+}
+/* Popover Style*/
+.popover-title {
+  font-size: 16px;
+}
+span[title='Last update'],
+span[title='Number of visits this year'] {
+  display: none;
+}
+
+.nav .s-lg-index-nav-btn > button {
+  margin: 3px 10px 0;
+  padding: 12px;
+}
+.nav > li > a {
+  margin: 4px 0 0 0;
+  color: #337ab7;
+}
+.nav > li > a:hover {
+  background-color: transparent;
+  outline: 0;
+}
+.nav.nav-pills .navbar-brand {
+  padding-top: 12px;
+}
+.nav-pills > li.active > button,
+.nav-pills > li.active > button:focus,
+.nav-pills > li.active > button:hover {
+  color: #fff;
+  padding: 14px 15px;
+  outline: 0;
+  line-height: 14px;
+  margin: 4px 0 0;
+}
+
+/** 
+ ** Overrites the colors and styling of the left side navigation tabs
+ ** Begin
+ **/
+#s-lg-tabs-container .nav-pills > li .active {
+  color: #0d5975;
+  border-left: 3px solid currentColor;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a {
+  color: inherit;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a:hover {
+  color: #0d5975;
+  background: #f1f1f1 !important;
+}
+
+#s-lg-tabs-container .nav-pills > li > a:hover {
+  color: #0d5975;
+  border: none;
+  background: #f1f1f1 !important;
+}
+
+#s-lg-tabs-container .nav-pills > li > a {
+  border: none;
+  background: #f1f1f1 !important;
+}
+
+#s-lg-tabs-container .nav-pills > li > a {
   padding: 5px 14px;
- }
+}
+
+/**
+ ** Finished
+ **/
+
+@media (max-width: 767px) {
+  navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #284b6e;
+  }
+  .nav.nav-pills .navbar-brand {
+    line-height: 20px;
+  }
+  .nav-pills > li + li {
+    margin-left: 8px;
+    width: 100%;
+  }
+  .nav-pills li a button {
+    width: 105%;
+    padding: 12px 0;
+  }
+  .nav .s-lg-index-nav-btn > button {
+    width: 95% !important;
+  }
+  .nav > li > a {
+    text-align: center;
+    width: 96%;
+  }
+  #s-lg-guide-list-controls .pull-right {
+    width: 100%;
+    background-color: #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 0 31px;
+  }
+  #s-lg-az-filters #s-lg-az-filter-cols div {
+    margin-bottom: 10px;
+  }
+}
