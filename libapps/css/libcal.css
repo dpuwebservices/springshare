@@ -206,6 +206,11 @@ ul.reserve-section li span {
 }
 
 /* CSS for Confirmed Bookings Button */
+.s-lc-eq-s-confirmedBtn .fa.fa-calendar-check-o {
+  display: none;
+}
+
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link,
 a.confirmedbookings {
   background: #337ab7;
   border: 2px solid #337ab7;
@@ -219,10 +224,12 @@ a.confirmedbookings {
   transition: all 0.5s;
   text-decoration: none;
 }
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link:hover,
 a.confirmedbookings:hover {
   background: #255e90;
   border-color: #255e90;
 }
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link::before,
 a.confirmedbookings::before {
   content: '\1F4C5';
   margin: 0 8px 0 0;
