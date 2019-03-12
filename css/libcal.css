@@ -1,240 +1,293 @@
-@import url('libcommon.css');    //import settings common to all LibApps apps
+/* import settings common to all LibApps apps */
+@import url('libcommon.css');
 
 /* New styles for Library Room Reservations page. Updated 03/02/2018 by Gerard */
-    .s-lc-public-header-text,
-    .s-lc-header {
-        margin-bottom: 0;
-    }
-    #s-lc-box-9048-container,
-    #s-lc-content-text-35281 {
-        margin-top: 0;    
-    }
-    p {font-size: 14px;}
-    .room-type-box {
-        margin: 0 0 30px;
-    }
-    .heading {
-        background: #f1f1f1;
-        padding: 16px 20px;
-        margin: 20px 0 0;
-        border: 1px solid #cccccc;
-        border-bottom: unset;
-        display: inline-block;
-        width: 100%;
-    }
-    .heading h1 {
-        font-size: 1.7em !important;
-        margin:0;
-        padding:0;
-        display:inline;
-    }
-    .room-type-box a.button.confirmedbookings, .s-lc-eq-s-conf-link {
-        background: #337ab7;
-        border: 2px solid #337ab7;
-        color: #fff;
-        float: right;
-        width: unset;
-        padding: 6px 12px;
-    }
-    .room-type-box a.button.confirmedbookings:hover, .s-lc-eq-s-conf-link {
-        background: #6fb0f3;
-        border: 2px solid #6fb0f3;
-    }
-    .room-type-box a.button.confirmedbookings:before, .s-lc-eq-s-conf-link {
-        content: "\1F4C5" !important;
-    }
-    .main-container {
-        border: 1px solid #cccccc;
-        width: 100%;
-        padding: 30px 20px 20px;
-    }
-    .category-container {
-        border-bottom: 1px solid #e1e1e1;
-        width: 100%;
-        display: inline-block;
-        margin: 8px 0 20px;
-        padding: 0 0 15px;
-    }
-    .category-container:last-child {
-        border-bottom: unset;
-        margin: 8px 0 0;
-        padding: 0;
-    }
-    .category-container .img-container {
-        width: 15%;
-        margin-right: 0;
-        float: left;
-    }
-    .category-container .img-container img {
-        max-width: 150px;
-        width: 100%;
-    }
-    .category-container .content-container {
-        float: left;
-        width: 84%;
-        margin-left: 1%;
-    }
-    .category-container .content-container h2 {
-        margin: 0 0 14px;
-        padding: 0;
-        font-size: 1.5em;
-    }
-    .category-container .content-container p span {
-        font-weight: 700;
-    }
-    ul.reserve-section {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    ul.reserve-section li {
-        padding: 6px 0;
-        font-weight: 700;
-        border-top: 1px solid #eee;
-        float: left;
-        width: 100%;
-    }
-    ul.reserve-section li:last-child {border-bottom: 1px solid #eee;}
-    ul.reserve-section.group-study-room li:last-child {border-bottom: 0;}
-    ul.reserve-section li span {
-        width: 80%;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 1.1em;
-        color: #000;
-        float: left;
-        line-height: 25px;
-    }
-    .room-type-box a.button {
-        border: 2px solid #7198c0;
-        padding: 0px 12px 0px 10px;
-        border-radius: 6px;
-        color: #1d4b98;
-        font-weight: bold;
-        display: inline-block;
-        line-height: 22px;
-        
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-    .room-type-box a.button:hover {
-        text-decoration:none;
-        background:#337ab7;
-        border: 2px solid #337ab7;
-        color: #fff;
-        
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-    .room-type-box a.button:before {
-        content: "\002B";
-        margin: 0 8px 0 0;
-        font-weight: 700;
-        font-size: 16px;
-    }
-   
+.s-lc-public-header-text,
+.s-lc-header {
+  margin-bottom: 0;
+}
+#s-lc-box-9048-container,
+#s-lc-content-text-35281 {
+  margin-top: 0;
+}
+p {
+  font-size: 14px;
+}
+.room-type-box {
+  margin: 0 0 30px;
+}
+.heading {
+  background: #f1f1f1;
+  padding: 16px 20px;
+  margin: 20px 0 0;
+  border: 1px solid #cccccc;
+  border-bottom: unset;
+  display: inline-block;
+  width: 100%;
+}
+.heading h1 {
+  font-size: 1.7em !important;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.s-lc-eq-s-conf-link {
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  color: #fff;
+  float: right;
+  width: unset;
+  padding: 6px 12px;
+}
+.s-lc-eq-s-conf-link {
+  background: #6fb0f3;
+  border: 2px solid #6fb0f3;
+}
+.s-lc-eq-s-conf-link {
+  content: '\1F4C5' !important;
+}
+/* position the confirmed booking button on right side */
+.room-type-box a.button.confirmedbookings {
+  float: right;
+}
+.main-container {
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding: 30px 20px 20px;
+}
+.category-container {
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  display: inline-block;
+  margin: 8px 0 20px;
+  padding: 0 0 15px;
+}
+.category-container:last-child {
+  border-bottom: unset;
+  margin: 8px 0 0;
+  padding: 0;
+}
+.category-container .img-container {
+  width: 15%;
+  margin-right: 0;
+  float: left;
+}
+.category-container .img-container img {
+  max-width: 150px;
+  width: 100%;
+}
+.category-container .content-container {
+  float: left;
+  width: 84%;
+  margin-left: 1%;
+}
+.category-container .content-container h2 {
+  margin: 0 0 14px;
+  padding: 0;
+  font-size: 1.5em;
+}
+.category-container .content-container p span {
+  font-weight: 700;
+}
+ul.reserve-section {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.reserve-section li {
+  padding: 6px 0;
+  font-weight: 700;
+  border-top: 1px solid #eee;
+  float: left;
+  width: 100%;
+}
+ul.reserve-section li:last-child {
+  border-bottom: 1px solid #eee;
+}
+ul.reserve-section.group-study-room li:last-child {
+  border-bottom: 0;
+}
+ul.reserve-section li span {
+  width: 80%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #000;
+  float: left;
+  line-height: 25px;
+}
+.room-type-box a.button {
+  border: 2px solid #7198c0;
+  padding: 0px 12px 0px 10px;
+  border-radius: 6px;
+  color: #1d4b98;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 22px;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.room-type-box a.button:hover {
+  text-decoration: none;
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  color: #fff;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.room-type-box a.button:before {
+  content: '\002B';
+  margin: 0 8px 0 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 /* Control to compensate for larger font we use and avoid overlapping DIVs*/
-    @media (min-width: 1200px){
-        #s-lc-rm-cal .ui-datepicker {
-            width: 17em;}
-    }
+@media (min-width: 1200px) {
+  #s-lc-rm-cal .ui-datepicker {
+    width: 17em;
+  }
+}
 
-    #s-lc-public-skiplink {display:none;}
+#s-lc-public-skiplink {
+  display: none;
+}
 
+.nav > li > a {
+  padding: 8px 12px;
+}
 
-    }
+.s-lc-box-container h1 {
+  font-size: 18px;
+}
 
-    .nav>li>a {
-        padding: 8px 12px;
-    }
+.s-lc-box-container h2 {
+  font-size: 16px;
+}
 
-    .s-lc-box-container h1 {
-        font-size: 18px;
-    }
+.s-lc-box-container h3 {
+  font-size: 14px;
+}
 
-    .s-lc-box-container h2 {
-        font-size: 16px;
+.s-lc-box-container,
+.s-lc-box-container h5 {
+  font-size: 13px;
+}
 
-    }
+/* ensure links are blue and bold on room pages */
+.s-lc-public-main a,
+.modal a {
+  color: #2f5c96;
+  font-weight: bold;
+}
 
-    .s-lc-box-container h3 {
-        font-size: 14px;
-    }
+.s-lc-public-main a.btn-primary {
+  color: #fff;
+}
 
-    .s-lc-box-container,.s-lc-box-container h5 {
-        font-size: 13px;
-    }
-    
-        /* ensure links are blue and bold on room pages */
-    .s-lc-public-main a, .modal a { 
-       color: #2F5C96;
-       font-weight:bold;
-    }
+.resbox {
+  min-height: 180px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 5px 0px 5px 0px;
+}
 
-    .s-lc-public-main a.btn-primary {
-        color: #fff;
-    }
+.resbox img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
 
-    .resbox{
-        min-height:180px;
-        background-color: #F8F8F8;
-        padding: 20px;
-        margin: 5px 0px 5px 0px;
-    }
+/* CSS for Confirmed Bookings Button */
+.s-lc-eq-s-confirmedBtn .fa.fa-calendar-check-o {
+  display: none;
+}
 
-    .resbox img {
-        padding-left:10px;
-        padding-bottom:10px;
-    }
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link,
+a.confirmedbookings {
+  background: #337ab7;
+  border: 2px solid #337ab7;
+  color: #fff;
+  width: auto;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 22px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link:hover,
+a.confirmedbookings:hover {
+  background: #255e90;
+  border-color: #255e90;
+}
+.s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link::before,
+a.confirmedbookings::before {
+  content: '\1F4C5';
+  margin: 0 8px 0 0;
+  font-weight: 700;
+  font-size: 16px;
+}
 
-    @media (max-width: 767px)
-    {
-        navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open      .dropdown-menu>li>a:hover {
-            background-color: #284b6e; }
-    }
+@media (max-width: 767px) {
+  navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #284b6e;
+  }
+}
 
-    .dropdown-menu{
-        font-size:12px;
-    }
+.dropdown-menu {
+  font-size: 12px;
+}
 
-    .navbar-collapse{
-        max-height:400px; 
-    }
+.navbar-collapse {
+  max-height: 400px;
+}
 
 @media only screen and (max-width: 66em) {
-    .resbox{
-        min-height:auto;
-    }
-    .resbox .resbox {padding:0;}
-    .s-lc-box-container h2 {margin: 0 0 20px;}
-    .s-lc-box-container p+h2 {margin-top: 20px;}
-    .resbox img {
-        max-width: 110%;
-    }
+  .resbox {
+    min-height: auto;
+  }
+  .resbox .resbox {
+    padding: 0;
+  }
+  .s-lc-box-container h2 {
+    margin: 0 0 20px;
+  }
+  .s-lc-box-container p + h2 {
+    margin-top: 20px;
+  }
+  .resbox img {
+    max-width: 110%;
+  }
 }
 @media screen and (max-width: 568px) {
-     .room-type-box a.button {
-        float:left !important;
-     }
-    .category-container .img-container {
-        width: 100%;
-    }
-    .category-container .content-container {
-        width: 100%;
-        margin-left: 0;
-    }
-    .category-container .content-container h2 {
-        margin: 14px 0 14px;
-    }
-    .heading h1 {
-        display: inline-block !important;
-        width: 100%;
-    }
-    ul.reserve-section li span {width: 100%;}
+  .room-type-box a.button {
+    float: left !important;
+  }
+  .category-container .img-container {
+    width: 100%;
+  }
+  .category-container .content-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .category-container .content-container h2 {
+    margin: 14px 0 14px;
+  }
+  .heading h1 {
+    display: inline-block !important;
+    width: 100%;
+  }
+  ul.reserve-section li span {
+    width: 100%;
+  }
 }
