@@ -1,4 +1,5 @@
-@import url('libcommon.css'); //import settings common to all LibApps apps
+/*import settings common to all LibApps apps*/
+@import url('libcommon.css');
 
 div.s-lg-az-result-keywords span.bold {
   font-weight: normal;
@@ -177,11 +178,11 @@ span[title='Number of visits this year'] {
  **/
 #s-lg-tabs-container .nav-pills > li .active {
   color: #0d5975;
-  border-left: 3px solid currentColor;
+  border-left: 3px solid currentColor !important;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a {
-  color: inherit;
+  color: #0d5975;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
@@ -190,9 +191,11 @@ span[title='Number of visits this year'] {
 }
 
 #s-lg-tabs-container .nav-pills > li > a:hover {
-  color: #0d5975;
+  color: #0d5975 !important;
   border: none;
   background: #f1f1f1 !important;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #s-lg-tabs-container .nav-pills > li > a {
