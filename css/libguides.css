@@ -207,6 +207,10 @@ span[title='Number of visits this year'] {
   padding: 5px 14px;
 }
 
+/* for tables (few guides have them)*/
+table td{ padding: 4px;}
+table tr:first-child {font-weight: bold; font-size: 14px;}
+
 /**
  ** Finished
  **/
