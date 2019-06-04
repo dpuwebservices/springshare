@@ -25,6 +25,12 @@ a:hover {
     font-weight: bold;
     color: #565656;
 }
+#logo {
+    font-size: initial;
+    text-align: center;
+    padding-top: unset;
+    padding-bottom: unset;
+}
 .required_field {
     margin-left: 2px;
 }
