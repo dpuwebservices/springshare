@@ -150,6 +150,17 @@ ul.reserve-section li span {
   font-size: 16px;
 }
 
+/* EQUIPMENT CATALOG SETTINGS*/
+.s-lc-equipment-time-grid, .s-lc-eq-availability {
+    display: none;
+}
+
+/* needs to be hidden or block alignment gets thrown off*/
+#cart-nav, #s-lc-eq-cart-cont {
+    visibility: hidden;
+}
+
+
 /* Control to compensate for larger font we use and avoid overlapping DIVs*/
 @media (min-width: 1200px) {
   #s-lc-rm-cal .ui-datepicker {
