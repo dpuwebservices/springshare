@@ -156,10 +156,11 @@ ul.reserve-section li span {
 }
 
 /* needs to be hidden or block alignment gets thrown off*/
+/* not working--investigate
 #cart-nav, #s-lc-eq-cart-cont {
     visibility: hidden;
 }
-
+*/
 
 /* Control to compensate for larger font we use and avoid overlapping DIVs*/
 @media (min-width: 1200px) {
