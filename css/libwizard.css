@@ -1,4 +1,5 @@
-@import url('libcommon.css');    //import settings common to all LibApps apps
+/*import settings common to all LibApps apps*/
+@import url('libcommon.css');    
 
 p {
     font-family: "Source Sans Pro",sans-serif !important;
