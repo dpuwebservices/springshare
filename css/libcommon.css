@@ -44,7 +44,7 @@ Last update: 1/12/2018 11:35
     }
     /*Depaul logo*/
     .dpu-logo-short {
-        background: url('images/dpu-logo-short.png') no-repeat scroll 0 0 transparent;
+        background: url('https://files.dpulibrary.org/springshare/css/images/dpu-logo-short.png') no-repeat scroll 0 0 transparent;
         width: 190px;
         height: 45px;
         border-right: 2px solid #FFF;
@@ -176,7 +176,7 @@ Last update: 1/12/2018 11:35
 @media only screen and (max-width: 66em) {
     /*Logo change again when width change to the 66em. */
     .dpu-logo-short {
-        background: url('images/depaul-logo.png') no-repeat scroll 0 0 transparent;
+        background: url('https://files.dpulibrary.org/springshare/css/images/depaul-logo.png') no-repeat scroll 0 0 transparent;
         width: 48px;
         height: 40px;
         margin: 6px 0 0 0;
