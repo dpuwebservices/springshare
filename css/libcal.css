@@ -152,7 +152,7 @@ ul.reserve-section li span {
 
 /* EQUIPMENT CATALOG SETTINGS*/
 .s-lc-equipment-time-grid, .s-lc-eq-availability {
-    display: none;
+    display: block; visibility: hidden; max-height: 0px;
 }
 
 /* needs to be hidden or block alignment gets thrown off*/
