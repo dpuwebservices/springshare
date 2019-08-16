@@ -1,0 +1,13 @@
+    #simple-header-fix .dpu-banner-text>a:hover {
+        color: #fff;
+    }
+
+    #simple-header-fix a {
+        color: #777;
+        text-decoration: none;
+    }
+
+    #simple-header-fix a:hover,a:focus {
+        color: #777;
+    }
+    
