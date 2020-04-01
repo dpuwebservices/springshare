@@ -6,6 +6,14 @@ Note: The attributes/tags/elements for http://depaul.beta.libanswers.com/
 
 
 @import url('https://files.dpulibrary.org/springshare/css/libcommon.css');    /*import settings common to all LibApps apps*/
+
+
+/*Default color from LibCommon too hard to see here*/
+.s-la-faq-answer a {
+    text-decoration: underline;
+    color: #2B4D74;
+}
+
     
 /* show only questions in browse list (Home Page, Single Search Page) */
 .s-la-faq-listing-meta, .s-srch-result-meta {
