@@ -156,13 +156,13 @@ Last update: 1/12/2018 11:35
    /* Hide admin-only calendars from LibCal widgets
    Add hiding normal calendars due to COVID-19 pandemic
    */
-      .s-lc-h-loc s-lc-h-tr_6930, .libbg_6930,  s-lc-h-tr_6930, .libbg_6930, .s-lc-h-tr_6930 {
+      .s-lc-h-loc s-lc-h-tr_6930, .libbg_6930,  .s-lc-h-tr_6930, .libbg_6930, .s-lc-h-tr_6930 {
         display:none;
       }
       
       
      /* for new combined jtr/loop hours swap later*/ 
-      .s-lc-h-loc s-lc-h-tr_12626, .libbg_12626,  s-lc-h-tr_12626, .libbg_12626, .s-lc-h-tr_12626 {
+      .s-lc-h-loc s-lc-h-tr_12626, .libbg_12626,  .s-lc-h-tr_12626, .libbg_12626, .s-lc-h-tr_12626 {
         display:none;
       }
     
