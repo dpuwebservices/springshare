@@ -180,7 +180,7 @@ Last update: 1/12/2018 11:35
       
       
 /* Mimic Sharepoint call-to-action button (for LibCal)*/      
-.cta-button-blue {
+.cta-button-blue, .search-button {
     padding: .5em 1em .5em 1em;
     font-style: normal;
     font-weight: bold;
@@ -193,7 +193,13 @@ Last update: 1/12/2018 11:35
     text-decoration: none !important;
     color: #fff !important;
     background: #005c96 !important;
-}      
+} 
+
+.search-button{
+  border:none;
+  margin:0 8px;
+  border-radius: .3em
+}
 
 @media only screen and (max-width: 66em) {
     /*Logo change again when width change to the 66em. */
