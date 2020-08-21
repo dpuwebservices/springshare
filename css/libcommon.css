@@ -161,9 +161,9 @@ Last update: 1/12/2018 11:35
       
       
      /* Hide Online research help hours during COVID-19 pandemic*/ 
-      .s-lc-h-loc s-lc-h-tr_6256, .libbg_6256,  .s-lc-h-tr_6256, .libbg_6256, .s-lc-h-tr_6256 {
+      /* .s-lc-h-loc s-lc-h-tr_6256, .libbg_6256,  .s-lc-h-tr_6256, .libbg_6256, .s-lc-h-tr_6256 {
         display:none;
-      }
+      } */
     
         
      /* Hide JTR hours during COVID-19 pandemic*/ 
