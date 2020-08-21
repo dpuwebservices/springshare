@@ -167,14 +167,14 @@ Last update: 1/12/2018 11:35
     
         
      /* Hide JTR hours during COVID-19 pandemic*/ 
-      .s-lc-h-loc s-lc-h-tr_2437, .libbg_2437,  .s-lc-h-tr_2437, .libbg_2437, .s-lc-h-tr_2437 {
+      /* .s-lc-h-loc s-lc-h-tr_2437, .libbg_2437,  .s-lc-h-tr_2437, .libbg_2437, .s-lc-h-tr_2437 {
         display:none;
-      }
+      } */
       
      /* Hide Loop hours during  COVID-19 pandemic*/ 
-      .s-lc-h-loc s-lc-h-tr_2438, .libbg_2438,  .s-lc-h-tr_2438, .libbg_2438, .s-lc-h-tr_2438 {
+      /* .s-lc-h-loc s-lc-h-tr_2438, .libbg_2438,  .s-lc-h-tr_2438, .libbg_2438, .s-lc-h-tr_2438 {
         display:none;
-      }
+      } */
             
       
       
