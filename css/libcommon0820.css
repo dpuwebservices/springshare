@@ -195,6 +195,12 @@ Last update: 1/12/2018 11:35
     background: #005c96 !important;
 } 
 
+.btn .btn-info{
+    background: white;
+    color: #005c96;
+    border: 1px solid #005c96;
+}
+
 .search-button{
   border:none;
   margin:0 8px;
