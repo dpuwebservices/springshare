@@ -47,7 +47,7 @@ p {
   background: #005c96 !important;
 }
 
-.btn .btn-info{
+.btn .btn-info, #s-lc-eq-auth-lobtn{
   background: white;
   color: #005c96;
   border: 1px solid #005c96;
