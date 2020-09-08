@@ -1,0 +1,37 @@
+<!-- CONFIRMED--MEDIATED--VERIFIED -->
+Hello {{{FIRST_NAME}}},
+
+{{#BOOKING_TIMES}}The following reservation has been confirmed:
+
+{{{BOOKING_TIMES}}}{{/BOOKING_TIMES}}
+
+{{{CATEGORY}}}
+
+
+<p><span style="background-color: #ffff00; font-size: 16px;">You will be required to show this confirmation email to gain admittance to the library, as well as your <a href="https://resources.depaul.edu/coronavirus/fall-2020/health-safety-practices/Pages/health-monitoring.asp">#CampusClear app</a> entry for the reservation date.</span></p>
+<p>Please note the following changes in policy and services:</p>
+<ul>
+<li>Eating and drinking is not permitted in the library</li>
+<li>You must stay within the cordoned off areas of the second floor.</li>
+<li>You must leave the library after your reservation expires</li>
+</ul>
+<p>Stay home if you are sick. In addition, you must wear a mask or cloth face covering and maintain physical distancing with others while on campus. Read more about&nbsp;<a href="https://resources.depaul.edu/coronavirus/fall-2020/health-safety-practices/Pages/default.aspx" target="_blank">DePaul's Health &amp; Safety Practices</a>.</p>
+
+<!--
+Rooms are available to current students, faculty, and staff of DePaul (<a href="https://library.depaul.edu/about/policies/Pages/room-reservations-policy.aspx">view policies</a>). 
+Those who have erroneously made a reservation and do not fall within one of these categories will be denied access. 
+To cancel this booking visit: {{{CANCEL_URL}}}
+-->
+
+{{#MEDIATED_ROOM_TIMES}}
+The following room reservation(s) are pending Library approval:
+{{{MEDIATED_ROOM_TIMES}}}
+
+You will receive an additional follow up email with the Library's decision.{{/MEDIATED_ROOM_TIMES}}
+
+{{#ROOM_DIRECTIONS}}
+Specific room directions:
+{{{ROOM_DIRECTIONS}}}{{/ROOM_DIRECTIONS}}
+
+To cancel this booking visit:
+{{{CANCEL_URL}}}
