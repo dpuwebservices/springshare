@@ -152,6 +152,9 @@ Last update: 1/12/2018 11:35
     
     p.clear-block, .clear-block{display:inline;}
 
+    .hide{
+        display:none;
+    }
 
    /* Hide admin-only calendars from LibCal widgets
    */
