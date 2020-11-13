@@ -1,0 +1,25 @@
+
+
+      <script> 
+        var $buoop = {
+          required: {i: 999}, 
+          test: false, //when debugging set to true
+          text: { 
+            'msg': 'This platform no longer supports {brow_name}. Please switch to another browser.',
+            'msgmore': 'Business students can Thomson ONE database through <a href="http://ezproxy.depaul.edu/login/thomsonone">this link</a>.',
+            'bupdate': 'Update browser', 
+            'bignore': 'Ignore',
+            'remind': 'You will be reminded in {days} days.',
+            'bnever': 'Never show again'  
+          }
+        };
+            function $buo_f(){ 
+              var e = document.createElement("script"); 
+              e.src = "//browser-update.org/update.min.js"; 
+              document.body.appendChild(e);
+            };
+            try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+            catch(e){window.attachEvent("onload", $buo_f)}
+                
+     </script>
+     
