@@ -1,36 +1,32 @@
-<!-- CONFIRMED--MEDIATED--VERIFIED -->
 Hello {{{FIRST_NAME}}},
 
-{{#BOOKING_TIMES}}The following reservation has been confirmed:
+The following bookings have been {{#MEDIATED_ROOM_TIMES}}submitted{{/MEDIATED_ROOM_TIMES}}{{^MEDIATED_ROOM_TIMES}}confirmed{{/MEDIATED_ROOM_TIMES}}:
 
-{{{BOOKING_TIMES}}}{{/BOOKING_TIMES}}
+{{#BOOKINGS}}
+{{location.name}}{{#zone}} >> {{zone.name}}{{/zone}}{{#seat}} >> {{item.name}}{{/seat}}
+<strong>{{resource.name}}</strong>: {{times}}{{#COST}}{{#cost}} ({{cost}}){{/cost}}{{/COST}}{{#map}} (<a href="{{map}}">Map</a>){{/map}}.
+
+{{/BOOKINGS}}
+
+{{#MEDIATED_ROOM_TIMES}}
+You will receive an additional follow up email with the Library's decision.
+{{/MEDIATED_ROOM_TIMES}}
+
+{{#ROOM_DIRECTIONS}}
+Directions:
+{{{ROOM_DIRECTIONS}}}{{/ROOM_DIRECTIONS}}
 
 {{{CATEGORY}}}
 
-<p><span style="background-color: #ffff00; font-size: 16px;">You will be required to show this confirmation email to gain admittance to the library, as well as your <a href="https://resources.depaul.edu/coronavirus/fall-2020/health-safety-practices/Pages/health-monitoring.asp">#CampusClear app</a> entry for the reservation date. </span></p>
-<p><span style="background-color: #ffff00; font-size: 16px;">Access JTR by swiping into the building from the Kenmore Avenue side. </span><br />Contact an <a href="https://offices.depaul.edu/information-services/services/identity/Pages/default.aspx">ID card service office</a> if you need a new or replacement DePaul ID.</p>
-<p>Please note the following changes in policy and services:</p>
-<ul>
-<li>Eating and drinking is not permitted in the library</li>
-<li>You must stay within the cordoned off areas of the second floor.</li>
-<li>You must leave the library after your reservation expires</li>
-</ul>
-<p>Stay home if you are sick. In addition, you must wear a mask or cloth face covering and maintain physical distancing with others while on campus. Read more about&nbsp;<a href="https://resources.depaul.edu/coronavirus/fall-2020/health-safety-practices/Pages/default.aspx" target="_blank">DePaul's Health &amp; Safety Practices</a>.</p>
-<!--
-Rooms are available to current students, faculty, and staff of DePaul (<a href="https://library.depaul.edu/about/policies/Pages/room-reservations-policy.aspx">view policies</a>). 
-Those who have erroneously made a reservation and do not fall within one of these categories will be denied access. 
+{{{ADDITIONAL_INFORMATION}}}
+
+{{#COST}}The total cost of this reservation is {{COST}}.{{^MEDIATED_ROOM_TIMES}}{{#BOOKING_URL}}
+
+To pay for this booking visit: <a href="{{{BOOKING_URL}}}">{{{BOOKING_URL}}}</a>{{/BOOKING_URL}}{{/MEDIATED_ROOM_TIMES}}{{/COST}}
+
+{{#CHECK_IN_URL}}When you arrive for your booking:
+1. Scan the QR code next to your space (if QR code is available), or <a href="{{{CHECK_IN_URL}}}">click this link</a> to check in
+2. Enter this code: <strong>{{CHECK_IN_CODE}}</strong>{{/CHECK_IN_URL}}
+{{^CHECK_IN_URL}}{{#CHECK_IN_CODE}}Your check in code is: <strong>{{CHECK_IN_CODE}}</strong>{{/CHECK_IN_CODE}}{{/CHECK_IN_URL}}
+
 To cancel this booking visit: {{{CANCEL_URL}}}
--->
-
-{{#MEDIATED_ROOM_TIMES}}
-The following room reservation(s) are pending Library approval:
-{{{MEDIATED_ROOM_TIMES}}}
-
-You will receive an additional follow up email with the Library's decision.{{/MEDIATED_ROOM_TIMES}}
-
-{{#ROOM_DIRECTIONS}}
-Specific room directions:
-{{{ROOM_DIRECTIONS}}}{{/ROOM_DIRECTIONS}}
-
-To cancel this booking visit:
-{{{CANCEL_URL}}}
