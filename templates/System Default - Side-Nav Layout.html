@@ -1,3 +1,4 @@
+<!-- SIDE NAV -->
 <body class="s-lg-guide-body">
     {{skip_link}}
     {{obsolete_browser_alert}}
@@ -5,7 +6,7 @@
     <!-- BEGIN: Page Header -->
     {{public_header}}
     <!-- END: Page Header -->
-    <!-- BEGIN: Guide Info Header -->
+    <!-- BEGIN: Guide Header -->
     <div id="s-lg-guide-header" class="container s-lib-header s-lib-side-borders">
         <nav id="s-lib-bc" aria-label="breadcrumb">
             {{breadcrumbs}}
@@ -16,28 +17,36 @@
             {{ADMIN_MINI_CMD_BAR}}
         </div>
         <div id="s-lg-guide-header-info">
-            <h1 id="s-lg-guide-name">{{guide_title}}: {{page_title}}</h1>
+            <h1 id="s-lg-guide-name">{{guide_title}}</h1>
             <div id="s-lg-guide-desc-container">
                 <span id="s-lg-guide-description">{{guide_description}}</span>
             </div>
         </div>
     </div>
-    <!-- END: Guide Info Header -->
-    <div id="s-lg-tabs-container" class="container s-lib-side-borders pad-top-med">
-        <div id="s-lg-guide-tabs" class="tabs" role="navigation" aria-label="Guide Pages">
-            <ul class="nav nav-tabs split-button-nav">
-                {{guide_nav}}
-            </ul>
+    <!-- END: Guide Header -->
+    <div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
+    <div id="s-lg-side-nav-content" class="container s-lib-side-borders pad-top-med">
+        <div class="row">
+            <div class="col-md-3 s-lg-tabs-side pad-bottom-med">
+                <div id="s-lg-tabs-container">
+                    <div id="s-lg-guide-tabs" role="navigation" aria-label="Guide Pages">
+                        <ul class="nav nav-pills nav-stacked split-button-nav">
+                            {{guide_nav}}
+                        </ul>
+                        {{side_nav_boxes}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="s-lg-tab-content">
+                    <div id="s-lg-guide-main" class="tab-pane active" tabindex="-1">
+                        {{content}}
+                    </div>
+                </div>
+                {{page_prev_next_links}}
+            </div>
         </div>
     </div>
-    <div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
-    <!-- BEGIN: Guide Content -->
-    <div id="s-lg-guide-main" class="container s-lib-main s-lib-side-borders" tabindex="-1">
-        {{empty_page_sub_page_list}}
-        {{content}}
-        {{page_prev_next_links}}
-    </div>
-    <!-- END: Guide Content -->
     <!-- BEGIN: Page Footer -->
     <div id="s-lib-footer-public"
          class="s-lib-footer footer container s-lib-side-borders">
@@ -57,7 +66,7 @@
         </div>
         <div class="pad-bottom-sm clearfix">
             <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
-                {{support_url_display}}        </div>
+                <a href="mailto:ask@depaul.libanswers.com">Report a problem</a>        </div>
             <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
                 {{guide_subjects}}
             </div>
