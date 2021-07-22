@@ -1,1 +1,4 @@
 According to guide sample, using Bootstrap version  3.4.1
+
+Using Bootstrap grid overlay extension for Chrome showed no issues
+
