@@ -2,12 +2,13 @@ Summary:
 
 July 2021: started investigating problem April reported with the Studio G guide. Initial problem was that it wasn't assigned to the correct group. Changed that to "Research Guides" but still didn't solve the problem. Contact SpringShare support, who suspected it was due to the custom template. 
 
-After several back and forth emails, received notice from Fi that all guides were now problematic: could not add content to the third column as it was hidden from the display. After more research, discovered the problem occurred when the support person enabled the ""Use default guide admin interface?" setting for the production Research Guides group. Unchecking that option resolved that third column issue. 
+After several back and forth emails, received notice from Fi that all guides were now problematic: could not add content to the third column as it was hidden from the display. After more research, discovered the problem occurred when the support person enabled the "Use default guide admin interface?" setting for the production Research Guides group. Unchecking that option resolved that third column issue. 
 
 Fixed April's guide by deleting the profile content and re-adding. 
 
 Things to do:
-- Determine what is missing from the system default guides, such as breadcrumbs and back-to-top feature
+- Determine what is missing from the system default guides, such as breadcrumbs and back-to-top feature. I havemade those modifications to the DePaul Template and copied the code to the TESTING template in LibGuides. 
+
 
 Attaching full email thread from Springshare to queue item #7726945
 
