@@ -1,6 +1,6 @@
 Summary:
 
-July 2021: started investigating problem April reported with the Studio G guide. Initial problem was that it wasn't assigned to the correct group. Changed that to "Research Guides" but still didn't solve the problem. Contact SpringShare support, who suspected it was due to the custom template. 
+July 13 2021: started investigating problem April reported with the Studio G guide. Initial problem was that it wasn't assigned to the correct group. Changed that to "Research Guides" but still didn't solve the problem, and oddness with the display in general--but only for that guide. Contacted SpringShare support, who suspected it was due to the custom template. 
 
 After several back and forth emails, received notice from Fi that all guides were now problematic: could not add content to the third column as it was hidden from the display. After more research, discovered the problem occurred when the support person enabled the "Use default guide admin interface?" setting for the production Research Guides group. Unchecking that option resolved that third column issue. 
 
