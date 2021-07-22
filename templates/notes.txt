@@ -2,3 +2,12 @@ According to guide sample, using Bootstrap version  3.4.1
 
 Using Bootstrap grid overlay extension for Chrome showed no issues
 
+email sent 07/22
+HI Diana-
+
+I’m back in the office and getting back into this. I’m seeing the problem when using our default group of “Research Guides” but not when using a new group called SANDBOX. These two groups use the exact same template code--it just exists in two different files: “DePaul Template” and “TESTING template code.” You can see this in action between this public guide and this test guide. 
+
+Is there anything else we can check to resolve the hidden column problem? I viewed it through the bootstrap overlay extension for Chrome and couldn’t see any issues. I can’t figure out why the same code is giving two different results.
+
+Thank you,
+Christine
