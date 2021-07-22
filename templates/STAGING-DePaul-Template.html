@@ -63,38 +63,37 @@
          </div>
       </div>
    </div>
-   <!-- BEGIN: Page Footer -->
-   <div id="s-lib-footer-public" class="s-lib-footer footer container  s-lib-side-borders">
-      <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
-         <ul id="s-lg-guide-header-attributes" class="">
-            <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
-               <span class="s-lg-guide-label">Last Updated:</span> <span class="s-lg-text-greyout">{{guide_updated}}
-               </span>
-            </li>
-            <li id="s-lg-guide-header-url" class="s-lg-h-separator">
-               <span class="s-lg-guide-label">URL:</span> <span class="s-lg-text-greyout">{{guide_url}}
-               </span>
-            </li>
-            <li id="s-lg-guide-print-url">
-               <a href="{{guide_print_url}}"><i class="fa fa-print" title="Print Page"></i> Print Page</a>
-            </li>
-         </ul>
-         <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
-            <a href="{{login_url}}">Login to LibApps</a>.
-         </div>
-      </div>
-      <div class="pad-bottom-sm clearfix">
-         <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
-         </div>
-         <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
-            {{guide_subjects}}
-         </div>
-         <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
-            {{guide_tags}}
-         </div>
-      </div>
-   </div>
-   <!-- END: Page Footer -->
+
+    <!-- BEGIN: Page Footer -->
+    <div id="s-lib-footer-public"
+         class="s-lib-footer footer container s-lib-side-borders">
+        <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+            <ul id="s-lg-guide-header-attributes" class="">
+                <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
+                    {{last_updated_display}}            </li>
+                <li id="s-lg-guide-header-url" class="s-lg-h-separator">
+                    {{guide_url_display}}
+                </li>
+                <li id="s-lg-guide-print-url">
+                    {{print_url_display}}
+                </li>
+            </ul>
+            <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+                {{login_url_display}}        </div>
+        </div>
+        <div class="pad-bottom-sm clearfix">
+            <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
+                <a href="mailto:ask@depaul.libanswers.com">Report a problem</a>        </div>
+            <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+                {{guide_subjects}}
+            </div>
+            <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+                {{guide_tags}}
+            </div>
+        </div>
+    </div>
+    <!-- END: Page Footer -->
+
    <div id="s-lib-scroll-top">
       <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top" aria-label="Back to Top">
           <span class="fa-stack fa-lg" aria-hidden="true">
