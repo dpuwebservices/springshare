@@ -1,3 +1,5 @@
+
+
 <body class="s-lg-guide-body">
     {{skip_link}}
     {{obsolete_browser_alert}}
@@ -7,79 +9,83 @@
     <!-- END: Page Header -->
     <!-- BEGIN: Guide Info Header -->
     <div id="s-lg-guide-header" class="container s-lib-header s-lib-side-borders">
-        <nav id="s-lib-bc" aria-label="breadcrumb">
-            {{breadcrumbs}}
-        </nav>
-        <div class="pull-right">
-            <div id="s-lg-guide-header-search">
-                {{guide_search}}        </div>
-            {{ADMIN_MINI_CMD_BAR}}
-        </div>
-        <div id="s-lg-guide-header-info">
-            <h1 id="s-lg-guide-name">{{guide_title}}: {{page_title}}</h1>
-            <div id="s-lg-guide-desc-container">
-                <span id="s-lg-guide-description">{{guide_description}}</span>
-            </div>
-        </div>
+       <nav id="s-lib-bc" aria-label="breadcrumb">
+          {{breadcrumbs}}
+       </nav>
+       <div class="pull-right">
+          <div id="s-lg-guide-header-search">
+             {{guide_search}}        
+          </div>
+          {{ADMIN_MINI_CMD_BAR}}
+       </div>
+       <div id="s-lg-guide-header-info">
+          <h1 id="s-lg-guide-name">{{guide_title}}: {{page_title}}</h1>
+          <div id="s-lg-guide-desc-container">
+             <span id="s-lg-guide-description">{{guide_description}}</span>
+          </div>
+       </div>
     </div>
     <!-- END: Guide Info Header -->
     <div id="s-lg-tabs-container" class="container s-lib-side-borders pad-top-med">
-        <div id="s-lg-guide-tabs" class="tabs" role="navigation" aria-label="Guide Pages">
-            <ul class="nav nav-tabs split-button-nav">
-                {{guide_nav}}
-            </ul>
-        </div>
+       <div id="s-lg-guide-tabs" class="tabs" role="navigation" aria-label="Guide Pages">
+          <ul class="nav nav-tabs split-button-nav">
+             {{guide_nav}}
+          </ul>
+       </div>
     </div>
     <div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
     <!-- BEGIN: Guide Content -->
     <div id="s-lg-guide-main" class="container s-lib-main s-lib-side-borders" tabindex="-1">
-        {{empty_page_sub_page_list}}
-        {{content}}
-        {{page_prev_next_links}}
+       {{empty_page_sub_page_list}}
+       {{content}}
+       {{page_prev_next_links}}
     </div>
     <!-- END: Guide Content -->
     <!-- BEGIN: Page Footer -->
     <div id="s-lib-footer-public"
-         class="s-lib-footer footer container s-lib-side-borders">
-        <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
-            <ul id="s-lg-guide-header-attributes" class="">
-                <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
-                    {{last_updated_display}}            </li>
-                <li id="s-lg-guide-header-url" class="s-lg-h-separator">
-                    {{guide_url_display}}
-                </li>
-                <li id="s-lg-guide-print-url">
-                    {{print_url_display}}
-                </li>
-            </ul>
-            <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
-                {{login_url_display}}        </div>
-        </div>
-        <div class="pad-bottom-sm clearfix">
-            <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
-                {{support_url_display}}        </div>
-            <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
-                {{guide_subjects}}
-            </div>
-            <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
-                {{guide_tags}}
-            </div>
-        </div>
+       class="s-lib-footer footer container s-lib-side-borders">
+       <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+          <ul id="s-lg-guide-header-attributes" class="">
+             <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
+                {{last_updated_display}}            
+             </li>
+             <li id="s-lg-guide-header-url" class="s-lg-h-separator">
+                {{guide_url_display}}
+             </li>
+             <li id="s-lg-guide-print-url">
+                {{print_url_display}}
+             </li>
+          </ul>
+          <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+             {{login_url_display}}        
+          </div>
+       </div>
+       <div class="pad-bottom-sm clearfix">
+          <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
+             {{support_url_display}}        
+          </div>
+          <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+             {{guide_subjects}}
+          </div>
+          <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+             {{guide_tags}}
+          </div>
+       </div>
     </div>
     <!-- END: Page Footer -->
-    
-                <div id="s-lib-scroll-top">
-                    <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top" aria-label="Back to Top">
-                        <span class="fa-stack fa-lg" aria-hidden="true">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
-                        </span>
-                    </a>
-                </div><div id="s-lib-alert" title="">
-                                <div id="s-lib-alert-content"></div>
-                           </div>
-                    <!-- BEGIN: Custom Footer -->
-                    {{public_footer}}
-            <!-- END: Custom Footer -->
-    </body>
-    
+    <div id="s-lib-scroll-top">
+       <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top" aria-label="Back to Top">
+       <span class="fa-stack fa-lg" aria-hidden="true">
+       <i class="fa fa-square-o fa-stack-2x"></i>
+       <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+       </span>
+       </a>
+    </div>
+    <div id="s-lib-alert" title="">
+       <div id="s-lib-alert-content"></div>
+    </div>
+    <!-- BEGIN: Custom Footer -->
+    {{public_footer}}
+    <!-- END: Custom Footer -->
+ </body>
+  
