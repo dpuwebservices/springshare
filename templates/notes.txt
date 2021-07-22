@@ -7,7 +7,7 @@ After several back and forth emails, received notice from Fi that all guides wer
 Fixed April's guide by deleting the profile content and re-adding. 
 
 Things to do:
-- Determine what is missing from the system default guides, such as breadcrumbs and back-to-top feature. I havemade those modifications to the DePaul Template and copied the code to the TESTING template in LibGuides. 
+- Determine what is missing from the system default guides, such as breadcrumbs and back-to-top feature. I havemade those modifications to the DePaul Template and copied the code to the STAGING template in LibGuides. 
 
 
 Attaching full email thread from Springshare to queue item #7726945
