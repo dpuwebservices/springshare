@@ -1,13 +1,13 @@
-According to guide sample, using Bootstrap version  3.4.1
+Summary:
 
-Using Bootstrap grid overlay extension for Chrome showed no issues
+July 2021: started investigating problem April reported with the Studio G guide. Initial problem was that it wasn't assigned to the correct group. Changed that to "Research Guides" but still didn't solve the problem. Contact SpringShare support, who suspected it was due to the custom template. 
 
-email sent 07/22
-HI Diana-
+After several back and forth emails, received notice from Fi that all guides were now problematic: could not add content to the third column as it was hidden from the display. After more research, discovered the problem occurred when the support person enabled the ""Use default guide admin interface?" setting for the production Research Guides group. Unchecking that option resolved that third column issue. 
 
-I’m back in the office and getting back into this. I’m seeing the problem when using our default group of “Research Guides” but not when using a new group called SANDBOX. These two groups use the exact same template code--it just exists in two different files: “DePaul Template” and “TESTING template code.” You can see this in action between this public guide and this test guide. 
+Fixed April's guide by deleting the profile content and re-adding. 
 
-Is there anything else we can check to resolve the hidden column problem? I viewed it through the bootstrap overlay extension for Chrome and couldn’t see any issues. I can’t figure out why the same code is giving two different results.
+Things to do:
+- Determine what is missing from the system default guides, such as breadcrumbs and back-to-top feature
 
-Thank you,
-Christine
+Attaching full email thread from Springshare to queue item #7726945
+
