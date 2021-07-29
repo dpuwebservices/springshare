@@ -1,0 +1,605 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Home - Guides at DePaul University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive" /><!-- favicon.twig -->
+<link rel="apple-touch-icon" sizes="180x180" href="//libapps.s3.amazonaws.com/apps/common/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//libapps.s3.amazonaws.com/apps/common/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//libapps.s3.amazonaws.com/apps/common/favicon/favicon-16x16.png">
+<link rel="manifest" href="//libapps.s3.amazonaws.com/apps/common/favicon/site.webmanifest">
+<link rel="mask-icon" href="//libapps.s3.amazonaws.com/apps/common/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="//libapps.s3.amazonaws.com/apps/common/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="//libapps.s3.amazonaws.com/apps/common/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Guides">
+    <meta property="og:description" content="Research Guides Research guides can help you get started on your research. Browse by subject, course or 'how to' topic."><meta property="og:type" content="website">
+      <meta property="og:url" content="https://libguides.depaul.edu/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@springshare"><link rel="stylesheet" href="https://libguides.depaul.edu/web/jquery/css/jquery-ui.min.css?2695" />
+    <link rel="stylesheet" href="https://libguides.depaul.edu/web/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://libguides.depaul.edu/web/css2.10.5/lg-public.min.css" />
+    <script type="text/javascript" src="https://libguides.depaul.edu/web/jquery/js/1.12.4_jquery.min.js"></script>
+    <!-- js_include_fallback.twig -->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+jQuery.ui ||
+document.write('<script src="https://libguides.depaul.edu/web/jquery/js/jquery-ui.min.js?2695">\x3C/script>');
+</script>
+<!-- !js_include_fallback.twig -->
+    <script type="text/javascript" src="https://libguides.depaul.edu/web/js2.10.5/lg-public.min.js"></script>
+    <!-- BEGIN: CUSTOM HEAD JS/CSS -->
+    <link rel="shortcut icon" href="https://library.depaul.edu/_layouts/images/favicon.ico" type="image/vnd.microsoft.icon" />
+
+<link type="text/css" rel="stylesheet" href="https://files.dpulibrary.org/springshare/css/libguides1020.css" />
+
+<style>
+
+.buorg-moremsg a {color: #229f2c; font-weight:900; text-decoration:underline;}
+.buorg-moremsg a:hover {color: #1a561e;}
+
+</style>
+
+
+<script>
+
+var $buoop = {
+required: {
+i: 999
+},
+test: false, //when debugging set to true
+reminderClosed: 0,
+reminder: 0,
+no_permanent_hide: true,
+text: {
+'msg': 'This platform no longer supports {brow_name}. Please switch to another browser.',
+'msgmore': '<br>DePaul students can access the Thomson One database (which only runs on IE) from <a href="http://ezproxy.depaul.edu/login/thomsonone">this link</a>.',
+'remind': 'You will be reminded in {days} days.',
+}
+};
+
+//  Original function from browser-update.org
+function $buo_f() {
+var e = document.createElement("script");
+e.src = "//browser-update.org/update.min.js";
+document.body.appendChild(e);
+};
+try {
+document.addEventListener("DOMContentLoaded", $buo_f, false)
+} catch (e) {
+window.attachEvent("onload", $buo_f)
+}
+
+</script>
+    <!-- END: CUSTOM HEAD JS/CSS -->
+    <script>var system = {"name":"Guides"};
+springSpace.publicObj = new springSpace.public.Public({
+    constant: {
+        PROCESSING: {},
+        CONTENT: {}
+    },
+    system_name: system.name,
+    customer: {"name":"DePaul University"}
+})
+</script><!-- get_lg_session_status.twig -->
+<script>
+springSpace.Session.CONST.ACTION_AUTH_SET_LG_SESSION_COOKIE = 750;
+
+
+callGetLGSessionStatus = function () {
+springSpace.Session.auth_reload_script = window.location.href;
+springSpace.Session.getLGSessionStatus({
+url: "https://depaul.libapps.com/libapps/login_process.php",
+data: {
+    action: 5,
+    app_id: 1,
+    domain: "libguides.depaul.edu",
+    site_id: 3695,
+    auth_reload: 0
+}
+})
+}
+
+jQuery(
+function () {
+                        callGetLGSessionStatus();
+        }
+);
+</script>
+<!-- !get_lg_session_status.twig -->
+<script>
+var springStats = springStats || {};
+springStats.saConfig = springStats.saConfig || {
+site_id: 3695,
+tracking_parameters: {"_st_site_id":3695},
+tracking_server_host: "libguides-proc.springyaws.com"
+};
+</script>
+<script async  src="https://libguides.depaul.edu/web/js/sa.min.js?3116" ></script>
+    <script>
+        springSpace.Common = springSpace.Common || { };
+        springSpace.Common.constant = {
+            PROCESSING: {
+                ACTION_DISPLAY_POLL: 159
+            }
+        };
+        springSpace.publicObj.constant.PROCESSING.ACTION_LOAD_GUIDE_LIST = 170;
+        springSpace.publicObj.constant.CONTENT.HOME_GUIDES_TITLE = "Guides";
+        springSpace.publicObj.homeNavButtons = {"170":"ALL GUIDES","171":"BY GROUP","172":"BY SUBJECT","173":"BY GUIDE TYPE","174":"BY LIBRARIAN"};
+        springSpace.publicObj.getCountType=function(action) {
+            var count_type = "";
+            switch (action) {
+                case 176:
+                    count_type = "guidetype";
+                    break;
+                case 177:
+                    count_type = "group";
+                    break;
+                case 178:
+                    count_type = "owner";
+                    break;
+            }
+            return count_type;
+        };
+        
+        springSpace.publicObj.loadGuideCounts=function(config) {
+            jQuery.ajax({
+                url: "/index_process.php?action=" + config.action + "&site_id=" + config.site_id + 
+                (config.group_id ? "&group_id=" + config.group_id : ""),
+                type: "GET",
+                dataType: "json",
+                success: function(response, textStatus, jqXHR) {
+                    if ( response.errCode == 200 ) {
+                        var count_type = springSpace.publicObj.getCountType(config.action);
+                        jQuery.each(
+                            response.data, 
+                            function(idx, elt) {
+                                jQuery("#s-lg-index-" + count_type + "-" + elt.id).show();
+                                jQuery("#s-lg-index-" + count_type + "-count-" + elt.id).html(elt.count);
+                            }
+                        );
+                    } else {
+                        springSpace.UI.notify({mode: "custom", msg: "Error loading guide counts."});
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    springSpace.UI.notify({mode: "custom", msg: "Error loading guide counts."});
+                }
+            });
+        }
+        
+        var button_data = {"code":"s"};
+
+        springSpace.homepage = {
+            default_list_order: "a",
+            current_list: 172,
+            current_btn_id: "s-lg-index-subject-btn",
+            current_num_cols: 3,
+            current_type_label: "",
+            current_button_code: button_data.code,
+            group_id: 0,
+            historyEdited: false,
+            initPushState: function() {
+                if (window.history && history.pushState) {
+                    jQuery(window).bind("popstate", function(e) {
+                        // Don't reload list if this is the result of a skip link hash update.
+                        if ( springSpace.homepage.historyEdited ) {
+                            // location.search will return URL encoded values which will end up causing double-encoding when jQuery sends the loadAzList request.
+                            var button_code = springSpace.Util.getQSParam({name: "b", qs: location.search});
+                            var guide_display_code = springSpace.Util.getQSParam({name: "d", qs: location.search});
+                            
+                            // If there is no button code, go back to the default button
+                            if (button_code === "") {
+                                button_code = "s";
+                            }
+                            
+                            springSpace.publicObj.loadHomepageList({
+                                nav: "back",
+                                action: springSpace.homepage.mapQSIdToActionId(button_code),
+                                group_id: springSpace.homepage.group_id,
+                                order: springSpace.homepage.mapQSIdToGuideSortId(guide_display_code),
+                                num_cols: 3,
+                                elt_id: "s-lg-index-list",
+                                button_id: springSpace.homepage.mapQSIdToButtonEltId(button_code),
+                                type_label: "Subjects",
+                                display_sort: ( springSpace.homepage.mapQSIdToButtonEltId(button_code) === "s-lg-index-all-btn")
+                            });
+                        }
+                    });
+                }
+            },
+            mapQSIdToButtonEltId: function(qs_id) {
+                var button_ids = {
+                    "g": "s-lg-index-all-btn",
+                    "s": "s-lg-index-subject-btn",
+                    "t": "s-lg-index-guidetype-btn",
+                    "o": "s-lg-index-owner-btn",
+                    "p": "s-lg-index-group-btn",
+                };
+                springSpace.Util.setObjProp(qs_id, "", button_ids);
+                
+                return button_ids[qs_id];
+            },
+            mapQSIdToActionId: function(qs_id) {
+                var button_ids = {
+                    "g": "170",
+                    "s": "172",
+                    "t": "173",
+                    "o": "174",
+                    "p": "171",
+                };
+                springSpace.Util.setObjProp(qs_id, "", button_ids);
+                
+                return button_ids[qs_id];
+            },
+            mapButtonEltIdToQSId: function(btn_elt_id) {
+                var button_ids = {
+                    "s-lg-index-all-btn": "g",
+                    "s-lg-index-subject-btn": "s",
+                    "s-lg-index-guidetype-btn": "t",
+                    "s-lg-index-owner-btn": "o",
+                    "s-lg-index-group-btn": "p",
+                };
+                springSpace.Util.setObjProp(btn_elt_id, "", button_ids);
+                
+                return button_ids[btn_elt_id];
+            },
+            mapQSIdToGuideSortId: function(qs_id) {
+                var sort_ids = {
+                    "a": "0",
+                    "r": "2",
+                    "p": "3"
+                };
+                springSpace.Util.setObjProp(qs_id, "", sort_ids);
+                
+                return sort_ids[qs_id];
+            },
+            mapGuideSortIdToQSId: function(sort_id) {
+                var sort_ids = {
+                    "0": "a",
+                    "2": "r",
+                    "3": "p"
+                };
+                springSpace.Util.setObjProp(sort_id, "", sort_ids);
+                
+                return sort_ids[sort_id];
+            },
+            processPushState: function(config) {
+                if (history.pushState) {
+                    // Only call pushState if this is a call to navigate forward (link, etc.), not back or initial load.
+                    if ( config.nav !== "back" && config.nav !== "init" ) {
+                        // Only add display code to URL if on the guides button.
+                        var qs_config = (
+                            springSpace.homepage.current_button_code === "g" ?
+                            { button_code: springSpace.homepage.current_button_code,
+                              guide_display_code: springSpace.homepage.default_list_order } : 
+                            { button_code: springSpace.homepage.current_button_code }
+                        );
+                        
+                        var url = location.pathname + springSpace.homepage.buildQS(qs_config);
+                        history.pushState({}, null, url);
+                    }
+                }
+                
+                // Set flag to indicate history has been updated.
+                springSpace.homepage.historyEdited = true;				
+            },
+            buildQS: function(config) {
+                var params = {
+                    b: springSpace.Util.setProp(config.button_code, ""),
+                    d: springSpace.Util.setProp(config.guide_display_code, "")
+                };
+                
+                // If on the default button, do not add the code
+                if (params.b === "s") {
+                    return "";
+                }
+
+                // Add group_id to query string if supplied.
+                if (springSpace.homepage.group_id) {
+                    params.group_id = springSpace.homepage.group_id;                            
+                } 
+                
+                var qs_params = [];
+                
+                jQuery.each(params, function(idx, val) {
+                    if ( val !== "" && val !== "0") { 
+                        qs_params.push(idx + "=" + encodeURIComponent(val));
+                    }
+                });
+        
+                return ( qs_params.length == 0 ? "" : "?" + qs_params.join("&") );
+            }
+        };
+        
+        jQuery(function() {
+            // Initialize pushState handling.
+            springSpace.homepage.initPushState();
+            
+            // Clear out the search term from previous search/back button.
+            jQuery("#s-lg-guide-search").val("");
+            
+            // Load guide list.
+            springSpace.publicObj.loadHomepageList({
+                action: springSpace.homepage.current_list,
+                group_id: "0",
+                order: springSpace.homepage.mapQSIdToGuideSortId(springSpace.homepage.default_list_order),
+                num_cols: 3,
+                elt_id: "s-lg-index-list",
+                button_id: springSpace.homepage.current_btn_id,
+                type_label: "Subjects",
+                display_sort: ( springSpace.homepage.current_btn_id === "s-lg-index-all-btn"),
+                nav: "init"
+            });
+
+            // Select default dropdown option.
+            jQuery("#s-lg-guide-order > option[value=" + springSpace.homepage.mapQSIdToGuideSortId(springSpace.homepage.default_list_order) + "]").prop("selected",true);
+
+            // Load guide type counts.
+            springSpace.publicObj.loadGuideCounts({
+                action: 176,
+                site_id: 3695,
+                group_id: 0
+            });
+
+            // Load group guides counts.
+            springSpace.publicObj.loadGuideCounts({
+                action: 177,
+                site_id: 3695
+            });
+
+               // Load owner group counts.
+            springSpace.publicObj.loadGuideCounts({
+                action: 178,
+                site_id: 3695,
+                   group_id: 0
+            }	);
+        });
+        jQuery(function() {jQuery(window).one('load', function() {springSpace.springTrack.trackPage({_st_type_id: '11'});});
+            });
+    </script>
+    
+    </head><body class="s-lib-public-body">
+
+<!-- BEGIN: Page Header -->
+<!-- University Library Logo -->      
+<div class="dpu-gradient dpu-banner">   
+<a href="https://www.depaul.edu/Pages/default.aspx">
+<div class=" img-responsive dpu-logo-short pull-left"></div>   
+</a>
+
+<!-- University Library text -->   
+<span class="dpu-banner-text pull-left">	     
+<a class="h1 site-title-long" href="https://library.depaul.edu">University Library</a>
+<a class="h1 site-title-short" href="https://library.depaul.edu">DePaul Library</a>
+</span>  
+</div>
+
+<!-- With Bootstrap, a navigation bar can extend or collapse, depending on the screen size. --> 
+<div class=" navbar navbar-inverse">   
+<!-- Research guides in navbar --> 	   
+<div class="container">      
+
+<span class="navbar-brand">	
+<!-- removing Research Guides Link
+<a href="http://libguides.depaul.edu" >Research Guides</a>	
+-->    
+</span> 
+
+<div class="navbar-header">         
+<!-- Collapse button -->
+<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" style="background-color:#2b4c72;">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar" ></span>
+</button>
+</div>      
+<div class="collapse navbar-collapse navHeaderCollapse">         
+<!-- library navigation in navbar --> 	        
+<ul class="nav navbar-nav">           
+    <li><a href="https://library.depaul.edu/find/Pages/default.aspx">FIND</a></li> 
+    <li><a href="https://library.depaul.edu/get-help/Pages/default.aspx">GET HELP</a></li>  
+    <li><a href="https://library.depaul.edu/services/Pages/default.aspx">SERVICES</a></li>  
+    <li><a href="https://library.depaul.edu/special-collections/Pages/default.aspx">SPECIAL COLLECTIONS</a></li>  
+    <li><a href="https://library.depaul.edu/technology/Pages/default.aspx">TECHNOLOGY</a></li>
+    <li><a href="https://library.depaul.edu/about/Pages/default.aspx">ABOUT</a></li>  
+    <li><a href="https://libguides.depaul.edu/covid19"><span style="color: #c0392b;">COVID-19 Library Updates</span></a></li> 
+</ul>         
+<!-- More guides with dropdown list-->         
+<ul class="nav navbar-nav navbar-right">       
+    <li class="dropdown">
+        <a id="btn-ask" class="dropdown-toggle btn" data-toggle="dropdown" role="button" aria-expanded="false">Ask a Librarian
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">              
+            <li><a  href="https://library.depaul.edu/get-help/ask-a-librarian/Pages/default.aspx#chat">Chat</a></li>
+            <li><a href="https://library.depaul.edu/get-help/ask-a-librarian/Pages/Email-a-Librarian.aspx">Email</a></li>   
+            <li><a href="https://library.depaul.edu/about/contact-us/Pages/default.aspx">Phone</a></li>              
+            <li><a href="https://library.depaul.edu/get-help/ask-a-librarian/Pages/default.aspx#text">Text</a></li>       
+            <li class="divider"></li>             
+            <li><a href="https://library.depaul.edu/get-help/ask-a-librarian/Pages/Make-an-Appointment.aspx">Make Appointment</a></li>        
+        </ul>     
+    </li>     
+</ul>    
+</div>  
+</div>
+</div>
+<div class="container">
+<!-- END: Page Header -->
+<!-- BEGIN: Content Header -->
+<div id="s-lib-public-header" class="s-lib-header container s-lib-side-borders">
+<div id="s-lib-bc">
+    
+<ol id="s-lib-bc-list" class="breadcrumb">
+    
+        <li id="s-lib-bc-customer">
+            <a title="DePaul University Library"  href="https://library.depaul.edu">DePaul University Library
+            </a>
+        </li>
+        <li id="s-lib-bc-site">
+            <a title="Guides"  href="https://libguides.depaul.edu/">Guides
+            </a>
+        </li>
+        <li id="s-lib-bc-page" class="active">Home
+        </li>
+</ol>
+</div>
+
+<div class="page-header">
+    <h1 id="s-lib-public-header-title">Research Guides
+    </h1>
+    <p class="lead" id="s-lib-public-header-desc">Research guides can help you get started on your research. Browse by subject, course or 'how to' topic.
+    </p>
+</div>
+
+</div>
+<!-- END: Content Header -->
+<!-- BEGIN: Nav Bar -->
+<div id="s-lib-public-nav" class="container s-lib-side-borders">
+
+</div>
+<!-- END: Nav Bar -->
+<!-- BEGIN: content -->
+<div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders">
+<div  id="s-lg-index-cols"  class="row">
+    <div id="col1" class="col-md-12 center">
+        <div class="clearfix">
+            <div id="s-lg-hp-nav"> 
+                <ul>
+                    <li>
+                        <ul class="nav nav-pills">
+                            <li class="navbar-brand">
+                                BROWSE:
+                            </li>
+                            
+                            <li id="s-lg-index-all-btn" class="s-lg-index-nav-btn active">
+                <button type="button" class="btn" onclick="springSpace.publicObj.loadHomepageList({
+                        action: 170,
+                        group_id: 0,
+                        order: jQuery('#s-lg-guide-order').val(),
+                        num_cols: 1,
+                        elt_id: 's-lg-index-list',
+                        button_id: 's-lg-index-all-btn',
+                        display_sort: true
+                    });"
+                >ALL GUIDES</button>
+            </li>
+                            <li id="s-lg-index-subject-btn" class="s-lg-index-nav-btn">
+                <button type="button" class="btn" onclick="springSpace.publicObj.loadHomepageList({
+                    action: 172,
+                    group_id: 0,
+                    num_cols: 3,
+                    type_label: 'Subjects',
+                    elt_id: 's-lg-index-list',
+                    button_id: 's-lg-index-subject-btn',
+                  });">BY SUBJECT</button>
+            </li>
+                            
+                            <li id="s-lg-index-course-btn" class="s-lg-index-nav-btn">
+                                <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                        action: 170,
+                                        type_id: 2,
+                                        order: jQuery('#s-lg-guide-order').val(),
+                                        num_cols: 3,
+                                        elt_id: 's-lg-index-list',
+                                        button_id: 's-lg-index-course-btn',
+                                        display_sort: true
+                                    });">COURSE GUIDES</a>
+                            </li>
+
+                            <li id="s-lg-index-how-to-btn" class="s-lg-index-nav-btn">
+                                <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                        action: 170,
+                                        type_id: 4,
+                                        order: jQuery('#s-lg-guide-order').val(),
+                                        num_cols: 3,
+                                        elt_id: 's-lg-index-list',
+                                        button_id: 's-lg-index-how-to-btn',
+                                        display_sort: true
+                                    });">HOW TO GUIDES</a>
+                            </li>
+                            
+                            <li id="s-lg-index-owner-btn" class="s-lg-index-nav-btn">
+                <button type="button" class="btn" onclick="springSpace.publicObj.loadHomepageList({
+                    action: 174,
+                    group_id: 0,
+                    num_cols: 3,
+                    type_label: 'Guide Owners',
+                    elt_id: 's-lg-index-list',
+                    button_id: 's-lg-index-owner-btn',
+                });">BY LIBRARIAN</button>
+            </li>
+                            
+                            
+                            
+                     <li class="pull-right">
+<a href="http://libguides.depaul.edu/az.php"><button type="button" class="btn btn-info">A-Z DATABASES &amp; RESOURCES</button>
+            </a>
+
+    </li>
+                            
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </div>
+            
+<div id="s-lg-guide-list-controls">
+    <div class="pull-left">
+        <h2 id="s-lg-index-list-header" class="muted"></h2>
+    </div>
+    <div class="pull-right muted">
+        <div class="form-inline" id="form-group-s-lg-guide-order">
+            <div class="form-group">
+                <label for="s-lg-guide-order">Sort</label>
+                <select id="s-lg-guide-order" name="s-lg-guide-order" class="form-control">
+                    <option value="0">Alphabetically</option>
+                    <option value="3">By Popularity</option>
+                    <option value="2">Most Recent</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-default" onclick="springSpace.publicObj.loadHomepageList({
+                action: 170,
+                group_id: 0,
+                order: jQuery('#s-lg-guide-order').val(),
+                num_cols: 1,
+                elt_id: 's-lg-index-list',
+                button_id: 's-lg-index-all-btn',
+                display_sort: true,
+                type_label: springSpace.homepage.current_type_label
+            });">Go</button>
+        </div>
+    </div>
+</div>
+        </div>
+        <div id="s-lg-index-list" class="">
+            Loading...
+        </div>
+    </div>
+
+   
+</div>
+</div>
+<!-- END: content -->
+<!-- BEGIN: Page Footer -->
+<div id="s-lib-footer-public" class="s-lib-footer footer container s-lib-side-borders"><div><div id="s-lib-footer-brand">Powered by Springshare.</div><div id="s-lib-footer-rights">All rights reserved.</div><div id="s-lib-footer-login-link"><a href="https://depaul.libapps.com/libapps/login.php?site_id=3695">Login to LibApps</a></div></div><div id="s-lib-footer-support-link"><a href="mailto:ask@depaul.libanswers.com">Report a problem.</a></div></div></div>
+<!-- END: Page Footer -->
+<div id="s-lib-alert" title="">
+                <div id="s-lib-alert-content"></div>
+           </div>        
+    <div id="s-lib-popover-title" class="hide">
+        <span class="text-info"><strong>title</strong></span> 
+        <button type="button" id="popclose" class="close" onclick="jQuery('.s-lib-popover').popover('hide')">&times;</button> 
+    </div>
+    <div id="s-lib-popover-content" class="hide"><i class="fa fa-refresh fa-spin"></i> Loading...
+        <button class="btn btn-default btn-sm popclose" type="button">Close</button>
+    </div>        
+<div id="s-lib-scroll-top" title="Back to Top">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+    </span>
+</div>        <!-- BEGIN: Custom Footer -->
+
+</div>
+
+<!-- END: Custom Footer -->
+<!-- BEGIN: Analytics code --><!-- Google Analytics PageView Tracking Setup --><script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(			['globalTracker._setAccount', 'UA-2227787-4'],		['globalTracker._setDomainName', '.depaul.edu'],		['globalTracker._setAllowLinker', true],		['globalTracker._trackPageview'],		['siloTracker._setAccount', 'UA-5169126-1'],		['siloTracker._setDomainName', '.depaul.edu'],		['siloTracker._setAllowLinker', true],		['siloTracker._trackPageview']	);	(function() {		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);	})();	//Google Analytics Event Tracking Setup	function recordGAEvent(link, category, action, label, value) {		_gaq.push(['globalTracker._trackEvent', category, action, label, value]);		_gaq.push(['siloTracker._trackEvent', category, action, label, value]);	}</script><meta name="google-site-verification" content="qCvXJ2W-HqK5REO1m6iXQL5qEHbzW8gi55UqCJ9Qvc0"/><!-- END: Analytics code --></body></html>
