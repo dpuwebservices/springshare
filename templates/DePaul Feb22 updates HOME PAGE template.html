@@ -1,0 +1,121 @@
+<body class="s-lib-public-body">
+    <!-- BEGIN: Page Header -->
+    {{public_header}}
+    <!-- END: Page Header -->
+    <!-- BEGIN: Content Header -->
+    <div id="s-lib-public-header" class="s-lib-header container s-lib-side-borders">
+       <div id="s-lib-bc">
+          {{breadcrumbs}}
+       </div>
+       <div class="page-header">
+          <h1 id="s-lib-public-header-title">{{title}}
+          </h1>
+          <p class="lead" id="s-lib-public-header-desc">{{system_intro}}
+          </p>
+       </div>
+    </div>
+    <!-- END: Content Header -->
+    <!-- BEGIN: Nav Bar -->
+    <div id="s-lib-public-nav" class="container s-lib-side-borders">
+       {{page_nav}}
+    </div>
+    <!-- END: Nav Bar -->
+    <!-- BEGIN: content -->
+    <div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders">
+       <div  id="s-lg-index-cols"  class="row">
+          <div id="col1" class="col-md-12 center">
+             <div class="clearfix">
+                <div id="s-lg-hp-nav">
+                   <ul>
+                      <li>
+                         <ul class="nav nav-pills">
+                            <li class="navbar-brand">
+                               BROWSE:
+                            </li>
+                            {{button_all_guides}}
+                            <li id="s-lg-index-course-btn" class="s-lg-index-nav-btn">
+                              <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                 action: 170,
+                                 type_id: 1,
+                                 order: jQuery('#s-lg-guide-order').val(),
+                                 num_cols: 3,
+                                 elt_id: 's-lg-index-list',
+                                 button_id: 's-lg-index-course-btn',
+                                 display_sort: true
+                                 });">SUBJECT GUIDES</a>
+                           </li>
+                            <li id="s-lg-index-course-btn" class="s-lg-index-nav-btn">
+                               <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                  action: 170,
+                                  type_id: 2,
+                                  order: jQuery('#s-lg-guide-order').val(),
+                                  num_cols: 3,
+                                  elt_id: 's-lg-index-list',
+                                  button_id: 's-lg-index-course-btn',
+                                  display_sort: true
+                                  });">COURSE GUIDES</a>
+                            </li>
+                            <li id="s-lg-index-how-to-btn" class="s-lg-index-nav-btn">
+                               <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                  action: 170,
+                                  type_id: 4,
+                                  order: jQuery('#s-lg-guide-order').val(),
+                                  num_cols: 3,
+                                  elt_id: 's-lg-index-list',
+                                  button_id: 's-lg-index-how-to-btn',
+                                  display_sort: true
+                                  });">HOW TO GUIDES</a>
+                            </li>
+                            <li id="s-lg-index-community-btn" class="s-lg-index-nav-btn">
+                              <a href="javascript: void(0);" onclick="springSpace.publicObj.loadHomepageList({
+                                 action: 170,
+                                 type_id: 1,
+                                 order: jQuery('#s-lg-guide-order').val(),
+                                 num_cols: 3,
+                                 elt_id: 's-lg-index-list',
+                                 button_id: 's-lg-index-community-btn',
+                                 display_sort: true
+                                 });">COMMUNITY GUIDES</a>
+                           </li>                            
+                            {{button_by_owner}}
+                            <li class="pull-right">
+                               <a href="http://libguides.depaul.edu/az.php"><button type="button" class="btn btn-info">A-Z DATABASES &amp; RESOURCES</button>
+                               </a>
+                            </li>
+                         </ul>
+                      </li>
+                   </ul>
+                </div>
+                {{guide_list_controls}}
+             </div>
+             <div id="s-lg-index-list" class="">
+                {{content}}
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- END: content -->
+    <!-- BEGIN: Page Footer -->
+    {{system_footer}}
+    <!-- END: Page Footer -->
+    <div id="s-lib-alert" title="">
+       <div id="s-lib-alert-content"></div>
+    </div>
+    <div id="s-lib-popover-title" class="hide">
+       <span class="text-info"><strong>title</strong></span> 
+       <button type="button" id="popclose" class="close" onclick="jQuery('.s-lib-popover').popover('hide')">&times;</button> 
+    </div>
+    <div id="s-lib-popover-content" class="hide"><i class="fa fa-refresh fa-spin"></i> Loading...
+       <button class="btn btn-default btn-sm popclose" type="button">Close</button>
+    </div>
+    <div id="s-lib-scroll-top" title="Back to Top">
+       <span class="fa-stack fa-lg">
+       <i class="fa fa-square-o fa-stack-2x"></i>
+       <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+       </span>
+    </div>
+    <!-- BEGIN: Custom Footer -->
+    {{public_footer}}
+    <!-- END: Custom Footer -->
+ </body>
+ 
