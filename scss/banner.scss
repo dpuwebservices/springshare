@@ -1,0 +1,43 @@
+
+// Banner items to be handled later
+
+.dpu-gradient,
+.dpu-banner,
+.dpu-logo-short,
+.dpu-banner-text,
+.dpu-banner-text .site-title-short,
+.dpu-banner-text > a:hover,
+.site-title-short,
+.site-title-long,
+.navbar-nav,
+.navbar-nav:first-child > li,
+.nav .navbar-nav,
+.navbar,
+.navbar-right,
+.navbar-inverse,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-collapse,
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus,
+navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.nav.nav-pills .navbar-brand,
+.nav-pills > li + li,
+.nav-pills li a button,
+.nav .s-lg-index-nav-btn > button,
+.nav > li > a {
+    font: inherit;
+    color: inherit;
+    padding: inherit;
+    line-height: inherit;
+    background: inherit;
+    height: inherit;
+    width: inherit;
+    border: inherit;
+    position: inherit;
+    min-height: inherit;
+    float: inherit;
+    display: inherit;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;    
+}

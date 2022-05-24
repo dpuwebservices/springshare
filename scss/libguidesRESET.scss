@@ -1,0 +1,29 @@
+@import "libcommonRESET.scss";
+
+
+
+//    ** LibGuides-specigic CSS
+
+   #s-lg-tabs-container  > li .active,
+   #s-lg-tabs-container .nav-pills > .active > a,
+   #s-lg-tabs-container .nav-pills > .active > a:hover,
+   #s-lg-tabs-container .nav-pills > li > a:hover,
+   #s-lg-tabs-container .nav-pills > li > a,
+   #s-lg-tabs-container .nav-pills > li > a,
+   table td,
+   table tr:first-child,
+   #s-lg-guide-list-controls .pull-right,
+   #s-lg-az-filters #s-lg-az-filter-cols div {
+     font: inherit;
+     line-height: inherit;
+     color: inherit;
+     border: inherit;
+     background: inherit;
+     text-decoration: inherit;
+     padding: inherit;
+     margin: inherit;
+     width: inherit;
+     text-align: inherit;
+     border: inherit;
+   }
+   

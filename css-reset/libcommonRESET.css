@@ -1,6 +1,3 @@
-// libCommon specific reset code
-
-//  KEEP THESE
 .hide {
   display: none;
 }
@@ -8,23 +5,23 @@
 .no-float {
   float: none;
 }
+
 .float-left {
   float: left;
 }
+
 .float-right {
   float: right;
 }
 
 /* Hide admin-only calendars from LibCal widgets
    */
-.s-lc-h-loc s-lc-h-tr_6930,.libbg_6930,s-lc-h-tr_6930,.libbg_6930,.s-lc-h-tr_6930 {
+.s-lc-h-loc s-lc-h-tr_6930, .libbg_6930, s-lc-h-tr_6930, .libbg_6930, .s-lc-h-tr_6930 {
   display: none;
 }
 
-
-
-body,h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,
-a,a:hover,a:focus,
+body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+a, a:hover, a:focus,
 #btn-ask,
 .navbar-brand,
 .dropdown-menu > li > a,
@@ -47,3 +44,5 @@ p.clear-block,
   border-radius: inherit;
   -webkit-border-radius: inherit;
 }
+
+/*# sourceMappingURL=libcommonRESET.css.map */

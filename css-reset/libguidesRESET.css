@@ -1,0 +1,72 @@
+.hide {
+  display: none;
+}
+
+.no-float {
+  float: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Hide admin-only calendars from LibCal widgets
+   */
+.s-lc-h-loc s-lc-h-tr_6930, .libbg_6930, s-lc-h-tr_6930, .libbg_6930, .s-lc-h-tr_6930 {
+  display: none;
+}
+
+body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+a, a:hover, a:focus,
+#btn-ask,
+.navbar-brand,
+.dropdown-menu > li > a,
+p.clear-block,
+.clear-block,
+.cta-button-blue,
+.search-button {
+  font: inherit;
+  font-size:100%;
+  color: inherit;
+  padding: inherit;
+  line-height: inherit;
+  background: inherit;
+  height: inherit;
+  width: inherit;
+  border: inherit;
+  position: inherit;
+  min-height: inherit;
+  float: inherit;
+  display: inherit;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+
+#s-lg-tabs-container > li .active,
+#s-lg-tabs-container .nav-pills > .active > a,
+#s-lg-tabs-container .nav-pills > .active > a:hover,
+#s-lg-tabs-container .nav-pills > li > a:hover,
+#s-lg-tabs-container .nav-pills > li > a,
+#s-lg-tabs-container .nav-pills > li > a,
+table td,
+table tr:first-child,
+#s-lg-guide-list-controls .pull-right,
+#s-lg-az-filters #s-lg-az-filter-cols div {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: inherit;
+  background: inherit;
+  text-decoration: inherit;
+  padding: inherit;
+  margin: inherit;
+  width: inherit;
+  text-align: inherit;
+  border: inherit;
+}
+
+/*# sourceMappingURL=libguidesRESET.css.map */
