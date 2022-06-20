@@ -1,17 +1,26 @@
+// (Shift-Alt-F to format after selecting)
+
 @import url(https://use.typekit.net/zfg2vfd.css);
 
-html, body{
-    font-family: "urw-din",sans-serif;	
-    font-weight:normal;
-    font-size:14px;
+$brightBlue: rgba(0, 87, 183, 1);
+$darkBlue: rgba(14, 65, 116, 1);
+$red: rgba(175, 39, 47, 1);
+
+html,
+body {
+    font-family: "urw-din", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
 }
 
-.nav, .nav-pills, .breadcrumb {
+.nav,
+.nav-pills,
+.breadcrumb {
     font-family: "terso", sans-serif;
     font-weight: normal;
-  }
-  
-  .navbar-nav {
-    font-weight:bold;
-    font-size:12px;
-  }
+}
+
+.navbar-nav {
+    font-weight: bold;
+    font-size: 12px;
+}
