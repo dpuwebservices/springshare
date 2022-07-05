@@ -61,7 +61,7 @@ a.dpu-logo-short:hover {
 }
 #s-lg-tabs-container .nav-pills > li .active {
   color: #555;
-  background: #284b6e;
+  background: $darkBlue;
 }
 #s-lg-tabs-container .nav-pills > .active > a {
   color: #ffffff;
@@ -218,7 +218,7 @@ table tr:first-child {font-weight: bold; font-size: 14px;}
 @media (max-width: 767px) {
   navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: #284b6e;
+    background-color: $darkBlue;
   }
   .nav.nav-pills .navbar-brand {
     line-height: 20px;
