@@ -73,11 +73,13 @@ a.dpu-logo-short:hover {
 }
 #s-lg-tabs-container .nav-pills > .active > a:hover {
   color: #555;
-  background: #7197c2 !important;
+  // background: #7197c2 !important;
+  background: lighten($brightBlue, 30%) !important;
 }
 #s-lg-tabs-container .nav-pills > li > a:hover {
   color: #555;
-  background: #7197c2 !important;
+  // background: #7197c2 !important;
+  background: lighten($brightBlue, 30%) !important;
   font-weight: bold;
 }
 .s-lib-box .s-lib-box-title {
@@ -91,7 +93,8 @@ a.dpu-logo-short:hover {
 }
 #s-lg-guide-name,
 #s-lib-public-header-title {
-  color: rgba(9, 70, 101, 0.9);
+  // color: rgba(9, 70, 101, 0.9);
+  color: $darkBlue;
   font-size: 30px;
   font-weight: 700;
 }
@@ -113,11 +116,13 @@ a.dpu-logo-short:hover {
 }
 .s-lib-box a:link,
 .s-lib-box a:visited {
-  color: #005c96;
+  // color: #005c96;
+  color: $brightBlue;
   text-decoration: none;
 }
 .s-lib-box a:hover {
-  color: #005c96;
+  // color: #005c96;
+  color: $brightBlue;
   text-decoration: underline;
 }
 .s-lg-link-list li {
@@ -141,7 +146,8 @@ a.dpu-logo-short:hover {
 }
 /* Multi-disciplinary styling */
 .multidis {
-  color: #4796b3;
+  // color: #4796b3;
+  color: $brightBlue;
 }
 /* Popover Style*/
 .popover-title {
@@ -158,7 +164,8 @@ span[title='Number of visits this year'] {
 }
 .nav > li > a {
   margin: 4px 0 0 0;
-  color: #337ab7;
+  // color: #337ab7;
+  color: $brightBlue;
 }
 .nav > li > a:hover {
   background-color: transparent;
@@ -255,3 +262,4 @@ table tr:first-child {font-weight: bold; font-size: 14px;}
     margin-bottom: 10px;
   }
 }
+

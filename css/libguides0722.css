@@ -74,12 +74,12 @@ a.dpu-logo-short:hover {
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
   color: #555;
-  background: #7197c2 !important;
+  background: #51a4ff !important;
 }
 
 #s-lg-tabs-container .nav-pills > li > a:hover {
   color: #555;
-  background: #7197c2 !important;
+  background: #51a4ff !important;
   font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ a.dpu-logo-short:hover {
 
 #s-lg-guide-name,
 #s-lib-public-header-title {
-  color: rgba(9, 70, 101, 0.9);
+  color: rgb(14, 65, 116);
   font-size: 30px;
   font-weight: 700;
 }
@@ -124,12 +124,12 @@ a.dpu-logo-short:hover {
 
 .s-lib-box a:link,
 .s-lib-box a:visited {
-  color: #005c96;
+  color: rgb(0, 87, 183);
   text-decoration: none;
 }
 
 .s-lib-box a:hover {
-  color: #005c96;
+  color: rgb(0, 87, 183);
   text-decoration: underline;
 }
 
@@ -159,7 +159,7 @@ a.dpu-logo-short:hover {
 
 /* Multi-disciplinary styling */
 .multidis {
-  color: #4796b3;
+  color: rgb(0, 87, 183);
 }
 
 /* Popover Style*/
@@ -179,7 +179,7 @@ span[title="Number of visits this year"] {
 
 .nav > li > a {
   margin: 4px 0 0 0;
-  color: #337ab7;
+  color: rgb(0, 87, 183);
 }
 
 .nav > li > a:hover {
