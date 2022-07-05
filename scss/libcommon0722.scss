@@ -107,7 +107,7 @@ $red: rgba(175, 39, 47, 1);
     }
 
     .navbar-inverse .navbar-nav>li>a {
-        color: #284b6e;
+        color: $darkBlue;
         font-weight: 700;
         padding-top: 13px;
         padding-bottom: 13px;
@@ -119,7 +119,7 @@ $red: rgba(175, 39, 47, 1);
     }
 
     .navbar-collapse .navbar-nav > li > a:hover,.navbar-collapse .navbar-nav > li > a:focus {
-        background-color: #284b6e;
+        background-color: $darkBlue;
         color: #fff;
         display: block !important;
         width: 100%;
@@ -146,7 +146,7 @@ $red: rgba(175, 39, 47, 1);
         font-family: "Open Sans Condensed",sans-serif;
         font-weight: 700;
         text-transform: uppercase;
-        color: #284b6e;
+        color: $darkBlue;
         padding: .55em 1em;
         font-size: 1em;
     }

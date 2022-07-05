@@ -112,7 +112,7 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #284b6e;
+  color: rgb(14, 65, 116);
   font-weight: 700;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -121,7 +121,7 @@ a:hover, a:focus {
 }
 
 .navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-nav > li > a:focus {
-  background-color: #284b6e;
+  background-color: rgb(14, 65, 116);
   color: #fff;
   display: block !important;
   width: 100%;
@@ -148,7 +148,7 @@ a:hover, a:focus {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #284b6e;
+  color: rgb(14, 65, 116);
   padding: 0.55em 1em;
   font-size: 1em;
 }
