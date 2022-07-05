@@ -1,6 +1,6 @@
 /*import settings common to all LibApps apps*/
 // @import url("../css/libcommon0722.css"); 
-//  ***Need to use explicit URL. Until then, use colors below:
+//  ***Need to switch to the @use command
  
 $brightBlue: rgba(0, 87, 183, 1);
 $darkBlue: rgba(14, 65, 116, 1);
