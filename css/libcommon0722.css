@@ -1,0 +1,254 @@
+/*
+Author: Advait, McClure
+Date: 11/2/2016
+Note: The common attributes/tags/elements
+Last update: 1/12/2018 11:35
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic");
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+  color: #565656;
+  font-size: 14px;
+  padding: 0px 0px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.no-float {
+  float: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Banner */
+/*Library Header*/
+.dpu-gradient {
+  background: #385f8a;
+  background: -moz-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b5b90), color-stop(100%, #2b4c72));
+  background: -webkit-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
+  background: -o-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
+  background: -ms-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
+  background: linear-gradient(to bottom, #2b5b90 0%, #2b4c72 100%);
+  height: 110px;
+  border-top: 4px solid #052C41;
+}
+
+.dpu-banner {
+  padding: 1.5em 3% 1.5em;
+  color: #ffffff;
+  font-size: 130%;
+}
+
+/*Depaul logo*/
+.dpu-logo-short {
+  background: url("https://files.dpulibrary.org/springshare/css/images/dpu-logo-short.png") no-repeat scroll 0 0 transparent;
+  width: 190px;
+  height: 45px;
+  border-right: 2px solid #FFF;
+}
+
+/*Depaul Library Text*/
+.dpu-banner-text {
+  padding-left: 26px;
+}
+
+.dpu-banner-text .site-title-short {
+  display: none;
+}
+
+.h1 {
+  font-size: 28px;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.dpu-banner-text > a:hover {
+  color: #fff;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #777;
+}
+
+/*when navigation bar collapse. */
+.navbar-nav {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-top: 0;
+  margin-top: -1px;
+}
+
+.navbar-nav:first-child > li {
+  border-right: 1px solid #bcbcab;
+}
+
+.nav .navbar-nav {
+  width: 430px;
+  height: 50px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 0;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar-right {
+  margin-top: 1px;
+}
+
+.navbar-inverse {
+  background: #f0ede4;
+  border-color: #bbb;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #284b6e;
+  font-weight: 700;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-nav > li > a:focus {
+  background-color: #284b6e;
+  color: #fff;
+  display: block !important;
+  width: 100%;
+}
+
+#btn-ask {
+  background-color: #2dba6f;
+  color: #fff;
+  margin: 0;
+  padding: 11px 14px 9px 18px;
+}
+
+/*Research Guide */
+.navbar-brand {
+  float: left;
+  font-size: 18px;
+  padding-top: 8px;
+  height: 0;
+  line-height: 30px;
+}
+
+/* More Guide */
+.dropdown-menu > li > a {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #284b6e;
+  padding: 0.55em 1em;
+  font-size: 1em;
+}
+
+p.clear-block, .clear-block {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+/* Hide admin-only calendars from LibCal widgets
+*/
+.s-lc-h-loc s-lc-h-tr_6930, .libbg_6930, s-lc-h-tr_6930, .libbg_6930, .s-lc-h-tr_6930 {
+  display: none;
+}
+
+/* Hide Online research help hours during COVID-19 pandemic*/
+/* .s-lc-h-loc s-lc-h-tr_6256, .libbg_6256,  .s-lc-h-tr_6256, .libbg_6256, .s-lc-h-tr_6256 {
+  display:none;
+} */
+/* Hide JTR hours during COVID-19 pandemic*/
+/* .s-lc-h-loc s-lc-h-tr_2437, .libbg_2437,  .s-lc-h-tr_2437, .libbg_2437, .s-lc-h-tr_2437 {
+  display:none;
+} */
+/* Hide Loop hours during  COVID-19 pandemic*/
+/* .s-lc-h-loc s-lc-h-tr_2438, .libbg_2438,  .s-lc-h-tr_2438, .libbg_2438, .s-lc-h-tr_2438 {
+  display:none;
+} */
+/* Mimic Sharepoint call-to-action button (for LibCal)*/
+.cta-button-blue, .search-button {
+  padding: 0.5em 1em 0.5em 1em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-size: 90%;
+  display: inline-block;
+  margin-bottom: 0.6em;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: #005c96 !important;
+}
+
+.search-button {
+  border: none;
+  margin: 0 8px;
+  border-radius: 0.3em;
+}
+
+@media only screen and (max-width: 66em) {
+  /*Logo change again when width change to the 66em. */
+  .dpu-logo-short {
+    background: url("https://files.dpulibrary.org/springshare/css/images/depaul-logo.png") no-repeat scroll 0 0 transparent;
+    width: 48px;
+    height: 40px;
+    margin: 6px 0 0 0;
+    border-right: none;
+  }
+
+  /*	banner with max width 66em*/
+  .dpu-banner {
+    padding: 1em 20px 3.4em !important;
+    height: auto;
+  }
+
+  /* Navigation bar change when max width equal to 66em*/
+  .navbar-nav {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.1em !important;
+    font-weight: 700;
+  }
+
+  .nav > li > a {
+    font-size: 1.2em;
+  }
+
+  .dpu-banner-text {
+    padding-left: 8px;
+  }
+
+  .site-title-short {
+    display: inline !important;
+  }
+
+  .site-title-long {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=libcommon0722.css.map */
