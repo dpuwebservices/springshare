@@ -1,5 +1,10 @@
 /*import settings common to all LibApps apps*/
-@import url('libcommon0722.css');
+// @import url("../css/libcommon0722.css"); 
+//  ***Need to use explicit URL. Until then, use colors below:
+ 
+$brightBlue: rgba(0, 87, 183, 1);
+$darkBlue: rgba(14, 65, 116, 1);
+$red: rgba(175, 39, 47, 1);
 
 div.s-lg-az-result-keywords span.bold {
   font-weight: normal;
