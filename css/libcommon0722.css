@@ -192,7 +192,7 @@ p.clear-block, .clear-block {
   margin-bottom: 0.6em;
   text-decoration: none !important;
   color: #fff !important;
-  background: #005c96 !important;
+  background: rgb(0, 87, 183) !important;
 }
 
 .search-button {
