@@ -291,5 +291,8 @@ table tr:first-child {
     margin-bottom: 10px;
   }
 }
+.s-lib-profile-container .label-info {
+  background: rgb(0, 87, 183);
+}
 
 /*# sourceMappingURL=libguides0722.css.map */
