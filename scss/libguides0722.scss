@@ -74,12 +74,12 @@ a.dpu-logo-short:hover {
 #s-lg-tabs-container .nav-pills > .active > a:hover {
   color: #555;
   // background: #7197c2 !important;
-  background: lighten($brightBlue, 30%) !important;
+  background: lighten($brightBlue, 20%) !important;
 }
 #s-lg-tabs-container .nav-pills > li > a:hover {
   color: #555;
   // background: #7197c2 !important;
-  background: lighten($brightBlue, 30%) !important;
+  background: lighten($brightBlue, 20%) !important;
   font-weight: bold;
 }
 .s-lib-box .s-lib-box-title {
@@ -266,5 +266,8 @@ table tr:first-child {font-weight: bold; font-size: 14px;}
 .s-lib-profile-container {
   .label.label-info{
     background: $brightBlue;
+  }  
+  .label.label-info:hover {
+    background: lighten($brightBlue, 20%);
   }  
 }
