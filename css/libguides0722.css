@@ -291,7 +291,7 @@ table tr:first-child {
     margin-bottom: 10px;
   }
 }
-.s-lib-profile-container .label-info {
+.s-lib-profile-container .label.label-info {
   background: rgb(0, 87, 183);
 }
 
