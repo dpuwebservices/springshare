@@ -1,8 +1,5 @@
 /*
-Author: Advait, McClure
-Date: 11/2/2016
 Note: The common attributes/tags/elements
-Last update: 1/12/2018 11:35
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic");
 body {
@@ -33,15 +30,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 /* Banner */
 /*Library Header*/
 .dpu-gradient {
-  background: #385f8a;
-  background: -moz-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b5b90), color-stop(100%, #2b4c72));
-  background: -webkit-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
-  background: -o-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
-  background: -ms-linear-gradient(top, #2b5b90 0%, #2b4c72 100%);
-  background: linear-gradient(to bottom, #2b5b90 0%, #2b4c72 100%);
+  background: brightBlue;
   height: 110px;
-  border-top: 4px solid #052C41;
 }
 
 .dpu-banner {
