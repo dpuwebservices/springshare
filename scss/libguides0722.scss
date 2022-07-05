@@ -177,21 +177,21 @@ span[title='Number of visits this year'] {
  ** Begin
  **/
 #s-lg-tabs-container .nav-pills > li .active {
-  color: #0d5975;
+  color: $brightBlue;
   border-left: 3px solid currentColor !important;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a {
-  color: #0d5975;
+  color: $brightBlue;
 }
 
 #s-lg-tabs-container .nav-pills > .active > a:hover {
-  color: #0d5975;
+  color: $brightBlue;
   background: #f1f1f1 !important;
 }
 
 #s-lg-tabs-container .nav-pills > li > a:hover {
-  color: #0d5975 !important;
+  color: $brightBlue !important;
   border: none;
   background: #f1f1f1 !important;
   font-weight: bold;
