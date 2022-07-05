@@ -1,20 +1,5 @@
-#################
-## Eclipse
-#################
-
-*.pydevproject
-.project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
+# Sass
+*css.map
 
 # External tool builders
 .externalToolBuilders/
