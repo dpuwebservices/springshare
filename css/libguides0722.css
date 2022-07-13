@@ -182,9 +182,10 @@ span[title="Number of visits this year"] {
   color: rgb(0, 87, 183);
 }
 
-.nav > li > a:hover {
-  background-color: transparent;
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li.active > button, .nav-pills > li.active > button:focus, .nav-pills > li.active > button:hover {
+  background-color: rgb(0, 87, 183);
   outline: 0;
+  color: white;
 }
 
 .nav.nav-pills .navbar-brand {

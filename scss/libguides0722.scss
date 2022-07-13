@@ -164,12 +164,13 @@ span[title='Number of visits this year'] {
 }
 .nav > li > a {
   margin: 4px 0 0 0;
-  // color: #337ab7;
   color: $brightBlue;
 }
-.nav > li > a:hover {
-  background-color: transparent;
+
+.nav-pills > li.active > a,  .nav-pills > li.active > a:focus,  .nav-pills > li.active > a:hover, .nav-pills > li.active > button,  .nav-pills > li.active > button:focus,  .nav-pills > li.active > button:hover {
+  background-color: $brightBlue;
   outline: 0;
+  color:white;
 }
 .nav.nav-pills .navbar-brand {
   padding-top: 12px;
