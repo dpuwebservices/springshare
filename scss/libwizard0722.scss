@@ -1,0 +1,62 @@
+/*import settings common to all LibApps apps*/
+// @import url("../css/libcommon0722.css"); 
+//  ***Need to switch to the @use command: https://sass-lang.com/documentation/at-rules/use
+ 
+$brightBlue: rgba(0, 87, 183, 1);
+$darkBlue: rgba(14, 65, 116, 1);
+$red: rgba(175, 39, 47, 1);
+
+#public-system-header, #logo{
+    background:$brightBlue;
+}
+
+p {
+    font-family: "Source Sans Pro",sans-serif !important;
+    color: #565656;
+    font-size: 14px;
+}
+a {
+    color: $brightBlue;
+    text-decoration: none
+}
+a:hover {
+    color: $brightBlue;
+}
+.header-text-properties {
+    font-family: "Open Sans Condensed",sans-serif !important;    
+    font-size: 20px !important;
+    color: #565656;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 700;
+}
+#mainform label {
+    font-size: 16px;
+    font-family: "Open Sans Condensed",sans-serif !important;
+    font-weight: bold;
+    color: #565656;
+}
+#logo {
+    font-size: initial;
+    text-align: center;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+.required_field {
+    margin-left: 2px;
+}
+.field-label strong {
+    min-width: 108px;
+    display: inline-block;
+}
+.btn-primary {
+    font-family: "Source Sans Pro",sans-serif !important;
+}
+.field-type-checkbox .field-input {
+    font-size: 16px;
+    font-family: "Open Sans Condensed",sans-serif !important;
+    font-weight: bold;
+    color: #565656;
+}
+.field-type-checkbox .field-input label:last-of-type {margin-bottom: 4px;}
+.field-type-checkbox .field-input br {display:none;}
+.field-type-checkbox .field-input .input-sz-lg-other {float:right;}
