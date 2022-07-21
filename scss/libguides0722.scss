@@ -42,6 +42,16 @@ div.s-lg-az-result-keywords span.bold {
   color: #555;
 }
 
+.s-lg-az-result-badge-popular{
+
+  background:$brightBlue;
+  }
+  
+  .s-lg-az-result-badge-new {
+    background: $darkBlue;
+  }
+  
+
 /* LibGuides Overrides */
 .pager {
   width: 75%;
