@@ -1,0 +1,53 @@
+/*import settings common to all LibApps apps*/
+// @import url("../css/libcommon0722.css"); 
+//  ***Need to switch to the @use command: https://sass-lang.com/documentation/at-rules/use
+ 
+$brightBlue: rgba(0, 87, 183, 1);
+$darkBlue: rgba(14, 65, 116, 1);
+$red: rgba(175, 39, 47, 1);
+
+
+
+/*Default color from LibCommon too hard to see here*/
+.s-la-faq-answer a {
+    text-decoration: underline;
+    color: $brightBlue;
+}
+
+.btn-primary, .pagination > .active > a, .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
+    background:$brightBlue;
+    border-color: $brightBlue;
+    color:white;
+}
+    
+/* show only questions in browse list (Home Page, Single Search Page) */
+.s-la-faq-listing-meta, .s-srch-result-meta {
+    display: none;
+} 
+
+/* hide FAQ owner (FAQ page) */  
+.s-la-faq-owner {
+    display: none;
+} 
+
+/* hide browser bar in navigation (All pages)*/
+ul.s-la-navbrowse, ul.s-la-navbrowse li{
+    visibility:hidden;
+}
+
+/* Hide # answers + "Enter another question" text in search bar (Home Page, Single Search Page) */
+.navbar .navbar-text{
+  display:none;
+}
+
+/* Styleing for topic list in sidebar (Home page, FAQ page, custom page) */ 
+.s-la-content-topic-list{
+  padding:0;
+  list-style:none;
+  
+}
+
+@media only screen and (max-width: 66em) {
+    #s-la-page-title-bar .navbar-collapse .nav.navbar-nav.s-la-navbrowse li {display:none;}
+    #s-la-page-title-bar .navbar-collapse.in {overflow-y:hidden}
+}
