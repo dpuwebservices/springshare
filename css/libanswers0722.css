@@ -1,4 +1,8 @@
 /*import settings common to all LibApps apps*/
+.s-lch-widget-float-btn.online {
+  background: rgb(0, 87, 183);
+}
+
 /*Default color from LibCommon too hard to see here*/
 .s-la-faq-answer a {
   text-decoration: underline;

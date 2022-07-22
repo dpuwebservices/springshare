@@ -7,7 +7,9 @@ $darkBlue: rgba(14, 65, 116, 1);
 $red: rgba(175, 39, 47, 1);
 
 
-
+.s-lch-widget-float-btn.online {
+    background:$brightBlue;
+}
 /*Default color from LibCommon too hard to see here*/
 .s-la-faq-answer a {
     text-decoration: underline;
