@@ -134,6 +134,10 @@ a:hover, a:focus {
   padding: 11px 14px 9px 18px;
 }
 
+#btn-ask:hover {
+  background: #bbdbfd;
+}
+
 .btn.btn-info {
   background: rgb(0, 87, 183);
   border: rgb(0, 87, 183);
