@@ -1,26 +1,24 @@
+@charset "UTF-8";
 /*import settings common to all LibApps apps*/
-// @import url("../css/libcommon0722.css"); 
-//  ***Need to switch to the @use command: https://sass-lang.com/documentation/at-rules/use
- 
-$brightBlue: rgba(0, 87, 183, 1);
-$darkBlue: rgba(14, 65, 116, 1);
-$red: rgba(175, 39, 47, 1);
-
 /* New styles for Library Room Reservations page. Updated 03/02/2018 by Gerard */
 .s-lc-public-header-text,
 .s-lc-header {
   margin-bottom: 0;
 }
+
 #s-lc-box-9048-container,
 #s-lc-content-text-35281 {
   margin-top: 0;
 }
+
 p {
   font-size: 14px;
 }
+
 .room-type-box {
   margin: 0 0 30px;
 }
+
 .heading {
   background: #f1f1f1;
   padding: 16px 20px;
@@ -30,6 +28,7 @@ p {
   display: inline-block;
   width: 100%;
 }
+
 .heading h1 {
   font-size: 1.7em !important;
   margin: 0;
@@ -37,47 +36,81 @@ p {
   display: inline;
 }
 
-.s-lc-public-main a.btn-primary, .btn-primary, .btn-sm, #s-lc-eq-n-searchbtn .cta-button-blue, #terms_accept, #submit_times, #s-lc-eq-bform-submit, #s-lc-eq-bform-submit {
+.s-lc-public-main a.btn-primary,
+.btn-primary,
+.btn-sm,
+#s-lc-eq-n-searchbtn .cta-button-blue,
+#terms_accept,
+#submit_times,
+#s-lc-eq-bform-submit,
+#s-lc-eq-bform-submit {
   text-decoration: none !important;
   color: #fff !important;
-  background: $brightBlue !important;
+  background: rgb(0, 87, 183) !important;
+}
+.s-lc-public-main a.btn-primary .s-lc-app-timeslot.s-lc-app-timeb,
+.btn-primary .s-lc-app-timeslot.s-lc-app-timeb,
+.btn-sm .s-lc-app-timeslot.s-lc-app-timeb,
+#s-lc-eq-n-searchbtn .cta-button-blue .s-lc-app-timeslot.s-lc-app-timeb,
+#terms_accept .s-lc-app-timeslot.s-lc-app-timeb,
+#submit_times .s-lc-app-timeslot.s-lc-app-timeb,
+#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb,
+#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb {
+  background: #5992d0 !important;
+  color: white !important;
+}
+.s-lc-public-main a.btn-primary .s-lc-app-timeslot.s-lc-app-timeb.active,
+.btn-primary .s-lc-app-timeslot.s-lc-app-timeb.active,
+.btn-sm .s-lc-app-timeslot.s-lc-app-timeb.active,
+#s-lc-eq-n-searchbtn .cta-button-blue .s-lc-app-timeslot.s-lc-app-timeb.active,
+#terms_accept .s-lc-app-timeslot.s-lc-app-timeb.active,
+#submit_times .s-lc-app-timeslot.s-lc-app-timeb.active,
+#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb.active,
+#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb.active {
+  background: rgb(0, 87, 183) !important;
+  color: white !important;
 }
 
-
-.s-lc-info-label{
-    background:$brightBlue;
+.s-lc-info-label {
+  background: rgb(0, 87, 183);
 }
 
-.btn .btn-info, #s-lc-eq-auth-lobtn {
+.btn .btn-info,
+#s-lc-eq-auth-lobtn {
   background: white;
-  color: $brightBlue;
-  border: 1px solid $brightBlue;
+  color: rgb(0, 87, 183);
+  border: 1px solid rgb(0, 87, 183);
 }
 
 .s-lc-eq-s-conf-link {
-  background: $brightBlue;
-  border: 2px solid $brightBlue;
+  background: rgb(0, 87, 183);
+  border: 2px solid rgb(0, 87, 183);
   color: #fff;
   float: right;
   width: unset;
   padding: 6px 12px;
 }
+
 .s-lc-eq-s-conf-link {
-  background: $brightBlue;
-  border: 2px solid $brightBlue;
+  background: rgb(0, 87, 183);
+  border: 2px solid rgb(0, 87, 183);
 }
+
 .s-lc-eq-s-conf-link {
-  content: '\1F4C5' !important;
+  content: "📅" !important;
 }
+
 /* position the confirmed booking button on right side */
 .room-type-box a.button.confirmedbookings {
   float: right;
 }
+
 .main-container {
   border: 1px solid #cccccc;
   width: 100%;
   padding: 30px 20px 20px;
 }
+
 .category-container {
   border-bottom: 1px solid #e1e1e1;
   width: 100%;
@@ -85,38 +118,46 @@ p {
   margin: 8px 0 20px;
   padding: 0 0 15px;
 }
+
 .category-container:last-child {
   border-bottom: unset;
   margin: 8px 0 0;
   padding: 0;
 }
+
 .category-container .img-container {
   width: 15%;
   margin-right: 0;
   float: left;
 }
+
 .category-container .img-container img {
   max-width: 150px;
   width: 100%;
 }
+
 .category-container .content-container {
   float: left;
   width: 84%;
   margin-left: 1%;
 }
+
 .category-container .content-container h2 {
   margin: 0 0 14px;
   padding: 0;
   font-size: 1.5em;
 }
+
 .category-container .content-container p span {
   font-weight: 700;
 }
+
 ul.reserve-section {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 ul.reserve-section li {
   padding: 6px 0;
   font-weight: 700;
@@ -124,12 +165,15 @@ ul.reserve-section li {
   float: left;
   width: 100%;
 }
+
 ul.reserve-section li:last-child {
   border-bottom: 1px solid #eee;
 }
+
 ul.reserve-section.group-study-room li:last-child {
   border-bottom: 0;
 }
+
 ul.reserve-section li span {
   width: 80%;
   display: inline-block;
@@ -139,38 +183,42 @@ ul.reserve-section li span {
   float: left;
   line-height: 25px;
 }
+
 .room-type-box a.button {
-  border: 2px solid $brightBlue;
+  border: 2px solid rgb(0, 87, 183);
   padding: 0px 12px 0px 10px;
   border-radius: 6px;
-  color: $brightBlue;
+  color: rgb(0, 87, 183);
   font-weight: bold;
   display: inline-block;
   line-height: 22px;
-
 }
+
 .room-type-box a.button:hover {
   text-decoration: none;
-  background: $brightBlue;
-//   border: 2px solid $brightBlue;
+  background: rgb(0, 87, 183);
   color: #fff;
-
 }
+
 .room-type-box a.button:before {
-  content: '\002B';
+  content: "+";
   margin: 0 8px 0 0;
   font-weight: 700;
   font-size: 16px;
 }
 
 /* EQUIPMENT CATALOG SETTINGS*/
-.s-lc-equipment-time-grid, .s-lc-eq-availability {
-    display: block; visibility: hidden; max-height: 0px;
+.s-lc-equipment-time-grid,
+.s-lc-eq-availability {
+  display: block;
+  visibility: hidden;
+  max-height: 0px;
 }
 
 /* needs to be hidden or block alignment gets thrown off*/
-#cart-nav, #s-lc-eq-cart-cont {
-    visibility: hidden;
+#cart-nav,
+#s-lc-eq-cart-cont {
+  visibility: hidden;
 }
 
 /* Control to compensate for larger font we use and avoid overlapping DIVs*/
@@ -179,7 +227,6 @@ ul.reserve-section li span {
     width: 17em;
   }
 }
-
 #s-lc-public-skiplink {
   display: none;
 }
@@ -208,11 +255,9 @@ ul.reserve-section li span {
 /* ensure links are blue and bold on room pages */
 .s-lc-public-main a,
 .modal a {
-  color: $brightBlue;
+  color: rgb(0, 87, 183);
   font-weight: bold;
 }
-
-
 
 .resbox {
   min-height: 180px;
@@ -232,9 +277,10 @@ ul.reserve-section li span {
 }
 
 .s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link,
-a.confirmedbookings, a.button.confirmedbookings {
-  background: $brightBlue;
-  border: 2px solid $brightBlue;
+a.confirmedbookings,
+a.button.confirmedbookings {
+  background: rgb(0, 87, 183);
+  border: 2px solid rgb(0, 87, 183);
   color: #fff;
   width: auto;
   padding: 6px 12px;
@@ -245,76 +291,75 @@ a.confirmedbookings, a.button.confirmedbookings {
   transition: all 0.5s;
   text-decoration: none;
 }
+
 .s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link:hover,
-a.confirmedbookings:hover, a.button.confirmedbookings:hover {
-  background: $brightBlue;
-  border-color: $brightBlue;
+a.confirmedbookings:hover,
+a.button.confirmedbookings:hover {
+  background: rgb(0, 87, 183);
+  border-color: rgb(0, 87, 183);
 }
+
 .s-lc-eq-s-confirmedBtn .s-lc-eq-s-conf-link::before,
-a.confirmedbookings::before, a.button.confirmedbookings::before {
-  content: '\1F4C5';
+a.confirmedbookings::before,
+a.button.confirmedbookings::before {
+  content: "📅";
   margin: 0 8px 0 0;
   font-weight: 700;
   font-size: 16px;
 }
 
-
-
 #s-lc-eq-form-times .input-sm {
-    background: black;
-    color: white;
-  }
-  
-   a.button.confirmedbookings{
-    clear:both;
-  }
-  
+  background: black;
+  color: white;
+}
+
+a.button.confirmedbookings {
+  clear: both;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
   .mobile-only {
-      display:none !important;
+    display: block !important;
   }
-  
-  @media screen and (max-width: 600px) {
-  .mobile-only {
-      display:block !important;
-    }
-   a.button.confirmedbookings{
-    width:100%;
+
+  a.button.confirmedbookings {
+    width: 100%;
     margin: 4px 0;
   }
-  }
-  
-  
-  #tempFloatLeft{
-  float:left;
-  }
-  
-  .cta-button-blue {
-      padding: .5em 1em .5em 1em;
-      font-style: normal;
-      font-weight: bold;
-      text-align: center;
-      -webkit-border-radius: .3em;
-      border-radius: .3em;
-      font-size: 90%;
-      display: inline-block;
-      margin-bottom: .6em;
-      text-decoration: none !important;
-      color: #fff !important;
-      background: $brightBlue !important;
-  }
-  
-  .home-page a{
-  color:$brightBlue;
-  }
-  
+}
+#tempFloatLeft {
+  float: left;
+}
+
+.cta-button-blue {
+  padding: 0.5em 1em 0.5em 1em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-size: 90%;
+  display: inline-block;
+  margin-bottom: 0.6em;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: rgb(0, 87, 183) !important;
+}
+
+.home-page a {
+  color: rgb(0, 87, 183);
+}
 
 @media (max-width: 767px) {
   navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: $brightBlue;
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: rgb(0, 87, 183);
   }
 }
-
 .dropdown-menu {
   font-size: 12px;
 }
@@ -327,15 +372,19 @@ a.confirmedbookings::before, a.button.confirmedbookings::before {
   .resbox {
     min-height: auto;
   }
+
   .resbox .resbox {
     padding: 0;
   }
+
   .s-lc-box-container h2 {
     margin: 0 0 20px;
   }
+
   .s-lc-box-container p + h2 {
     margin-top: 20px;
   }
+
   .resbox img {
     max-width: 110%;
   }
@@ -344,21 +393,28 @@ a.confirmedbookings::before, a.button.confirmedbookings::before {
   .room-type-box a.button {
     float: left !important;
   }
+
   .category-container .img-container {
     width: 100%;
   }
+
   .category-container .content-container {
     width: 100%;
     margin-left: 0;
   }
+
   .category-container .content-container h2 {
     margin: 14px 0 14px;
   }
+
   .heading h1 {
     display: inline-block !important;
     width: 100%;
   }
+
   ul.reserve-section li span {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=libcal1122.css.map */
