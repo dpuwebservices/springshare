@@ -49,15 +49,17 @@ p {
   color: #fff !important;
   background: $brightBlue !important;
 
+}
+
 // librarian appointment time grid
-  .s-lc-app-timeslot.s-lc-app-timeb {
-    background: #5992d0 !important;
-    color: white !important;
-  }
-  .s-lc-app-timeslot.s-lc-app-timeb.active {
-    background: rgb(0, 87, 183) !important;
-    color: white !important;
-  }
+.btn.btn-default.btn-sm.s-lc-app-timeslot.s-lc-app-timeb{ 
+  background: #5992D0 !important;
+  color: white !important
+}
+
+.btn.btn-default.btn-sm.s-lc-app-timeslot.s-lc-app-timeb.active {
+  background: rgb(0, 87, 183) !important;
+  color: white !important
 }
 
 .s-lc-info-label {

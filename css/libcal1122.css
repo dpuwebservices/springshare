@@ -48,25 +48,13 @@ p {
   color: #fff !important;
   background: rgb(0, 87, 183) !important;
 }
-.s-lc-public-main a.btn-primary .s-lc-app-timeslot.s-lc-app-timeb,
-.btn-primary .s-lc-app-timeslot.s-lc-app-timeb,
-.btn-sm .s-lc-app-timeslot.s-lc-app-timeb,
-#s-lc-eq-n-searchbtn .cta-button-blue .s-lc-app-timeslot.s-lc-app-timeb,
-#terms_accept .s-lc-app-timeslot.s-lc-app-timeb,
-#submit_times .s-lc-app-timeslot.s-lc-app-timeb,
-#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb,
-#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb {
-  background: #5992d0 !important;
+
+.btn.btn-default.btn-sm.s-lc-app-timeslot.s-lc-app-timeb {
+  background: #5992D0 !important;
   color: white !important;
 }
-.s-lc-public-main a.btn-primary .s-lc-app-timeslot.s-lc-app-timeb.active,
-.btn-primary .s-lc-app-timeslot.s-lc-app-timeb.active,
-.btn-sm .s-lc-app-timeslot.s-lc-app-timeb.active,
-#s-lc-eq-n-searchbtn .cta-button-blue .s-lc-app-timeslot.s-lc-app-timeb.active,
-#terms_accept .s-lc-app-timeslot.s-lc-app-timeb.active,
-#submit_times .s-lc-app-timeslot.s-lc-app-timeb.active,
-#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb.active,
-#s-lc-eq-bform-submit .s-lc-app-timeslot.s-lc-app-timeb.active {
+
+.btn.btn-default.btn-sm.s-lc-app-timeslot.s-lc-app-timeb.active {
   background: rgb(0, 87, 183) !important;
   color: white !important;
 }
